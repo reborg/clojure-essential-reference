@@ -1,0 +1,1 @@
+(sort-by (juxt count str) ["wd5" "aba" "yp" "csu" "nwd7"]) ; <1>

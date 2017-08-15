@@ -1,0 +1,2 @@
+(unchecked-inc Long/MAX_VALUE)
+;; -9223372036854775808

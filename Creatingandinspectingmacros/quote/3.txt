@@ -1,0 +1,2 @@
+(resolve '+)
+;; #'clojure.core/+

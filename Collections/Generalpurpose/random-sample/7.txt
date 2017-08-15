@@ -1,0 +1,1 @@
+(filter (fn [_] (< (rand) prob)) coll) ; <1>

@@ -1,0 +1,1 @@
+(LAMBDA (Y Z) (CONS (CAR Y) (CDR Z)))

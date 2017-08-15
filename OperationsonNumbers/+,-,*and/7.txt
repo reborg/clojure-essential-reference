@@ -1,0 +1,4 @@
+(+)double
+(-)double
+(*)double
+(/)double

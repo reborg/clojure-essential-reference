@@ -1,0 +1,1 @@
+(memfn [<tags> name & <args>])

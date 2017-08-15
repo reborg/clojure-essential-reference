@@ -1,0 +1,3 @@
+(gensym
+  ([])
+  ([prefix-string]))
