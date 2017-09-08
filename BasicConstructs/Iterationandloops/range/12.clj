@@ -14,7 +14,7 @@
 (defn random-dna [n] ; <4>
   (repeatedly n #(rand-nth [\a \c \g \t])))
 
-(defmacro b [expr] ; <6>
+(defmacro b [expr] ; <5>
   `(str (first (:mean (quick-benchmark ~expr {}))) " secs"))
 
 (let [dna (random-dna 1e6)]

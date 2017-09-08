@@ -1,5 +1,11 @@
+(defn count-occurrences [coll]
+  (->> coll
+       (map #(vector % 1))                       ; <1>
+       (reduce (fn [m [k cnt]]                   ; <2>
+         (assoc m k (+ cnt (get m k 0)))) {})))  ; <3>
+
 (defn word-count [s]
-  (frequencies (.split #"\s+" s)))              ; <1>
+  (count-occurrences (.split #"\s+" s)))
 
 (word-count "To all things, all men, all of the women and children")
 

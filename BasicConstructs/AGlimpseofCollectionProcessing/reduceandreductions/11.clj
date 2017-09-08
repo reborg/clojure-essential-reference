@@ -1,5 +1,5 @@
-(let [xs (range 1e8)] (reduce + xs))      ; <1>
-;; 4999999950000000
+(defn foldr [f init xs]
+  (reduce (fn [x y] (f y x)) init (reverse xs))) ; <1>
 
-(take 10 (reduce merge '() (range 1e8)))  ; <2>
-;; java.lang.OutOfMemoryError: GC overhead limit exceeded
+(foldr / 1. numbers)
+;; 0.375

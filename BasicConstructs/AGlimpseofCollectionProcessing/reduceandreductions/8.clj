@@ -1,7 +1,9 @@
-(defn foldr [f init xs]
-  (if (empty? (rest xs))
-    (f (first xs) init)
-    (f (first xs) (foldr f init (rest xs)))))          ; <1>
+(def numbers (cons 1 (cons 2 (cons 3 (cons 4 (list)))))) ; <1>
 
-(foldr + 0 numbers)
+(defn foldl [f init xs]
+  (if (empty? xs)
+    init
+    (foldl f (f init (first xs)) (rest xs))))            ; <2>
+
+(foldl + 0 numbers)
 ;; 10

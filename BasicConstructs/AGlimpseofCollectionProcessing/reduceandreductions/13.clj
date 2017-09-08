@@ -1,4 +1,5 @@
-(let [xs (range 1000)]
-  (* 10e6 (b (last (reductions unchecked-add-int xs))))) ; <1>
+(let [xs (range 1e8)] (reduce + xs))      ; <1>
+;; 4999999950000000
 
-;; 530.79127793974734 (µs)
+(take 10 (reduce merge '() (range 1e8)))  ; <2>
+;; java.lang.OutOfMemoryError: GC overhead limit exceeded

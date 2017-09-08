@@ -1,5 +1,5 @@
-(defn foldr [f init xs]
-  (reduce (fn [x y] (f y x)) init (reverse xs))) ; <1>
+(foldl / 1. numbers)
+;; 0.041666666666666664
 
 (foldr / 1. numbers)
 ;; 0.375
