@@ -1,4 +1,6 @@
 (require '[clojure.core.reducers :as r])
+(import 'java.util.concurrent.atomic.AtomicInteger)
+(set! *warn-on-reflection* true)
 
 (defn pdrop                               ; <1>
   [n coll]

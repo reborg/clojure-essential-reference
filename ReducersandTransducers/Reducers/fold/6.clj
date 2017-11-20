@@ -1,6 +1,6 @@
 (extend-protocol                  ; <1>
   clojure.core.protocols/IKVReduce
-  java.util.HashMap
+  java.util.concurrent.ConcurrentHashMap
   (kv-reduce [m f _]
     (reduce (fn [amap [k v]] (f amap k)) m m)))
 
@@ -10,7 +10,7 @@
       (combinef a-large-map)
       reducef
       a-large-map)))
-;; "Elapsed time: 37538.71 msecs"
+;; "Elapsed time: 41113.49182 msecs"
 
 (.get a-large-map 8190)           ; <3>
 ;; 3.131592903558553

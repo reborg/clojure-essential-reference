@@ -12,5 +12,5 @@
                step
                (do
                  (vswap! fillers next)      ; <5>
-                 (rf result filler))))
+                 (rf step filler))))
            (reduced result)))))))           ; <6>

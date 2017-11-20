@@ -16,11 +16,11 @@
 
 (defn pdrop
   [dropn coll]
-  (reify                                              ; <2>
+  (reify                                     ; <2>
     r/CollFold
     (coll-fold [this n combinef reducef]
       (stateful-foldvec coll n combinef
-        (fn []                                        ; <3>
+        (fn []                               ; <3>
           (let [nv (volatile! dropn)]
             (fn
               [result input]
@@ -30,8 +30,10 @@
                   result
                   (reducef result input))))))))))
 
-(->> (vec (range 1600))                               ; <4>
-     (pdrop 10)
-     (r/fold 200 + +))
+(distinct                                     ; <4>
+  (for [i (range 1000)]
+    (->> (vec (range 1600))
+         (pdrop 10)
+         (r/fold 200 + +))))
 
-;; 1222840
+;; (1222840)

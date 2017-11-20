@@ -1,0 +1,3 @@
+(completing
+  ([f])
+  ([f cf]))

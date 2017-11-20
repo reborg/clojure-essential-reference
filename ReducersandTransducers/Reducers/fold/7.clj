@@ -6,17 +6,18 @@
     reducef))
 
 (extend-protocol r/CollFold               ; <2>
-  java.util.HashMap
+  java.util.concurrent.ConcurrentHashMap
   (coll-fold
     [m n combinef reducef]
     (foldmap m n combinef reducef)))
 
-(def a-large-map (HashMap. (large-map 100000 100)))
+(def a-large-map (ConcurrentHashMap. (large-map 100000 100)))
 
 (time                                     ; <3>
   (dorun
-    (r/fold
-      (combinef a-large-map)
-      reducef
-      a-large-map)))
-"Elapsed time: 18142.184 msecs"
+    (into {}
+      (r/fold
+        (combinef a-large-map)
+        reducef
+        a-large-map))))
+"Elapsed time: 430.96208 msecs"

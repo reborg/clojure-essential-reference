@@ -1,0 +1,5 @@
+(foldcat [coll])
+(cat ([])
+     ([ctor])
+     ([left right]))
+(append! [acc el])

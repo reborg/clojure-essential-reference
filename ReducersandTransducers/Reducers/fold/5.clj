@@ -1,4 +1,4 @@
-(import 'java.util.HashMap)
+(import 'java.util.concurrent.ConcurrentHashMap)
 (require '[clojure.core.reducers :as r])
 
 (defn pi [n]                        ; <1>
@@ -23,7 +23,7 @@
   (doto m
     (.put k (pi (.get m k)))))
 
-(def a-large-map (HashMap. (large-map 100000 100)))
+(def a-large-map (ConcurrentHashMap. (large-map 100000 100)))
 
 (dorun                              ; <5>
   (r/fold
