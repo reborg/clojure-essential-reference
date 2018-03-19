@@ -1,28 +1,9 @@
-(require '[criterium.core :refer [quick-benchmark]])
+(require '[criterium.core :refer [quick-bench]])
 
-(defn complement-dna [nucleotide] ; <1>
-  ({\a \t \t \a \c \g \g \c} nucleotide))
+(let [xs (range 1000000)]
+  (quick-bench (reduce + (map inc xs)))) ; <1>
+;; Execution time mean : 42.022867 ms
 
-(defn palindrome? [xs cnt] ; <2>
-  (let [reverse-idx (range (quot cnt 2) 0 -1)]
-    (every? #(= (nth xs %) (complement-dna (nth xs (- cnt % 1))))
-            reverse-idx)))
-
-(defn palindrome-reverse? [xs] ; <3>
-  (= (map complement-dna xs) (reverse xs)))
-
-(defn random-dna [n] ; <4>
-  (repeatedly n #(rand-nth [\a \c \g \t])))
-
-(defmacro b [expr] ; <5>
-  `(str (first (:mean (quick-benchmark ~expr {}))) " secs"))
-
-(let [dna (random-dna 1e6)]
-  (b (palindrome? dna 1e6))) ; <6>
-
-;; 0.030452050535 secs
-
-(let [dna (random-dna 1e6)]
-  (b (palindrome-reverse? dna)))
-
-;; 0.082715375918 secs
+(let [xs (range 1000000)]
+  (quick-bench (transduce (map inc) + xs))) ; <2>
+;; Execution time mean : 16.044716 ms

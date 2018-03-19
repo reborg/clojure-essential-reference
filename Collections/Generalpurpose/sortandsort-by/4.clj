@@ -32,7 +32,7 @@
              (#'r/fjfork t2)
              (mergef (f1) (#'r/fjjoin t2))))))))
 
-(extend-type IdRange
+(extend-type IdRange ; <6>
   DataProvider
   (fetch-ids [id-range]
     (shuffle (range (:from id-range) (:to id-range)))))

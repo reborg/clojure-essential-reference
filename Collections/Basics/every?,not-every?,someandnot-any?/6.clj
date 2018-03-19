@@ -1,15 +1,9 @@
-(def prizes {"AB334XC" "2 Weeks in Mexico" ; <1>
-             "QA187ZA" "Vespa Scooter"
-             "EF133KX" "Gold jewelry set"
-             "RE395GG" "65 inches Tv set"
-             "DF784RW" "Bicycle"})
+(def drawn #{4 38 20 16 87})
 
-(defn win [tickets] ; <2>
-  (or (some prizes tickets) "Sorry, try again"))
+(def cards [[37 2 94 4 38] [20 16 87 19 1] [87 20 16 38 4]])
 
-(win ["TA818GS" "RE395GG" "JJ148XN"]) ; <3>
-;; "65 inches Tv set"
-(win ["MP357SQ" "MB263DK" "HF359PB"])
-;; "Sorry, try again"
-(win ["MP357SQ" "MB263DK" "QA187ZA"])
-;; "Vespa Scooter"
+(defn bingo? [card] ; <1>
+ (every? drawn card))
+
+(map bingo? cards) ; <2>
+;;(false false true)

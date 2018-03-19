@@ -1,3 +1,10 @@
-(defn a [a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21])
+(defn get-bytes [^String s]                   ; <1>
+  (.getBytes s (StandardCharsets/UTF_8)))
 
-;; CompilerException java.lang.RuntimeException: Can't specify more than 20 params [...]
+(defn compute-hmac [^Mac mac canonical]       ; <2>
+  (.doFinal mac (get-bytes canonical)))
+
+(time (dotimes [i 100000]
+  (sign-request (str "http://example.com/tx/" i))))
+
+;; "Elapsed time: 449.417098 msecs"           ; <3>

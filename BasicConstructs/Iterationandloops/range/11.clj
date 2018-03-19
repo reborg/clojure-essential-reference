@@ -1,5 +1,5 @@
+(let [r (range 1e7)] (first r) (last r))  ; (1)
+;; 9999999
 
-  |<----------------------(dec n)----------------------------->|
-  A  A  G  T  G  T  G  T  G  A  G  T   G   G   T   A   G   A   T
-  |<------(quot n 2)-------->|
-                             |<---- m ---->|
+(let [r (range 1e7)] (last r) (first r))  ; (2)
+;; OutOfMemoryError GC overhead limit exceeded

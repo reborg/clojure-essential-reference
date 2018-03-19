@@ -2,7 +2,7 @@
 (require '[clojure.core.reducers :as r])
 
 (defn pi [n]                        ; <1>
-  "Pi Liebniz formula approx."
+  "Pi Leibniz formula approx."
   (->> (range)
        (filter odd?)
        (take n)

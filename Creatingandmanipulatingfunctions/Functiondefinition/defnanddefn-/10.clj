@@ -1,4 +1,2 @@
-(time (dotimes [i 100000]
-  (sign-request (str "http://example.com/tx/" i))))
-
-;; "Elapsed time: 1054.507977 msecs"
+Reflection warning, crypto.clj:12:3 - call to method getBytes can't be resolved (target class is unknown).
+Reflection warning, crypto.clj:21:3 - call to method doFinal can't be resolved (target class is unknown).

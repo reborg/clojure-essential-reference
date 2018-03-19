@@ -18,5 +18,5 @@
 (-main "project.clj" "/tmp/copy1.clj") ; <4>
 ;; nil
 
-(-main "copy1.clj" "/tmp/copy2.clj" "/tmp/")
+(-main "copy1.clj" "/tmp/copy2.clj" "/tmp/") ; <5>
 ;; nil

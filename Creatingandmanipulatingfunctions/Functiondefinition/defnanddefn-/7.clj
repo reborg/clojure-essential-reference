@@ -1,21 +1,39 @@
-(defn save! [item]
-  {:pre [(clojure.test/are [x] x                      ; <1>
-           (map? item)                                ; <2>
-           (string? (:name item))                     ; <3>
-           (#{:double :triple} (:width item)))]       ; <4>
-   :post [(clojure.test/is (= 10 (:id %)))]}          ; <5>
-  (assoc item :id 10))
+(ns profilable)
 
-(save! {:name 1 :width :single})
+(defn ^:bench profile-me [ms]                 ; <1>
+  (println "Crunching bits for" ms "ms")
+  (Thread/sleep ms))
 
-;; FAIL in () (test.clj:-1)                           ; <6>
-;; expected: (string? (:name item))
-;;   actual: (not (string? 1))
-;;
-;; FAIL in () (test.clj:-1)
-;; expected: (#{:double :triple} (:width item))
-;;   actual: nil
-;;
-;; AssertionError Assert failed: (clojure.test/are [x] x (map? item)
-;; (string? (:name item))
-;; (#{:double :triple} (:width item)))
+(defn dont-profile-me [ms]
+  (println "not expecting profiling"))
+
+(ns user)
+
+(defn- wrap [f]
+  (fn [& args]
+    (time (apply f args))))
+
+(defn- make-profilable [v]
+  (alter-var-root v (constantly (wrap @v))))
+
+(defn- tagged-by [tag nsname]
+  (->> (ns-publics nsname)
+       vals
+       (filter #(get (meta %) tag))))
+
+(defn bench-ns [nsname]                       ; <2>
+  (->> (tagged-by :bench nsname)
+       (map make-profilable)
+       dorun))
+
+(profilable/profile-me 500)                   ; <3>
+;; Crunching bits for 500 ms
+
+(bench-ns 'profilable)
+
+(profilable/profile-me 500)                   ; <4>
+;; Crunching bits for 500 ms
+;; "Elapsed time: 502.422309 msecs"
+
+(profilable/dont-profile-me 0)                ; <5>
+;; not expecting profiling

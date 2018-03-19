@@ -1,40 +1,21 @@
-(ns crypto
-  (:import java.io.ByteArrayOutputStream
-           javax.crypto.spec.SecretKeySpec
-           javax.crypto.Mac
-           java.util.Base64
-           java.net.URLEncoder
-           java.nio.charset.StandardCharsets))
+(defn save! [item]
+  {:pre [(clojure.test/are [x] x                      ; <1>
+           (map? item)                                ; <2>
+           (string? (:name item))                     ; <3>
+           (#{:double :triple} (:width item)))]       ; <4>
+   :post [(clojure.test/is (= 10 (:id %)))]}          ; <5>
+  (assoc item :id 10))
 
-(set! *warn-on-reflection* true)                              ; <1>
+(save! {:name 1 :width :single})
 
-(defn get-bytes [s]
-  (.getBytes s (StandardCharsets/UTF_8)))
-
-(defn create-spec [secret]
-  (SecretKeySpec. (get-bytes secret) "HmacSHA256"))
-
-(defn init-mac [spec]
-  (doto (Mac/getInstance "HmacSHA256")
-    (.init spec)))
-
-(defn compute-hmac [mac canonical]
-  (.doFinal mac (get-bytes canonical)))
-
-(defn encode [hmac]
-  (URLEncoder/encode
-    (.encodeToString (Base64/getEncoder) hmac)))
-
-(defn sign [canonical secret]                                 ; <2>
-  (-> secret
-      create-spec
-      init-mac
-      (compute-hmac canonical)
-      encode))
-
-(defn sign-request [url]                                      ; <3>
-  (let [signature (sign url "secret-password")]
-    (format "%s?signature=%s" url signature)))
-
-(sign-request "http://example.com/tx/1")
-;; "http://example.com/tx/1?signature=EtUPpQpumBqQ5c6aCclS8xDIItfP6cINNkKJXtlP1pc%3D"
+;; FAIL in () (test.clj:-1)                           ; <6>
+;; expected: (string? (:name item))
+;;   actual: (not (string? 1))
+;;
+;; FAIL in () (test.clj:-1)
+;; expected: (#{:double :triple} (:width item))
+;;   actual: nil
+;;
+;; AssertionError Assert failed: (clojure.test/are [x] x (map? item)
+;; (string? (:name item))
+;; (#{:double :triple} (:width item)))

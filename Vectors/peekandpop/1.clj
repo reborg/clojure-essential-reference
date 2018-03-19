@@ -1,0 +1,2 @@
+(peek [coll])
+(pop [coll])

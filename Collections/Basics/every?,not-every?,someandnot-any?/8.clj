@@ -1,1 +1,4 @@
-(every? pos? (range 1 (long 1e9)))
+(every? pos? []) ; <1>
+;; true
+(every? neg? []) ; <2>
+;; true
