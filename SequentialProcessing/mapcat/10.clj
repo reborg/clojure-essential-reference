@@ -1,0 +1,1 @@
+(let [xs (range 1000)] (bench (into [] (mapcat range) xs))) ; 10.4ms ; <1>

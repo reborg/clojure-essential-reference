@@ -1,7 +1,7 @@
 (defn lazy-loop [xs] ; <1>
   (lazy-seq
-    (when-let [xs (seq xs)]
-      (cons (first xs)
+    (when-first [x xs]
+      (cons x
         (lazy-loop (rest xs)))))) ; <2>
 
 (first (lazy-loop (lazy-expensive))) ; <3>

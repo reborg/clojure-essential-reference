@@ -1,4 +1,4 @@
-(defn repeatedly* [f x] ; <1>
+(defn repeatedly* [f] ; <1>
   (lazy-seq (cons (f) (repeatedly* f))))
 
 (defn iterate* [f x] ; <2>

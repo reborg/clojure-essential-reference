@@ -1,0 +1,3 @@
+(mapcat
+  ([f])
+  ([f & colls]))
