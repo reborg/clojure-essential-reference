@@ -1,5 +1,5 @@
-(def simmetric? (every-pred string? lower-case? palindrome?))
+(def symmetric? (every-pred string? lower-case? palindrome?))
 
-(simmetric? "racecar")
+(symmetric? "racecar")
 
 ;; true

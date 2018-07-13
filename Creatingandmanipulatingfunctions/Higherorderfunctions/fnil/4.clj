@@ -1,10 +1,4 @@
-(def greetings (fnil clojure.string/replace "Nothing to replace" "Morning" "Evening"))
+(def as-nums+ (fnil as-nums "0,1,2")) ; <1>
 
-(greetings "Good Morning!" "Morning" "Evening")
-;; "Good Evening!"
-(greetings nil "Morning" "Evening")
-;; "Nothing to replace"
-(greetings "Good Morning!" nil "Evening")
-;; "Good Evening!"
-(greetings "Good Morning!" "Morning" nil)
-;; "Good Evening!"
+(as-nums+ (:selection request-params)) ; <2>
+;; (0 1 2)

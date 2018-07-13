@@ -1,0 +1,5 @@
+(create-struct [& keys])
+(defstruct [name & keys])
+(struct-map [s & inits])
+(struct [s & vals])
+(accessor [s key])

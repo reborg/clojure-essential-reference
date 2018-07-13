@@ -1,20 +1,10 @@
-(def sensor-read                                    ; <1>
-  [{:id "AR2" :location 2 :status "ok"}
-   {:id "EF8" :location 2 :status "ok"}
-   nil
-   {:id "RR2" :location 1 :status "ok"}
-   nil
-   {:id "GT4" :location 1 :status "ok"}
-   {:id "YR3" :location 4 :status "ok"}])
+(def m {:a 1 :b nil :c 3}) ; <1>
 
-(defn problems? [sensors]
-  (contains? (into #{} sensors) nil))             ; <2>
+(if (get m :b) "Key found" "Key not found") ; <2>
+;; Key not found
 
-(defn raise-on-error [sensors]
-  (if (problems? sensors)
-    (throw (RuntimeException.
-      "At least one sensor is malfunctioning"))
-    :ok))
+(if (contains? m :b) "Key found" "Key not found") ; <3>
+;; Key found
 
-(raise-on-error sensor-read)                      ; <3>
-;; RuntimeException At least one sensor is malfunctioning
+(if-not (= ::none (get m :b ::none)) "Key found" "Key not found") ; <4>
+;; Key found

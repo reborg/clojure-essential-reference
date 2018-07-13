@@ -1,9 +1,5 @@
-(def request-params
- {:name "Jack"
-  :selection nil})
+(update {:a 1 :b 2} :c inc) ; <1>
+;; NullPointerException
 
-(defn as-nums [selection]
-  (let [nums (clojure.string/split selection #",")]
-    (map #(Integer/valueOf %) nums)))
-
-(as-nums (:selection request-params))
+(update {:a 1 :b 2} :c (fnil inc 0)) ; <2>
+;; {:a 1 :b 2 :c 1}

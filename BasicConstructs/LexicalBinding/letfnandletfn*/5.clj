@@ -20,7 +20,7 @@
   ([match n]
    (->>
      (all-ns)
-     (sequence (locs-xform-fact match))   ; <4>
+     (sequence (locs-xform match))   ; <4>
      (sort-by last >)
      (take n))))
 

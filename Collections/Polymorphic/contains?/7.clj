@@ -1,8 +1,5 @@
-(.contains [:a :b :c :d] :a) ; <1>
-;; true
+(contains? [1 2 3 4] 4) ; <1>
+;; false
 
-(.contains {:a 1} :a) ; <2>
-;; IllegalArgumentException No matching method found
-
-(.contains "somelongstring" "long") ; <3>
-;; true
+(contains? [:a :b :c :d] :a) ; <2>
+;; false

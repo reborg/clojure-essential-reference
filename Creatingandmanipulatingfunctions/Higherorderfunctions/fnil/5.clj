@@ -1,3 +1,10 @@
-(defn fnil+ [f & opts]
-  (fn [& args]
-    (apply f (map #(if (nil? %1) %2 %1) args (concat opts (repeat nil))))))
+(def greetings (fnil clojure.string/replace "Nothing to replace" "Morning" "Evening"))
+
+(greetings "Good Morning!" "Morning" "Evening")
+;; "Good Evening!"
+(greetings nil "Morning" "Evening")
+;; "Nothing to replace"
+(greetings "Good Morning!" nil "Evening")
+;; "Good Evening!"
+(greetings "Good Morning!" "Morning" nil)
+;; "Good Evening!"
