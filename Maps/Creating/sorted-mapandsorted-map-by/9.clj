@@ -1,10 +1,10 @@
-(require '[criterium.core :refer [quick-bench]])
-(import '[clojure.lang PersistentTreeMap])
+(def ordered-by-count ; <1>
+  (sorted-map-by
+    #(compare (count %2) (count %1))
+    [:a :b] 1 [:a] 2 [:b] 3))
 
-(let [m (apply sorted-map (range 10))]
-  (quick-bench (first m))) ; <1>
-;; Execution time mean : 57.393946 ns
+(assoc ordered-by-count [:x] 4) ; <2>
+;; {[:a :b] 1, [:a] 4}
 
-(let [m (apply sorted-map (range 10))]
-  (quick-bench (.min ^PersistentTreeMap m))) ; <2>
-;; Execution time mean : 6.234699 ns
+(dissoc ordered-by-count [:x]) ; <3>
+;; {[:a :b] 1}

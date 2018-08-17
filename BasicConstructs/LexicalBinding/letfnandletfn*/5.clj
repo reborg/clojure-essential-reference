@@ -1,3 +1,6 @@
+(require '[clojure.string :refer [split-lines]]
+         '[clojure.repl :refer [source-fn]])
+
 (defn locs-xform [match]
   (comp
     (filter (fn [ns]                      ; <1>
@@ -9,11 +12,11 @@
     (map meta)
     (map (fn [{:keys [ns name]}]          ; <2>
            (symbol (str ns) (str name))))
-    (map (juxt identity                   ; <3>
+    (map (juxt identity
                (fn [sym]
                  (count
-                   (clojure.string/split-lines
-                     (or (clojure.repl/source-fn sym) ""))))))))
+                   (split-lines           ; <3>
+                     (or (source-fn sym) ""))))))))
 
 (defn top-locs
   ([match] (top-locs match 10))
