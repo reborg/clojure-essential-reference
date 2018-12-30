@@ -1,3 +1,3 @@
-f = (+ 1) ; <1>
--- is equivalent to:
-f x = x + 1
+((partial f1 1 2 3) 4)
+((partial f1 1 2) 3 4)
+((partial f1 1) 2 3 4)

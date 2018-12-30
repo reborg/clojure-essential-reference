@@ -1,17 +1,13 @@
-(defn- validate [whitelist req]               ; <1>
-  (and (every? not-empty (vals req))
-       (every? whitelist (keys req))))
+(defn as [x]
+  (partial = x))                          ; <1>
 
-(def valid-req
-  {:id "1322"
-   :cache "rb001"
-   :product "cigars"})
+(defn same? [item coll]
+  (apply (as item) (seq coll)))           ; <2>
 
-(def invalid-req
-  {:id "1323"
-   :cache "rb004"
-   :spoof ""})
+(def all-a? (partial same? \a))           ; <3>
+(def all-red? (partial same? :red))       ; <4>
 
-(map (partial validate #{:id :cache :product}) ; <2>
-  [valid-req invalid-req])
-;; (true false)
+(all-a? "aaaaa")                          ; <5>
+;; true
+(all-red? [:red :red :red])               ; <6>
+;; true

@@ -1,22 +1,17 @@
-(defn f1 [a b c d]
-  (+ a b c d))
+(defn- validate [whitelist req]               ; <1>
+  (and (every? not-empty (vals req))
+       (every? whitelist (keys req))))
 
-(defn f2 [a b c]
-  (fn [d]
-    (+ a b c d)))
+(def valid-req
+  {:id "1322"
+   :cache "rb001"
+   :product "cigars"})
 
-(defn f3 [a b]
-  (fn [c]
-    (fn [d]
-      (+ a b c d))))
+(def invalid-req
+  {:id "1323"
+   :cache "rb004"
+   :spoof ""})
 
-(defn f4 [a]
-  (fn [b]
-    (fn [c]
-      (fn [d]
-        (+ a b c d)))))
-
-(f1 1 2 3 4)
-((f2 1 2 3) 4)
-(((f3 1 2) 3) 4)
-((((f4 1) 2) 3) 4)
+(map (partial validate #{:id :cache :product}) ; <2>
+  [valid-req invalid-req])
+;; (true false)

@@ -1,15 +1,14 @@
-(require '[clojure.string :refer [replace lower-case]])
+(require '[clojure.string :as s])
 
 (defn palindrome? [xs cnt] ; <1>
-  (let [idx (range (quot cnt 2) 0 -1)] ; <2>
+  (let [idx (range (quot cnt 2) -1 -1)] ; <2>
     (every? #(= (nth xs %) (nth xs (- cnt % 1))) idx))) ; <3>
 
 (defn string-palindrome? [s] ; <4>
-  (let [xs (some-> s
-             lower-case
-             (replace #" " "")
-             seq)]
-    (palindrome? xs (count xs))))
+  (let [chars (some->> s
+                s/lower-case
+                (remove #(Character/isWhitespace %)))]
+    (palindrome? chars (count chars))))
 
 (string-palindrome? "Was it a car or a cat I saw")
 ;; true
