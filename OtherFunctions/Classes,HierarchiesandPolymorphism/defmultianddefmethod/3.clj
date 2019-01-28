@@ -10,10 +10,11 @@
 (defn resolve-op [ops op] ; <3>
   (first (ops op)))
 
-(def calculate nil)
-(defmulti calculate ; <4>
-  (fn [form] (:op form))
-  :hierarchy #'hierarchy)
+(do ; <4>
+  (def calculate nil)
+  (defmulti calculate
+    (fn [form] (:op form))
+    :hierarchy #'hierarchy))
 
 (defmethod calculate :varargs ; <5>
   [{:keys [op expr]}]
