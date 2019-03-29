@@ -1,6 +1,6 @@
 (require '[clojure.string :refer [split-lines split]])
 
-(def waypoints "http://www.rap.ucar.edu/maps/Station.loc") ; <1>
+(def waypoints "https://ral.ucar.edu/maps/Station.loc") ; <1>
 (def lines (-> waypoints slurp split-lines))
 
 (def waypoints

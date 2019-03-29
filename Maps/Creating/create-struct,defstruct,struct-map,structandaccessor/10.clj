@@ -2,7 +2,7 @@
 (require '[clojure.string :refer [split-lines split]])
 (require '[criterium.core :refer [quick-bench]])
 
-(def waypoints "http://www.rap.ucar.edu/maps/Station.loc")
+(def waypoints "https://ral.ucar.edu/maps/Station.loc")
 (def lines (->> waypoints slurp split-lines (map #(split % #"\s+"))))
 (last lines)
 ;; ["ARP" "44.244823" "-84.179802" "Y31"] ; <1>
