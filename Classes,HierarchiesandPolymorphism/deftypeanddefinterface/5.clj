@@ -9,7 +9,7 @@
   IPerson
   (getName [this] name)
   (setName [this s] (set! name s)) ; <3>
-  (getAge [this])
+  (getAge [this] age)
   (setAge [this n] (set! age n)))
 
 (def p (->Person "Natasha" "823")) ; <4>
