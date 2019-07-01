@@ -10,15 +10,15 @@ Mr,John,Burton,41,Warren Rd,Yarmouth,NR31 9AB,01/05/2012 17:08")
 (defn split [line] ; <2>
   (s/split line #","))
 
-(defn transform [is] ; <3>
-  (let [lines (line-seq (io/reader is))
+(defn transform [data] ; <3>
+  (let [lines (line-seq data)
         headers (split (first lines))]
     (eduction
       (map split)
       (map (partial zipmap headers)) ; <4>
       (rest lines))))
 
-(with-open [data (io/input-stream (.getBytes file-content))] ; <5>
+(with-open [data (io/reader (char-array file-content))] ; <5>
   (doall (transform data)))
 
 ;; ({"TITLE" "Mrs", "FIRST" "Mary", "LAST" "Black", "NUMBER" "20",
