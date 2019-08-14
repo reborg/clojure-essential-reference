@@ -1,10 +1,8 @@
-  (defn name fdecl)
+(def long-keys [-3 -2 -1 0 1 2])
+(def composite-keys [#{[8 5] [3 6]} #{[3 5] [8 6]}])
 
-  fdecl :=>
-  <docstring> <metamap> arities <metamap>
+(map (memfn hashCode) long-keys) ; <1>
+;; (2 1 0 0 1 2)
 
-  arities :=>
-  [arity] or ([arity1]) ([arity2]) .. ([arityn])
-
-  arity :=>
-  <ret-typehint> [<arg-typehint> arity]
+(map (memfn hashCode) composite-keys) ; <2>
+;; (2274 2274)

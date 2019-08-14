@@ -1,4 +1,4 @@
-(defn transform [orig mapping]
+(defn transform [orig mapping] ; <1>
   (apply merge
     ;; prefer destructuring instead of this
     (map (fn [rules]

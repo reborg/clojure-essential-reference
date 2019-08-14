@@ -1,4 +1,4 @@
-((fn fibo
+((fn fibo ; <1>
   ([n] (fibo 1 0 n))
   ([a b cnt]
     (if (zero? cnt)

@@ -1,2 +1,2 @@
-(compare (ref :a) (ref :a))         ; <1>
-;; -1
+(compare (ref :a) (ref :a))                                   ; <1>
+                                                              ;; -1

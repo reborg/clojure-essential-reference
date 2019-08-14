@@ -6,7 +6,7 @@
   ([x y] (. clojure.lang.Numbers (lt x y)))
   ([x y & more]
    (if (< x y)
-     (let [nmore (next more)] ; <1>
+     (let [nmore (next more)]                                 ; <1>
        (if nmore
          (recur y (first more) nmore)
          (< y (first more))))

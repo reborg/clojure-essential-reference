@@ -7,11 +7,11 @@
   (take 1 (repeat 1))
   (take 500000 (repeat 0))))))
 
-(bench (apply = k))                     ; <1>
-;; Execution time mean :  63.865057 µs
+(bench (apply = k))                                           ; <1>
+                                                              ;; Execution time mean : 63.865057 µs
 
-(bench (apply = m))                     ; <2>
-;;  Execution time mean : 62885.110 µs
+(bench (apply = m))                                           ; <2>
+                                                              ;; Execution time mean : 62885.110 µs
 
-(bench (apply = half))                  ; <3>
-;;  Execution time mean : 18051.236 µs
+(bench (apply = half))                                        ; <3>
+                                                              ;; Execution time mean : 18051.236 µs
