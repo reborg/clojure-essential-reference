@@ -1,5 +1,5 @@
-(defn params [query]
-  (->> (clojure.string/split query #"&")
-       (map #(clojure.string/split % #"="))
+(defn params [query] ; <1>
+  (->> (split query #"&")
+       (map #(split % #"="))
        (map #(apply hash-map %))
        (apply merge)))

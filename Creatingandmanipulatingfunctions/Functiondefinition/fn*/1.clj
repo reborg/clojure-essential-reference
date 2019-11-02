@@ -1,1 +1,1 @@
-(fn* [& fdecl])
+(fn* [& fdecl]) ; <1>

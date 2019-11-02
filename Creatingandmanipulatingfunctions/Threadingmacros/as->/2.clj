@@ -2,6 +2,5 @@
   (assoc x :d 4)           ; <2>
   (vals x)                 ; <3>
   (filter even? x)         ; <4>
-  (apply + x))             ; <5>
-
+  (apply + x))
 ;; 6

@@ -1,12 +1,24 @@
-(game [#{[1 :h] [1 :s] [1 :c] [1 :d] [8 :h]}  ;<1>
-       #{[2 :h] [2 :s] [2 :d] [12 :s] [12 :h]}
-       #{[5 :d] [4 :s] [7 :d] [14 :s] [14 :h]}
-       #{[8 :s] [4 :c] [3 :d] [10 :s] [10 :h]}])
+(defn three-of-a-kind [hand] ; <1>
+  (n-of-a-kind hand 3))
 
-;; #{[1 :c] [1 :d] [1 :h] [1 :s] [8 :h]}      ; <2>
+(defn four-of-a-kind [hand]
+  (n-of-a-kind hand 4))
 
-(game [#{[1 :h] [1 :s] [1 :c] [1 :d] [8 :h]}
-       #{[4 :d] [5 :d] [6 :d] [7 :d] [8 :d]}
-       #{[3 :h] [5 :h] [4 :h] [7 :h] [6 :h]}])
+(defn straight-flush [hand] ; <2>
+  (let [sorted (sort-by-rank hand)
+        lower (card-rank sorted)
+        expected (range lower (+ 5 lower))]
+    (when (and (= sorted expected)
+               (apply = (map card-suit hand)))
+      hand)))
 
-;; #{[4 :d] [5 :d] [6 :d] [7 :d] [8 :d]}      ; <3>
+(defn n-of-a-kind-highest [hands] ; <3>
+  (->> hands
+      (sort-by max-rank)
+      last))
+
+(defn straight-flush-highest [hands]
+  (->> hands
+       (filter straight-flush)
+       (sort-by (comp card-rank sort-by-rank))
+       card-suit))

@@ -1,18 +1,8 @@
-(def sample-req {:host "http://mysite.com"
-                 :path "/a/123"
-                 :x "15.1"
-                 :y "84.2"})
+(let [point {:x "15.1" :y "84.2"}]
+  (as-> point {:keys [x y] :as <$>} ; <1>
+    (update <$> :x #(Double/valueOf %))
+    (update <$> :y #(Double/valueOf %))
+    (assoc <$> :sum (+ x y)) ; <2>
+    (assoc <$> :keys (keys <$>)))) ; <3>
 
-(defn process [req]
-  (as-> req {:keys [:host :path :x :y] :as m} ; <1>
-    (assoc m :url (str host path)) ; <2>
-    (assoc m :coord [(Double/valueOf x) (Double/valueOf y)]))) ; <3>
-
-(process sample-req)
-; ->
-; {:host "http://mysite.com"
-;  :path "/a/123"
-;  :x "15.1"
-;  :y "84.2"
-;  :url "http://mysite.com/a/123"
-;  :coord [15.1 84.2]}
+;; {:x 15.1, :y 84.2, :sum 99.3, :keys (:x :y :sum)}

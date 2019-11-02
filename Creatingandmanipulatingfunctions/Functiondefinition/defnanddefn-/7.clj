@@ -1,6 +1,6 @@
 (ns profilable)
 
-(defn ^:bench profile-me [ms]                 ; <1>
+(defn ^:bench profile-me [ms] ; <1>
   (println "Crunching bits for" ms "ms")
   (Thread/sleep ms))
 
@@ -21,19 +21,19 @@
        vals
        (filter #(get (meta %) tag))))
 
-(defn bench-ns [nsname]                       ; <2>
+(defn prepare-bench [nsname] ; <2>
   (->> (tagged-by :bench nsname)
        (map make-profilable)
        dorun))
 
-(profilable/profile-me 500)                   ; <3>
+(profilable/profile-me 500) ; <3>
 ;; Crunching bits for 500 ms
 
-(bench-ns 'profilable)
+(prepare-bench 'profilable)
 
-(profilable/profile-me 500)                   ; <4>
+(profilable/profile-me 500) ; <4>
 ;; Crunching bits for 500 ms
 ;; "Elapsed time: 502.422309 msecs"
 
-(profilable/dont-profile-me 0)                ; <5>
+(profilable/dont-profile-me 0) ; <5>
 ;; not expecting profiling

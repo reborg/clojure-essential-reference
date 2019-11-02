@@ -1,5 +1,5 @@
 (defn rand-b [n]
-  (->> (partial rand-int 2) ; <1>
+  (->> #(rand-int 2)        ; <1>
        (repeatedly n)       ; <2>
        (apply str)))        ; <3>
 

@@ -1,13 +1,9 @@
-(defn alaska? [postcode]
-  (.startsWith postcode "99"))
+(defn postcodes [mailing] ; <1>
+  (sequence (comp ; <2>
+              (map :label)
+              (map split-lines)
+              (map last))
+    mailing))
 
-(defn unique-postcodes [mailing]
- (sequence (comp
-            (map :label)
-            (map clojure.string/split-lines)
-            (map last)
-            (remove alaska?)
-            (distinct)) mailing))
-
-(unique-postcodes mailing)
-;; ("43793" "75395")
+(frequencies (postcodes mailing)) ; <3>
+;; {"99501" 1, "99783" 1, "43793" 1, "75395" 2}

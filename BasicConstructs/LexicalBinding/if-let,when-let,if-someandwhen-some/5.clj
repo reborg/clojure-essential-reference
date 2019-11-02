@@ -1,5 +1,5 @@
-(if-let [bind expr] <form> <else>)
-(if-some [bind expr] <form> <else>)
+(if-let [bind expr] <then-form> <else-form>)
+(if-some [bind expr] <then-form> <else-form>)
 
-(when-let [bind expr] <form>)
-(when-some [bind expr] <form>)
+(when-let [bind expr] <forms>)
+(when-some [bind expr] <forms>)

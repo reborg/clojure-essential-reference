@@ -15,6 +15,13 @@
       (make-unavailable! lane)
       (throw (Exception. "All cashiers busy!")))))
 
-(book-lane) ;; 1 ; <5>
-(book-lane) ;; 2
-(dosync (make-available! 2)) ;; [false 2 3 4 5]
+(book-lane) ; <5>
+;; 1
+
+(book-lane)
+;; 2
+
+(dosync (make-available! 2))
+
+@cashiers
+;; [false 2 3 4 5]

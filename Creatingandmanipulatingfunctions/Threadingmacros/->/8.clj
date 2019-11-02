@@ -1,2 +1,4 @@
-(/ (Math/abs (- (* (inc 1) 5) 1)) 3)
-(-> 1 inc (* 5) (- 1) (Math/abs) (/ 3))
+(map type (map #(hash-map :count 1 :item %) [1])) ; <1>
+;; (clojure.lang.PersistentHashMap)
+(map type (map #(-> {:count 1 :item %}) [1])) ; <2>
+;; (clojure.lang.PersistentArrayMap)

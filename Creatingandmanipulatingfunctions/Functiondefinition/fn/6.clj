@@ -16,3 +16,4 @@
       mapping)))
 
 (transform sample-person cleanup)
+;; {:id "1234567", :name "john doe", :avatar "http://focus.on/me.jpg"}

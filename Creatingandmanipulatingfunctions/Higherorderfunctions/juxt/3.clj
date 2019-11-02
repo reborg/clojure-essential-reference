@@ -6,8 +6,7 @@
 (defn right [[x y]] [(inc x) y])
 
 (defn valid? [[x y]] ; <3>
-  (and (contains? dim x)
-       (contains? dim y)))
+  (and (dim x) (dim y)))
 
 (defn neighbors [cell]
   (filter valid?
@@ -15,5 +14,6 @@
 
 (neighbors [2 1]) ; <5>
 ;; ([2 0] [2 2] [1 1] [3 1])
+
 (neighbors [0 0]) ; <6>
 ;; ([0 1] [1 0])

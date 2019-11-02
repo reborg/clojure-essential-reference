@@ -1,2 +1,7 @@
-(-> 1 (fn [x] (inc x)))
-;; IllegalArgumentException Parameter declaration 1 should be a vector
+(/ (Math/abs (- (* (inc 1) 5) 1)) 3) ; <1>
+(-> 1     ; <2>
+  inc
+  (* 5)
+  (- 1)
+  (Math/abs)
+  (/ 3))

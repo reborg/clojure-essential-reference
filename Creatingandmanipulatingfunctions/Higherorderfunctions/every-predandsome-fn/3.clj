@@ -1,0 +1,1 @@
+(remove odd? (range 10)) ; <1>

@@ -1,1 +1,1 @@
-(clojure.template/do-template [argv expr & values])
+(do-template [argv expr & values])

@@ -1,4 +1,4 @@
-(defn custom-filter [x]                           ; <1>
+(defn custom-filter [x] ; <1>
   (if (or (= x nil) (= false x))
     false
     true))

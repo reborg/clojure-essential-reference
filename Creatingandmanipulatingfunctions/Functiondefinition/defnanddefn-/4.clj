@@ -1,12 +1,14 @@
   (defn <tags> name fdecl)
 
-  fdecl :=>
-  <docstring> <metamap> arities <metamap>
+  fdecl :=> <docstring> ^<metamap> arities <metamap>
 
-  arities :=>
-  <metamap> [arity] <body>
-  OR
-  (<metamap> [arity1] <body>) (<metamap> [arity2] <body>) .. (<metamap> [arityN] <body>)
+  arities :=> <metamap> [arity] <body>
+              OR
+              (<metamap> [arity1] <body>)
+              (<metamap> [arity2] <body>)
+              ..
+              (<metamap> [arityN] <body>)
 
-  arity :=>
-  <ret-typehint> [<arg1-typehint> arg1 .. <argN-typehint> argN]
+  arity :=> <ret-typehint> [<arg1-typehint> arg1
+                            ..
+                            <argN-typehint> argN]

@@ -1,4 +1,4 @@
-  (let [bindings] <body>)
+  (let [bindings & body])
 
   bindings :=>
-  [<bind1> <expr1>, <bind2> <expr2> .. <bind> <expr>]
+  [<bind1> <expr1>, <bind2> <expr2> .. <bind-N> <expr-N>]

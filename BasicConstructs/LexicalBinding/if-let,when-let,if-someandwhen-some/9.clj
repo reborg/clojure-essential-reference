@@ -1,5 +1,5 @@
 (require '[clojure.core.async :refer
-          [go go-loop chan >! <! <!! close!]]))
+          [go go-loop chan >! <! <!! close!]])
 
 (defn- master [items in]                ; <1>
   (go

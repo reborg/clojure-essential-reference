@@ -1,6 +1,9 @@
-(def greetings (fnil clojure.string/replace "Nothing to replace" "Morning" "Evening"))
+(require '[clojure.string :as string])
 
-(greetings "Good Morning!" "Morning" "Evening")
+(def greetings
+  (fnil string/replace "Nothing to replace" "Morning" "Evening"))
+
+(greetings "Good Morning!" "Morning" "Evening") ; <1>
 ;; "Good Evening!"
 (greetings nil "Morning" "Evening")
 ;; "Nothing to replace"

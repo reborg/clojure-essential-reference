@@ -17,8 +17,8 @@ public final class LetPerf extends clojure.lang.AFunction {
     // 29  invokestatic clojure.lang.Numbers.num(long) : java.lang.Number [34]
     // 32  lload_3 [a1]
     // 33  invokestatic clojure.lang.Numbers.num(long) : java.lang.Number [34]
-    // 36  invokeinterface clojure.lang.IFn.invoke(java.lang.Object, java.lang.Object) : java.lang.Object [37] [nargs: 3]
-    // 41  invokeinterface clojure.lang.IFn.invoke(java.lang.Object, java.lang.Object) : java.lang.Object [37] [nargs: 3]
+    // 36  invokeinterface clojure.lang.IFn.invoke(Object, Object) : Object [37]
+    // 41  invokeinterface clojure.lang.IFn.invoke(Object, Object) : Object [37]
     // 46  areturn
   }
 

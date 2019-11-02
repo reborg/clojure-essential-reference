@@ -1,4 +1,4 @@
-(defn op [sel]
+(defn op [sel] ; <1>
   (condp = sel
     "plus"  +
     "minus" -

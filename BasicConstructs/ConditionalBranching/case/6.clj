@@ -15,7 +15,7 @@
 	 (Integer/valueOf arg2)))
 
 (defn calculator [s] ; <3>
-  (let [[arg1 op arg2] (clojure.string/split s #"\s")]
+  (let [[arg1 op arg2] (clojure.string/split s #"\s+")]
     (execute arg1 op arg2)))
 
 (calculator "10 ÷ 5") ; <4>

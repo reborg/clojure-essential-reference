@@ -1,4 +1,4 @@
-public class IntegerMath {
+public class IntegerMath { ; <1>
 
   public static int plus(Object op1, Object op2) {
     System.out.println("int plus(Object Object)");

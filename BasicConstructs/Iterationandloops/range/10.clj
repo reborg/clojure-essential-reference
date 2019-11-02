@@ -7,7 +7,7 @@
 (defn string-palindrome? [s] ; <4>
   (let [chars (some->> s
                 s/lower-case
-                (remove #(Character/isWhitespace %)))]
+                (remove (comp s/blank? str)))]
     (palindrome? chars (count chars))))
 
 (string-palindrome? "Was it a car or a cat I saw")

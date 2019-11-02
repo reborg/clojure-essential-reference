@@ -1,12 +1,11 @@
 (defn rule [moves]
   (let [[p1 p2] moves]                                      ; <1>
-    (if (= p1 p2)
-      "tie game"
       (cond
+        (= p1 p2) "tie game"
         (every? #{"rock" "paper"} moves) "paper wins over rock"
         (every? #{"scissor" "rock"} moves) "rock wins over scissor"
         (every? #{"paper" "scissor"} moves) "scissor wins over paper"
-        :else "computer can't win that!"))))
+        :else "computer can't win that!")))
 
 (defn game-loop []                                          ; <2>
   (println "Rock, paper or scissors?")

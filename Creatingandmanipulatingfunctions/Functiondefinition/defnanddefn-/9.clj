@@ -6,7 +6,7 @@
            java.net.URLEncoder
            java.nio.charset.StandardCharsets))
 
-(set! *warn-on-reflection* true)                              ; <1>
+(set! *warn-on-reflection* true) ; <1>
 
 (defn get-bytes [s]
   (.getBytes s (StandardCharsets/UTF_8)))
@@ -25,14 +25,14 @@
   (URLEncoder/encode
     (.encodeToString (Base64/getEncoder) hmac)))
 
-(defn sign [canonical secret]                                 ; <2>
+(defn sign [canonical secret] ; <2>
   (-> secret
       create-spec
       init-mac
       (compute-hmac canonical)
       encode))
 
-(defn sign-request [url]                                      ; <3>
+(defn sign-request [url] ; <3>
   (let [signature (sign url "secret-password")]
     (format "%s?signature=%s" url signature)))
 

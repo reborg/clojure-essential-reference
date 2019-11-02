@@ -1,7 +1,6 @@
-(defn extract-info [{:keys [name surname]
-                     {:keys [street city]} :address
-                     [primary-contact secondary-contact] :contacts}]
-
+(defn extract-info [{:keys [name surname] ; <1>
+                     {:keys [street city]} :address ; <2>
+                     [primary-contact secondary-contact] :contacts}] ; <3>
   (println name surname "lives at" street "in" city)
   (println "His primary contact is:" primary-contact)
   (when secondary-contact
