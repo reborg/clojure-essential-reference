@@ -1,0 +1,8 @@
+(unchecked-add-int [x y])
+(unchecked-subtract-int [x y])
+(unchecked-multiply-int [x y])
+(unchecked-divide-int [x y])
+(unchecked-inc-int [x])
+(unchecked-dec-int [x])
+(unchecked-negate-int [x])
+(unchecked-remainder-int [x y])
