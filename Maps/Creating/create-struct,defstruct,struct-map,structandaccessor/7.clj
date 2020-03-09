@@ -1,8 +1,8 @@
-(def type (accessor waypoint :type)) ; <1>
-(def lat (accessor waypoint :lat))
-(def lon (accessor waypoint :lon))
-(def id (accessor waypoint :id))
+(def k-type (accessor waypoint :type)) ; <1>
+(def k-lat (accessor waypoint :lat))
+(def k-lon (accessor waypoint :lon))
+(def k-id (accessor waypoint :id))
 
 (def waypoints (to-waypoints coordinates))
-(map id waypoints) ; <2>
+(map k-id waypoints) ; <2>
 ;; ("XVA" "FFA" "XJP")

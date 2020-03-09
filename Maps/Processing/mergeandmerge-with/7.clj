@@ -1,10 +1,9 @@
-(let [m1 {:a 1 :b 2}
-      m2 {:a 'a :b 'b}
-      m3 {:a "a" :b "b"}]
-  (merge-with (fn [v1 v2]
-                (if (vector? v1) ; <1>
-                  (conj v1 v2)
-                  [v1 v2]))
-              m1 m2 m3))
+(defprotocol IComplex ; <1>
+  (sum [c1 c2]))
 
-;; {:a [1 a "a"], :b [2 b "b"]} ; <2>
+(defrecord Complex [re im]
+  IComplex
+  (sum [c1 c2] (merge-with + c1 c2))) ; <2>
+
+(sum (Complex. 2 5) (Complex. 1 3))
+;; #user.Complex{:re 3, :im 8}

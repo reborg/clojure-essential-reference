@@ -6,3 +6,4 @@
 (chunk-buffer [capacity])
 (chunk-append [b x])
 (chunk [b])
+(chunked-seq? [s])

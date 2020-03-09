@@ -1,6 +1,7 @@
-(require '[criterium.core :refer :all])
+(require '[criterium.core :refer [quick-bench]])
 
-(def k (take 1000 (repeat 0)))
+(quick-bench (= 1 1 1 1 1)) ; <1>
+Execution time mean : 86.508844 ns
 
-(bench (apply == k))
-                                                              ;; Execution time mean : 64.778429 µs
+(quick-bench (== 1 1 1 1 1)) ; <2>
+Execution time mean : 63.125153 ns

@@ -7,8 +7,11 @@
    "u" "v" "w" "x"
    "y" "z"])
 
-(defn ++ [c]
-  (alpha (mod (inc (.indexOf alpha c)) 26)))  ; <1>
+(defn ++ [c]      ; <1>
+  (-> (.indexOf alpha c)
+      inc
+      (mod 26)
+      alpha))
 
 (++ "a")
 ;; "b"

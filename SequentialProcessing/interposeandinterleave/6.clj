@@ -1,5 +1,5 @@
 (defn untangle [n xs] ; <1>
-  (letfn [(step [xs] ; <2>
+  (letfn [(step [xs]  ; <2>
             (lazy-seq
               (cons
                 (take-nth n xs) ; <3>

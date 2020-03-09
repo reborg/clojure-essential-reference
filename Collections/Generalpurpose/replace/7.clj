@@ -1,9 +1,9 @@
-(require '[criterium.core :refer [quick-bench]])  ; <1>
+(require '[criterium.core :refer [quick-bench]])
 
 (defn large-map [i] (into {} (map vector (range i) (range i))))
-(def big-map (large-map 2e6))                     ; <2>
+(def big-map (large-map 2e6))                     ; <1>
 
-(let [v (into [] (range 1e6))]                    ; <3>
+(let [v (into [] (range 1e6))]                    ; <2>
   (quick-bench (replace {:small "map"} v))
   (quick-bench (replace big-map v)))
 

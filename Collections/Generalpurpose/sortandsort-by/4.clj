@@ -1,5 +1,5 @@
-(sort > (range 10)) ; <1>
-;; (9 8 7 6 5 4 3 2 1 0)
+(map #(instance? java.util.Comparator %) [< > <= >= =]) ; <1>
+;; (true true true true true)
 
-(sort-by last >= [[1 2] [5 4] [3 4]]) ; <2>
-;; ([3 6] [5 4] [1 2])
+(map #(instance? java.util.Comparator %) [+ - str prn]) ; <2>
+;; (true true true true)

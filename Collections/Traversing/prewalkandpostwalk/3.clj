@@ -21,14 +21,14 @@
             :nodes [{:type "workflow"
                      :nodes 90.11}]}]})
 
-(defn- step [node] ; <4>
+(defn- step [node]          ; <4>
   (if (= "pipeline" (:type node))
     (dissoc node :nodes)
     (do
       (eval (:action node))
       node)))
 
-(time (prewalk step data)) ; <5>
+(time (prewalk step data))  ; <5>
 ;; flowchart
 ;; flowchart
 ;; routine

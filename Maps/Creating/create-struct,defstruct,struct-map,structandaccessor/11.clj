@@ -6,13 +6,19 @@
 (def id (accessor w-struct :id))
 
 (let [w (first points-struct)] (quick-bench (id  w))) ; <1>
-;; Execution time mean : 7.578 ns
-(let [w (first points-record)] (quick-bench (:id w)))
-;; Execution time mean : 7.699 ns
-(let [w (first points-map)] (quick-bench (:id w)))
-;; Execution time mean : 13.730 ns
-(let [w (first points-hmap)] (quick-bench (:id w)))
-;; Execution time mean : 21.216794 ns
+;; Execution time mean : 4.318680 ns
 
-(let [^user.w-record w (first points-record)] (quick-bench (.id w)))
-;; Execution time mean : 4.712035 ns
+(let [w (first points-struct)] (quick-bench (:id  w)))
+;; Execution time mean : 10.249677 ns
+
+(let [w (first points-record)] (quick-bench (:id w)))
+;; Execution time mean : 4.626574 ns
+
+(let [w (first points-map)] (quick-bench (:id w)))
+;; Execution time mean : 9.730 ns
+
+(let [w (first points-hmap)] (quick-bench (:id w)))
+;; Execution time mean : 14.216794 ns
+
+(let [^user.w-record w (first points-record)] (quick-bench (.id w))) ; <2>
+;; Execution time mean : 3.612035 ns

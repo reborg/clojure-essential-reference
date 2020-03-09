@@ -4,6 +4,8 @@
 (def k2 [1 2 3])
 
 (def arraymap {k1 :v1 k2 :v2}) ; <2>
+;; IllegalArgumentException: Duplicate key [1, 2, 3]
+
 (= k1 k2)
 ;; true
 ;; IllegalArgumentException: Duplicate key [1, 2, 3]

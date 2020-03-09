@@ -1,16 +1,10 @@
-(require '[criterium.core :as c]) ; <1>
+(let [m1 {:a [1 3] :b 2}
+      m2 {:a 'a :b 'b}
+      m3 {:a "a" :b "b"}]
+  (merge-with (fn [v1 v2]
+                (if (:multi (meta v1)) ; <1>
+                  (conj v1 v2)
+                  ^:multi [v1 v2]))    ; <2>
+              m1 m2 m3))
 
-(let [m1 (apply hash-map (range 2000))
-      m2 (apply hash-map (range 1 2001))]
-  (c/quick-bench (merge m1 m2))) ; <2>
-;; Execution time mean : 221.025373 µs
-
-(defn merge* [m & maps]
-  (when (some identity maps)
-    (persistent!
-      (reduce conj! (transient (or m {})) maps))))
-
-(let [m1 (apply hash-map (range 2000))
-      m2 (apply hash-map (range 1 2001))]
-  (c/quick-bench (merge* m1 m2))) ; <3>
-;; Execution time mean : 162.887879 µs
+;; {:a [[1 3] a "a"], :b [2 b "b"]} ; <3>

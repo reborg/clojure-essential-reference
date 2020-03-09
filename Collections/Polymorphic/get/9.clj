@@ -10,7 +10,7 @@
 
 (search "user")                                               ; <5>
 
-{:USER "reborg"
- :user.country "GB"
- :user.language "en"
- :user.name "reborg"}
+;; {:USER "reborg"
+;;  :user.country "GB"
+;;  :user.language "en"
+;;  :user.name "reborg"}

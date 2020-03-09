@@ -1,15 +1,18 @@
-(def gas-stations
-  (let [x 3 y 5]                                              ; <1>
-    [(->GasStation "Shell" (relative-point 3.4 5.1 x y))
-     (->GasStation "Gulf" (relative-point 1 1 x y))
-     (->GasStation "Exxon" (relative-point -5 8 x y))
-     (->GasStation "Speedway" (relative-point 10 -1 x y))
-     (->GasStation "Mobil" (relative-point 2 2.7 x y))
-     (->GasStation "Texaco" (relative-point -4.4 11 x y))
-     (->GasStation "76" (relative-point 3 -3 x y))
-     (->GasStation "Chevron" (relative-point -2 5.3 x y))
-     (->GasStation "Amoco" (relative-point 8 -1 x y))]))
+(defn- sq [x] (* x x))
 
-(map :brand (sort gas-stations))                              ; <2>
-                                                              ;; ("Shell" "Mobil" "Gulf" "Chevron"
-                                                              ;; "Amoco" "76" "Exxon" "Speedway" "Texaco")
+(defn- distance [x1 y1 x2 y2]                    ; <1>
+  (Math/sqrt (+ (sq (- x1 x2)) (sq (- y1 y2)))))
+
+(defrecord Point [x y distance-origin]           ; <2>
+  Comparable
+  (compareTo [this other]
+    (compare (distance-origin (:x this) (:y this)) ; <3>
+             (distance-origin (:x other) (:y other)))))
+
+(defn relative-point [x1 y1 x2 y2]          ; <4>
+  (->Point x1 y1 (partial distance x2 y2)))
+
+(defrecord GasStation [brand location]      ; <5>
+  Comparable
+  (compareTo [this other]
+    (compare (:location this) (:location other)))) ; <6>

@@ -1,2 +1,8 @@
-(first (reverse (map #(do (print % "") %) (range 100))))
-;; 0 1 2 3 4...98 99 99
+(def DNA "CTATCTTTTAATCGGTTCTTGCAGTGAGATACATTCCACATGCCCGACTT")
+
+(->> DNA
+  reverse       ; <1>
+  (replace {\A \T \T \A \C \G \G \C}) ; <2>
+  (apply str))  ; <3>
+
+;; "AAGTCGGGCATGTGGAATGTATCTCACTGCAAGAACCGATTAAAAGATAG"

@@ -2,7 +2,7 @@
 (import 'java.util.concurrent.atomic.AtomicInteger)
 (set! *warn-on-reflection* true)
 
-(defn pdrop                               ; <1>
+(defn pdrop  ; <1>
   [n coll]
   (r/folder
     coll (fn [rf]
@@ -15,7 +15,7 @@
                result
                (rf result input)))))))))
 
-(distinct                                 ; <2>
+(distinct    ; <2>
   (for [i (range 1000)]
     (->> (vec (range 1600))
          (pdrop 10)

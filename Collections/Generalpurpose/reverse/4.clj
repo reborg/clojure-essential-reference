@@ -1,8 +1,8 @@
-(def DNA "CTATCTTTTAATCGGTTCTTGCAGTGAGATACATTCCACATGCCCGACTT")
+(reverse (sort (shuffle (range 10)))) ; <1>
+;; (9 8 7 6 5 4 3 2 1 0)
 
-(->> DNA
-  reverse ; <1>
-  (replace {\A \T \T \A \C \G \G \C}) ; <2>
-  (apply str)) ; <3>
+(sort > (shuffle (range 10))) ; <2>
+;; (9 8 7 6 5 4 3 2 1 0)
 
-;; "AAGTCGGGCATGTGGAATGTATCTCACTGCAAGAACCGATTAAAAGATAG"
+(sort #(compare %2 %1) (shuffle (map str (range 10)))) ; <3>
+;; ("9" "8" "7" "6" "5" "4" "3" "2" "1" "0")

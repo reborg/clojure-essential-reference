@@ -4,4 +4,4 @@
 ;; "Elapsed time: 0.055119 msecs"
 
 (time (last (keys big-map))) ; <3>
-;; "Elapsed time: 3284.845288 msecs"
+;; "Elapsed time: 930.845288 msecs"

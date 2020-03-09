@@ -1,8 +1,8 @@
-(defn lazy-expensive [] ; <1>
+(defn lazy-expensive []   ; <1>
   (map #(do (println "thinking hard") %)
   (into () (range 10))))
 
-(defn lazy-loop [xs] ; <2>
+(defn lazy-loop [xs]      ; <2>
   (lazy-seq
     (when xs
       (cons

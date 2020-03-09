@@ -1,7 +1,14 @@
-(let [m1 {:id [11] :colors ["red" "blue"]} ; <1>
-      m2 {:id [10] :colors ["yellow"]}
-      m3 {:id [31] :colors ["brown" "red"]}]
-  (merge-with into m1 m2 m3))
+(def sorted-map-of-keywords
+  (sorted-map :z 3 :f 5 :c 4))
 
-;; {:id [11 10 31], ; <1>
-;;  :colors ["red" "blue" "yellow" "brown" "red"]}
+(def map-of-ints
+  (hash-map 1 "a" 2 "b" 5 "c"))
+
+(merge sorted-map-of-keywords map-of-ints) ; <1>
+;; ClassCastException clojure.lang.Keyword cannot be cast to java.lang.Number
+
+(def map-of-keywords
+  (hash-map :a 1 :b 4 :e 4))
+
+(merge sorted-map-of-keywords map-of-keywords) ; <2>
+;; {:a 1, :b 4, :c 4, :e 4, :f 5, :z 3}

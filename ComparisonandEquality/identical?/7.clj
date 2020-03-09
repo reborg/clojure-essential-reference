@@ -1,2 +1,2 @@
-(identical? (Long. 100) (Long. 100))
-                                                              ;; false
+(identical? (Long. 100) 100) ; <1>
+;; false

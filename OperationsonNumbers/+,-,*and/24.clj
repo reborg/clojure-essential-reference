@@ -1,4 +1,5 @@
 (+)ratio
 (-)ratio
-(*)ratio/bigint
+(*)ratio
+   bigint
 (/)ratio

@@ -1,6 +1,6 @@
-(println (with-out-str (clojure.pprint/write ; <1>
+(clojure.pprint/pprint ; <1>
   (macroexpand
-    '(when-first [x coll] (println x))))))
+    '(when-first [x coll] (println x))))
 
 ;; (let* [temp_123 (seq coll)] ; <2>
 ;;  (when temp_123

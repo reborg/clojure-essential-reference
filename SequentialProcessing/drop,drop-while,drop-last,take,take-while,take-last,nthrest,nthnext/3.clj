@@ -8,12 +8,12 @@
   [400 27 :mar "-0800" :GET 1.1 4924]
   [200 27 :mar "-0800" :GET 1.1 12851]])
 
-(defn error? [code month] ; <2>
+(defn error-in-month? [code month] ; <2>
   (and (= (>= code 400) (= :mar month))))
 
 (defn process-errors [hub-messages] ; <3>
   (filter #(let [[code _ month] (take 3 %)]
-    (error? code month))
+    (error-in-month? code month))
     hub-sample))
 
 (process-errors hub-sample)

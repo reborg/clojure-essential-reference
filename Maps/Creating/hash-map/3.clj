@@ -1,5 +1,13 @@
-(apply hash-map (mapcat vector (range 4) (repeatedly rand))) ; <1>
-;; {0 0.6232152613924482
-;;  1 0.07009565532668205
-;;  3 0.9616604642779419
-;;  2 0.8674645383318249}
+(def map-with-meta ; <1>
+  (hash-map (with-meta 'k {:m 1}) 1
+            (with-meta 'k {:m 2}) 2))
+
+(map-with-meta 'k) ; <2>
+;; 2
+
+(-> map-with-meta ; <3>
+    (find 'k)
+    (first)
+    (meta))
+
+;; {:m 1}

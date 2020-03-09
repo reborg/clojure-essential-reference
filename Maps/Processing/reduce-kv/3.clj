@@ -10,9 +10,7 @@
     keyword))
 
 (reduce-kv ; <3>
-  (fn [m k v] (assoc m (transform k) v))
-  {}
-  env)
+  (fn [m k v] (assoc m (transform k) v)) {} env)
 
 ;; {:term-program "iTerm.app", ; <4>
 ;;  :shell "/bin/bash",

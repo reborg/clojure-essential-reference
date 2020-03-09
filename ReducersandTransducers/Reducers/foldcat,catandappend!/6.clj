@@ -1,2 +1,2 @@
-(count (distinct (seq words)))
+(count (distinct (seq words))) ; <1>
 ;; 17200

@@ -1,6 +1,6 @@
 (require '[clojure.core.reducers :as r])
 
-(defn dedupe [coll]
+(defn reducer-dedupe [coll]
   (r/reducer coll                     ; <1>
     (fn [rf]
       (let [prev (volatile! ::none)]  ; <2>
@@ -15,7 +15,7 @@
      (r/map range)
      (r/mapcat conj)
      (r/filter odd?)
-     dedupe
+     reducer-dedupe
      (into []))
 
 ;; [1 3 1 3 1 3 5 1 3 5 1 3 5 7 1 3 5 7]

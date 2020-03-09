@@ -1,5 +1,5 @@
-#{(rand) (rand) (rand)} ; <1>
-;; IllegalArgumentException Duplicate key: (rand)
+(some #{:x :c} [:a :b :c :d :e]) ; <1>
+;; :c
 
-(hash-set (rand) (rand) (rand)) ; <2>
-;; #{0.53148213003 0.7171734431 0.5055531620}
+(some #{:x :y} [:a :b :c :d :e]) ; <2>
+;; nil

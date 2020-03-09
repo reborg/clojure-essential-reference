@@ -1,11 +1,5 @@
-(def set-with-meta
-  (hash-set ; <1>
-    (with-meta 'a {:pos 1})
-    (with-meta 'a {:pos 2})
-    (with-meta 'a {:pos 3})))
+#{(rand) (rand) (rand)} ; <1>
+;; IllegalArgumentException Duplicate key: (rand)
 
-set-with-meta ; <2>
-;; #{a}
-
-(meta (first set-with-meta))
-;; {:pos 1}
+(hash-set (rand) (rand) (rand)) ; <2>
+;; #{0.53148213003 0.7171734431 0.5055531620}

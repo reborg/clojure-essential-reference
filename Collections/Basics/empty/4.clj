@@ -1,4 +1,4 @@
-(let [coll [1 2 3]] ; <1>
+(let [coll [1 2 3]]   ; <1>
   (cond
     (list? coll) '()
     (map? coll) {}
@@ -6,5 +6,5 @@
     :else "not found"))
 ;; []
 
-(empty [1 2 3]) ; <2>
+(empty [1 2 3])       ; <2>
 ;; []

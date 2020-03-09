@@ -9,8 +9,7 @@
   (let [mask-bits (range 1 (inc max-mask-bits))
         shift-bits (range 0 31)
         masks (map #(dec (bit-shift-left 1 %)) mask-bits)
-        shift-masks (for [mask masks
-                          shift shift-bits]
+        shift-masks (for [mask masks shift shift-bits]
                       [shift mask])]
     (first
       (filter
@@ -18,8 +17,6 @@
           (apply distinct?          ; <4>
             (map #(shift-mask s m %) hashes)))
         shift-masks))))
-
-
 
 (maybe-min-hash
   (map (memfn hashCode) [:a :b :c :d]))   ; <5>

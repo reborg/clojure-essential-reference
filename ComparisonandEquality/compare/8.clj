@@ -1,5 +1,8 @@
-(compare [1 1 1 1] [2 2 2])                                   ; <1>
-                                                              ;; 1
+(instance? java.lang.Comparable (range 10)) ; <1>
+;; false
 
-(compare [1 2 4] [1 2 3])                                     ; <2>
-                                                              ;; 1
+(compare (range 10) (range 10)) ; <2>
+;; ClassCastException
+
+(let [x (range 10) y x] (compare x y)) ; <3>
+;; 0

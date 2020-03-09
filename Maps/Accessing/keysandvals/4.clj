@@ -1,4 +1,4 @@
-(def matchers ; <1>
+(def matchers     ; <1>
   {"next generation" 10
    "incredible" 10
    "revolution" 10
@@ -7,6 +7,7 @@
    "additional benefits" 8
    "evolve over time" 8
    "brings" 7
+   "perfect" 5
    "better solution" 7
    "now with" 6})
 
@@ -30,7 +31,14 @@
       avg-xf)
     + (keys matchers))) ; <4>
 
-(score "All-new XT600 brings all the features ; <5>
-  you love about XT300, now with a new design,
-  improved sound and a lower price!")
+(score
+  "All-new XT600 brings all the features        ; <5>
+   you love about XT300, now with a new design,
+   improved sound and a lower price!")
 ;; 7.3333335
+
+(score                                          ; <6>
+  "We think this book is a perfect fit for the intermediate
+   or seasoned Clojure programmer who wants to understand
+  how a function (and ultimately Clojure) works")
+;; 5.0

@@ -1,5 +1,6 @@
 (def m {nil 0 :c 2})
-(-> m ; <1>
+
+(-> m                 ; <1>
   (assoc :a 1)
   (dissoc nil)
   (update :c inc)

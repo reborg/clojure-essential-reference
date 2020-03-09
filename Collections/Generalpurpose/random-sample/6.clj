@@ -1,7 +1,5 @@
 (defn random-subset [k s]
-  (loop [cnt 0
-         res []
-         [head & others] s]
+  (loop [cnt 0 res [] [head & others] s]
     (if head
       (if (< cnt k)
         (recur (inc cnt) (conj res head) others)
@@ -11,5 +9,5 @@
             (recur (inc cnt) res others))))
     res)))
 
-(random-subset 5 (range 10e7)) ; <1>
-;; [49860861 94867534 91064882 75176293 40474405]
+(random-subset 5 (range 10000)) ; <1>
+;; [8972 1623 1387 5184 3490]

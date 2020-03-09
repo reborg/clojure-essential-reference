@@ -9,7 +9,7 @@
   (println "calling" (format "http://%s/%s" host (or path "index.html"))))
 
 (def hosts ["10.100.89.42" "10.100.86.57" "10.100.23.12"])
-(def get (round-robin request hosts)) ; <6>
+(def get-host (round-robin request hosts)) ; <6>
 
 (get) ; <7>
 ;; calling http://10.100.23.12/index.html

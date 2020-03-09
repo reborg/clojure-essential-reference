@@ -1,17 +1,30 @@
-(require '[criterium.core :refer [quick-bench]])
+(require '[clojure.string :as s])
 
-(let [pairs (into [] (range 2e6))] ; <1>
-  (quick-bench (apply hash-map pairs)))
-;; Execution time mean : 595.268066 ms
+(def long-url ; <1>
+  (str "https://notifications.google.com/u/0/_"
+       "/NotificationsOgbUi/data/batchexecute?"
+       "f.sid=4896754370137081598&hl=en&soc-app=208&"
+       "soc-platform=1&soc-device=1&_reqid=53227&rt="))
 
-(let [pairs (into [] (map-indexed vector (range 1e6)))] ; <2>
-  (quick-bench (into {} pairs)))
-;; Execution time mean : 716.550233 ms
+(defn split-pair [pair] ; <2>
+  (let [[k v] (s/split pair #"=")]
+    (if v
+      [k v]
+      [k nil])))
 
-(let [m (HashMap. (apply hash-map (into [] (range 2e6))))] ; <3>
-  (quick-bench (into {} m)))
-;; Execution time mean : 602.384550 ms
+(defn params [url] ; <3>
+  (as-> url x
+    (s/split x #"\?")
+    (last x)
+    (s/split x #"\&")
+    (mapcat split-pair x)
+    (apply hash-map x)))
 
-(let [ks (doall (range 1e6)) vs (doall (range 1e6))] ; <4>
-  (quick-bench (zipmap ks vs)))
-;; Execution time mean : 632.163418 ms
+(params long-url) ; <4>
+;; {"soc-device" "1"
+;;  "_reqid" "53227"
+;;   "soc-platform" "1"
+;;   "f.sid" "4896754370137081598"
+;;   "rt" nil
+;;   "soc-app" "208"
+;;   "hl" "en"}

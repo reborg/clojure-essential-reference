@@ -1,15 +1,14 @@
-(defn split-by [pred coll] ; <1>
-  (lazy-seq
-    (when-let [s (seq coll)] ; <2>
-      (let [!pred (complement pred)
-            [xs ys] (split-with !pred s)] ; <3>
-        (if (seq xs) ; <4>
-          (cons xs (split-by pred ys)) ; <5>
-          (let [skip (take-while pred s) ; <6>
-                others (drop-while pred s)
-                [xs ys] (split-with !pred others)] ; <7>
-            (cons (concat skip xs)
-                  (split-by pred ys))))))))
+(defn k? [k] (complement #{k})) ; <1>
+(defn kv? [k v] (complement #{[k v]}))
 
-(take 3 (split-by #(zero? (mod % 5)) (range))) ; <8>
-;; ((0 1 2 3 4) (5 6 7 8 9) (10 11 12 13 14))
+(split-with (k? 5) (apply sorted-set (range 10))) ; <2>
+;; [(0 1 2 3 4) (5 6 7 8 9)]
+
+(split-with (kv? 4 5) (apply sorted-map (range 10))) ; <3>
+;; [([0 1] [2 3]) ([4 5] [6 7] [8 9])]
+
+(split-with (k? 5) (set (range 10))) ; <4>
+;; [(0 7 1 4 6 3 2 9) (5 8)]
+
+(split-with (kv? 4 5) (apply hash-map (range 10))) ; <5>
+;; [([0 1]) ([4 5] [6 7] [2 3] [8 9])]

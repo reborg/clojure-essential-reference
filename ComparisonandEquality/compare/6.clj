@@ -1,3 +1,3 @@
-(def nan Double/NaN)
-(map compare [nan nan 1] [1 nan nan])
-                                                              ;; (0 0 0)
+(def -∞ (/ -0 0.))
+(map compare [nil nil "a"] [-∞ nil nil]) ; <1>
+;; (-1 0 1)

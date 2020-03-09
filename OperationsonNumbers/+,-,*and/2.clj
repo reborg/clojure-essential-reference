@@ -1,4 +1,5 @@
 (+)long
 (-)long
 (*)long
-(/)ratio/long
+(/)ratio
+   long

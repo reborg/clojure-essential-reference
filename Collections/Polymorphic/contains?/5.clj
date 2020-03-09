@@ -1,4 +1,4 @@
-(def sensor-read                                    ; <1>
+(def sensor-read                        ; <1>
   [{:id "AR2" :location 2 :status "ok"}
    {:id "EF8" :location 2 :status "ok"}
    nil
@@ -8,7 +8,7 @@
    {:id "YR3" :location 4 :status "ok"}])
 
 (defn problems? [sensors]
-  (contains? (into #{} sensors) nil))             ; <2>
+  (contains? (into #{} sensors) nil))   ; <2>
 
 (defn raise-on-error [sensors]
   (if (problems? sensors)
@@ -16,5 +16,5 @@
       "At least one sensor is malfunctioning"))
     :ok))
 
-(raise-on-error sensor-read)                      ; <3>
+(raise-on-error sensor-read)            ; <3>
 ;; RuntimeException At least one sensor is malfunctioning

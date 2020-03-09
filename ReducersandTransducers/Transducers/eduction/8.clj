@@ -1,20 +1,11 @@
-(defn busy-mem []
-  (str (/ (-
-    (.. Runtime getRuntime totalMemory)
-    (.. Runtime getRuntime freeMemory))
-  1024. 1024.) " Mb"))
+(def best-part-repayment ; <1>
+  (eduction (xform {:repayment-method :part-repayment}) data))
 
-(System/gc) (busy-mem)  ; <1>
-;; 5.574 Mb
+(def best-fixed ; <2>
+  (eduction (xform {:rate :fixed}) data))
 
-(def s1 (eduction (map inc) (range 1e7)))
-(last s1)
+(:name (reduce best-fee best-part-repayment)) ; <3>
+;; "Fixed intrinsic"
 
-(System/gc) (busy-mem)  ; <2>
-;; 7.615 Mb
-
-(def s2 (sequence (map inc) (range 1e7)))
-(last s2)
-
-(System/gc) (busy-mem)  ; <3>
-;; 304.5126 Mb
+(:name (reduce best-fee best-fixed))
+;; "Switcher AA126"

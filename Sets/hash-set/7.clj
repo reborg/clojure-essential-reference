@@ -1,5 +1,11 @@
-(some #{:x :c} [:a :b :c :d :e]) ; <1>
-;; :c
+(def set-with-meta
+  (hash-set ; <1>
+    (with-meta 'a {:pos 1})
+    (with-meta 'a {:pos 2})
+    (with-meta 'a {:pos 3})))
 
-(some #{:x :y} [:a :b :c :d :e]) ; <2>
-;; nil
+set-with-meta ; <2>
+;; #{a}
+
+(meta (first set-with-meta))
+;; {:pos 1}

@@ -11,7 +11,7 @@
   ([] {})
   ([m1 m2] (merge-with + m1 m2)))
 
-(def war-and-peace "http://www.gutenberg.org/files/2600/2600-0.txt")
+(def war-and-peace "https://tinyurl.com/uyovxow")
 (def book (slurp war-and-peace))
 
 (defn freq-used-words [s]  ; <3>
