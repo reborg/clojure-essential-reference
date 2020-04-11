@@ -1,3 +1,3 @@
-(create-ns 'myns) ; <1>
-(require 'myns) ; <2>
-;; Could not locate myns__init.class or myns.clj on classpath
+(create-ns 'test-require) ; <1>
+(require 'test-require) ; <2>
+;; Could not locate test_require__init.class or test_require.clj on classpath.

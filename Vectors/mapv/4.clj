@@ -1,3 +1,5 @@
+(require '[criterium.core :refer [quick-bench]])
+
 (vec (remove odd? (range 10))) ; <1>
 ;; => [0 2 4 6 8]
 

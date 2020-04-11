@@ -12,4 +12,4 @@
 ;; #'ext/ext-var
 
 (intern 'yet-to-exist 'a 1) ; <5>
-;; Exception No namespace: yet-to-exist found  clojure.core/the-ns
+;; Exception No namespace: yet-to-exist found

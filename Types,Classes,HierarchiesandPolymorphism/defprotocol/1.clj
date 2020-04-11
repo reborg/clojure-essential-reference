@@ -1,25 +1,27 @@
-(defprotocol Foo ; <1>
-  (foo [this])
-  (bar [this]))
+(defprotocol MyProtocol ; <1>
+  (method1 [this])
+  (method2 [this]))
 
-(pprint (vec (.getDeclaredMethods user.Foo))) ; <2>
-[#object[Method "public abstract java.lang.Object user.Foo.foo()"]
- #object[Method "public abstract java.lang.Object user.Foo.bar()"]]
+(pprint (vec (.getDeclaredMethods user.MyProtocol))) ; <2>
+[#object[Method "public abstract java.lang.Object user.MyProtocol.method1()"]
+ #object[Method "public abstract java.lang.Object user.MyProtocol.method2()"]]
 
-(pprint Foo) <3>
+(pprint MyProtocol) ; <3>
 
-;;{:on user.Foo,
-;; :on-interface user.Foo,
-;; :sigs
-;; {:foo {:name foo, :arglists ([this]), :doc nil},
-;;  :bar {:name bar, :arglists ([this]), :doc nil}},
-;; :var #'user/Foo,
-;; :method-map {:bar :bar, :foo :foo},
-;; :method-builders
-;; {#'user/foo #object["user$eval1884$fn__1885@69be5837"],
-;;  #'user/bar #object["user$eval1884$fn__1896@5377a034"]}}
+;; {:on user.MyProtocol,
+;;  :on-interface user.MyProtocol,
+;;  :sigs
+;;  {:method1 {:name method1, :arglists ([this]), :doc nil},
+;;   :method2 {:name method2, :arglists ([this]), :doc nil}},
+;;  :var #'user/MyProtocol,
+;;  :method-map {:method1 :method1, :method2 :method2},
+;;  :method-builders
+;;  {#'user/method2 #object["user$eval1675$fn__1676@6f9e2121"],
+;;   #'user/method1 #object["user$eval1675$fn__1687@78d76411"]}}
 
-(fn? foo) ; <4>
+
+(fn? method1) ; <4>
 ;; true
-(fn? bar)
+
+(fn? method2)
 ;; true

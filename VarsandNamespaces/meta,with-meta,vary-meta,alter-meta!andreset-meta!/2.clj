@@ -8,6 +8,3 @@
 
 (meta (into [] v)) ; <4>
 ;; nil
-
-(with-meta (atom 0) {:not "supported"}) ; <5>
-;; ClassCastException clojure.lang.Atom cannot be cast to clojure.lang.IObj

@@ -12,11 +12,11 @@
 
 (set-validator! a should-be-positive)
 
-(swap! a dec) ; <3>
+(swap! a dec) ; <2>
 ;; ExceptionInfo 0 should be positive
 
 (try (swap! a dec)
-  (catch Exception e (ex-data e))) ; <4>
+  (catch Exception e (ex-data e))) ; <3>
 ;; {:valid? false,
 ;;  :value 0,
 ;;  :error "Should be a positive number",

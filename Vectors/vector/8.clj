@@ -1,7 +1,4 @@
-(require '[criterium.core :refer [bench]])
+(doc vector) ; <1>
 
-(bench (vector 1 2 3 4 5 6))
-;; Execution time mean : 12.281921 ns
-
-(bench (vector 1 2 3 4 5 6 7)) ; <1>
-;; Execution time mean : 261.268271 ns
+;; ([] [a] [a b] [a b c] [a b c d] [a b c d e] [a b c d e f] [a b c d e f & args])
+;; Creates a new vector containing the args.

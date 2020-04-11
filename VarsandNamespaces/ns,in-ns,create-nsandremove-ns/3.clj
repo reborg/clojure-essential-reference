@@ -1,16 +1,19 @@
-ns1/v1 ; <1>
-;; CompilerException java.lang.RuntimeException: No such namespace: ns1
+new-ns/var-def ; <1>
+;; CompilerException java.lang.RuntimeException: No such namespace: new-ns
 
-(contains? (set (map ns-name (all-ns))) 'ns1) ; <2>
+(contains? (set (map ns-name (all-ns))) 'new-ns) ; <2>
 ;; false
 
-(create-ns 'ns1) ; <3>
-(intern 'ns1 'v1 "now it's working") ; <4>
-(contains? (ns-map 'ns1) 'v1) ; <5>
+(create-ns 'new-ns) ; <3>
+(intern 'new-ns 'var-def "now it's working") ; <4>
+(contains? (ns-map 'new-ns) 'var-def) ; <5>
 ;; true
 
-ns1/v1 ; <6>
+new-ns/var-def ; <6>
 ;; "now it's working"
 
-(contains? (set (map ns-name (all-ns))) 'ns1) ; <7>
+(contains? (set (map ns-name (all-ns))) 'new-ns) ; <7>
 ;; true
+
+('Integer (ns-map 'new-ns)) ; <8>
+;; java.lang.Integer

@@ -3,7 +3,7 @@
 (def others (agent 0)) ; <2>
 (def words (agent {})) ; <3>
 
-(def war-and-peace "http://www.gutenberg.org/files/2600/2600-0.txt")
+(def war-and-peace "https://tinyurl.com/wandpeace")
 (def book (slurp war-and-peace))
 
 (send-off words ; <4>

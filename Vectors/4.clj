@@ -1,8 +1,11 @@
 (contains? [1 2 :a :b] 3) ; <1>
-;; => true
+;; true
+
 (contains? [1 2 :a :b] :a)
-;; => false
+;; false
+
 (.contains [1 2 :a :b] 3) ; <2>
-;; => false
+;; false
+
 (.contains [1 2 :a :b] :a)
-;; => true
+;; true

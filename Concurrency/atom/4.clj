@@ -1,10 +1,10 @@
 (defn swap-or-bail! [a f & [attempts]] ; <1>
   (loop [i (or attempts 3)]
-    (if (neg? i)
+    (if (zero? i)
       (println "Could not update. Bailing out.")
       (let [old (deref a)
             success? (compare-and-set! a old (f old))] ; <2>
-        (when-not (or success? (neg? i))
+        (when-not success?
           (println "Update failed. Retry" i)
           (recur (dec i)))))))
 
@@ -20,5 +20,4 @@
 ;; "Update failed. Retry 2"
 (reset! a 3)
 ;; "Update failed. Retry 1"
-(reset! a 4)
 ;; Could not update. Bailing out.

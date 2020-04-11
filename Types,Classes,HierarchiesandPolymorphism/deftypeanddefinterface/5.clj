@@ -13,5 +13,9 @@
   (setAge [this n] (set! age n)))
 
 (def p (->Person "Natasha" "823")) ; <4>
+
+(.getAge p)
+;; "823"
+
 (.setAge p 23)
 ;; 23

@@ -1,10 +1,11 @@
 import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
 
-public class ClassWithProperty { ; <1>
+public class ClassWithProperty { // <1>
    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
    private String value;
-   public string getvalue() { return this.value; }
+
+   public string getValue() { return this.value; }
 
    public void addPropertyChangeListener(PropertyChangeListener listener) {
        this.pcs.addPropertyChangeListener(listener);

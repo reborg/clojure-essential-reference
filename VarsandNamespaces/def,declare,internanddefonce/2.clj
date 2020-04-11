@@ -9,5 +9,5 @@
 ;; myns/def-meta-doc
 ;;   A def with metadata and docstring.
 
-(:created-at (meta (var def-meta-doc)))
+(:created-at (meta (var def-meta-doc))) ; <4>
 ;; "date"

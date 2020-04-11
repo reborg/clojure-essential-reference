@@ -1,4 +1,4 @@
-(def p (promise))
+(def p (promise)) ; <1>
 
 (future (println "Thread 1 got access to" @p)) ; <2>
 (future (println "Thread 2 got access to" @p))

@@ -6,18 +6,19 @@
     (fn [conn]
       (or conn
         (let [socket (Socket. (InetAddress/getByName "localhost") 61817)]
-          (println "Socket connected to 61817")
+          (print "Socket connected to 61817\n")
           socket)))))
 
 (defn handle-request [s] ; <3>
   (let [conn (connect)]
-    (println "Doing something with" s)))
+    (print (format "Doing something with %s\n" s))))
 
 (dotimes [i 3] ; <4>
   (future (handle-request i)))
+(flush)
 ;; Socket connected to 61817
-;; Socket connected to 61817Doing something with
-;;  0
-;; Doing something with 2
 ;; Socket connected to 61817
 ;; Doing something with 1
+;; Doing something with 0
+;; Socket connected to 61817
+;; Doing something with 2

@@ -1,15 +1,15 @@
 (def my-face (->MyFace))
 
-(foo my-face) ; <1>
-;; "MyFace::foo"
+(m1 my-face) ; <1>
+;; "MyFace::m1"
 
 (extend MyFace
   IFace
-  (assoc AFace :foo (fn [this] (str "new")) ; <2>
-               :baz (fn [this] (str "baz"))))
+  (assoc AFace :m1 (fn [this] (str "new")) ; <2>
+               :m3 (fn [this] (str "m3"))))
 
-(foo my-face) ; <3>
+(m1 my-face) ; <3>
 ;; "new"
 
-(baz my-face) ; <4>
-"baz"
+(m3 my-face) ; <4>
+"m3"

@@ -1,4 +1,4 @@
-(remove-ns 'ns1) ; <1>
+(remove-ns 'new-ns) ; <1>
 
-ns1/v1 ; <2>
-;; CompilerException java.lang.RuntimeException: No such namespace: ns1
+new-ns/var-def ; <2>
+;; CompilerException java.lang.RuntimeException: No such namespace: new-ns

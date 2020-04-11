@@ -9,7 +9,7 @@
     (compare (distance (.x p1) (.y p1) 0 0)
              (distance (.x p2) (.y p2) 0 0))))
 
-(sort [(->Point 5 2) (->Point 2 4) (->Point 3 1)])
+(sort [(->Point 5 2) (->Point 2 4) (->Point 3 1)]) ; <3>
 ;; (#object[user.Point 0x30fd77bf "user.Point@30fd77bf"]
 ;;  #object[user.Point 0x1d81121b "user.Point@1d81121b"]
 ;;  #object[user.Point 0x59dd184c "user.Point@59dd184c"])

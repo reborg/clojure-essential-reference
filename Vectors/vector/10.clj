@@ -1,18 +1,14 @@
-(require '[keirin.core :as k])
+(defmacro defnvector [n] ; <1>
+  (let [args (map #(symbol (str "x" %)) (range n))]
+    `(defn ~(symbol (str "vector" n)) [~@args] [~@args])))
 
-(defn- test-speed-creation-keirin' [i]
-  (let [num-elements (* (inc i) 100000)
-        data (doall (range num-elements))]
-    [num-elements
-     (k/bench (vec data) :num-timed-runs 120 :reporting :underlying-results)
-     (k/bench (apply vector data) :num-timed-runs 120 :reporting :underlying-results)]))
+(macroexpand '(handler 7)) ; <2>
+;; (def vector7 (fn ([x0 x1 x2 x3 x4 x5 x6] [x0 x1 x2 x3 x4 x5 x6])))
 
-(defn test-speed-creation-keirin []
-  (let [results (for [i (range 10)] (test-speed-creation-keirin' i))]
-    (doseq [i (range 3)]
-      (doseq [result results]
-        (let [num (cond-> (get result i)
-                    (not= i 0)
-                    :median)]
-          (printf "%10.3f " (double num))))
-      (println))))
+(handler 7) ; <3>
+(handler 8)
+(handler 9)
+(handler 10)
+
+(quick-bench (vector7 1 2 3 4 5 6 7)) ; <4>
+;; Execution time mean : 8.577230 ns

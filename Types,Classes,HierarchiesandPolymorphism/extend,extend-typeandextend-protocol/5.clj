@@ -1,6 +1,6 @@
 (extend-type MyFace
   IFace
-  (bar [this] (str "MyFace::bar"))) ; <1>
+  (m2 [this] (str "MyFace::m2"))) ; <1>
 
-(bar my-face)
-;; "MyFace::bar"
+(m2 my-face)
+;; "MyFace::m2"

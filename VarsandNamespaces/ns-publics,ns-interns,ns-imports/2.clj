@@ -1,6 +1,7 @@
 (def normal-var :public) ; <1>
 (def ^:private private-var :private)
 (c/import 'java.lang.Number)
+
 (c/ns-map 'myns) ; <2>
 ;; {private-var #'myns/private-var,
 ;;  Number java.lang.Number,

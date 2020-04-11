@@ -1,4 +1,5 @@
 (ns myns)
+
 (use '[clojure.java.io ; <1>
        :only [reader file] ; <2>
        :rename {reader r}] ; <3>

@@ -1,24 +1,32 @@
-(def votes (ref {})) ; <1>
+(def votes ; <1>
+  {"honeypot" (ref 0)
+   "candidate-0" (ref 0)
+   "candidate-1" (ref 0)
+   "candidate-2" (ref 0)
+   "candidate-3" (ref 0)
+   "candidate-4" (ref 0)})
 
-(defn counter [poll votes] ; <2>
+(defn batch [prefs]
   (future
     (dosync
-      (doseq [pref poll]
-        (commute votes update pref (fnil inc 0))))))
+      (ensure (votes "honeypot")) ; <2>
+      (doseq [color prefs
+              :while (< @(votes "honeypot") 5)]
+        (update votes color commute inc)))))
 
-(defn generate-poll [& preference] ; <3>
-  (eduction
-    (map-indexed #(repeat %2 (str "candidate-" %1)))
-    cat
-    preference))
+(defn generate-poll [honeypot & preference] ; <3>
+  (concat
+    (repeat honeypot "honeypot")
+    (eduction
+      (map-indexed #(repeat %2 (str "candidate-" %1)))
+      cat
+      preference)))
 
-(let [c1 (counter (generate-poll 40 64 19 82 11) votes) ; <4>
-      c2 (counter (generate-poll 10 89 23 75 22) votes)]
+(let [c1 (batch (generate-poll 3 10 30 20 30 20)) ; <4>
+      c2 (batch (generate-poll 5 20 10 10 30 20))]
   [@c1 @c2]
-  @votes)
+  {:total-votes (reduce + (map deref (vals votes)))
+   :winner (ffirst (sort-by (comp deref second) > votes))
+   :fraud? (= @(votes "honeypot") 5)})
 
-;; {"candidate-0" 50 ; <5>
-;;  "candidate-1" 153
-;;  "candidate-2" 42
-;;  "candidate-3" 157
-;;  "candidate-4" 33}
+;; {:total-votes 115, :winner "candidate-1", :fraud? true}

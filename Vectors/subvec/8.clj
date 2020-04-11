@@ -1,3 +1,5 @@
+(require '[criterium.core :refer [quick-bench]])
+
 (defn norm [v] ; <1>
   (loop [v v
          res 0.

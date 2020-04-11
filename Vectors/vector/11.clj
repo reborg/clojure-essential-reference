@@ -1,13 +1,12 @@
-(require '[criterium.core :refer [quick-bench]])
+(require '[criterium.core :refer [benchmark]])
 
-(let [reducible (doall (range 1000))
-      lazy (doall (map inc (range 1000)))]
-   (quick-bench (vec lazy))
-   (quick-bench (apply vector lazy))
-   (quick-bench (vec reducible))
-   (quick-bench (apply vector reducible)))
+(defmacro b [expr] ; <1>
+  `(first (:mean (benchmark ~expr {}))))
 
-;; Execution time mean : 22.523189 µs ; <1>
-;; Execution time mean : 22.624104 µs
-;; Execution time mean : 16.058917 µs ; <2>
-;; Execution time mean : 19.471246 µs
+(def results ; <2>
+  (doall
+    (for [i (range 10)]
+      (let [num-elements (* (inc i) 100000)
+            data (range num-elements)]
+        [(b (vec data))
+         (b (apply vector data))]))))

@@ -9,4 +9,4 @@
 
 ;; blocking call for 10 seconds
 a-var ; <2>
-2
+;; 2

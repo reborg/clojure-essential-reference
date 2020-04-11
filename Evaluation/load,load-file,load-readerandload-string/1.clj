@@ -1,8 +1,13 @@
-(load "/clojure/set") ; <1>
-;; nil
+(ns user)
+(clojure.zip/vector-zip []) ; <1>
+;; ClassNotFoundException clojure.zip
 
-(clojure.set/union #{1 2 3} #{2 3 5}) ; <2>
-;; #{1 3 2 5}
+(load "zip") ; <2>
+;; FileNotFoundException Could not locate zip__init.class [...]
 
 (ns clojure.set) ; <3>
 (load "zip")
+;; nil
+
+(clojure.zip/vector-zip []) ; <4>
+;; [[] nil]

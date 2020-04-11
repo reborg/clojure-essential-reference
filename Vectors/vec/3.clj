@@ -1,4 +1,4 @@
-(def a (make-array Long 3))
+(def a (make-array Long 3)) ; <1>
 (def v (vec a))
 
 v
@@ -8,4 +8,4 @@ v
 ;; 99
 
 v
-;; [nil 99 nil] ; <1>
+;; [nil 99 nil] ; <2>

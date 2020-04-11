@@ -1,8 +1,8 @@
 (import '[clojure.lang PersistentQueue])
-(def q (PersistentQueue/EMPTY))
-(def v [])
-(def l ())
+(def q (into (PersistentQueue/EMPTY) [1 2 3]))
+(def v [1 2 3])
+(def l '(1 2 3))
 
-(peek (conj q "a" "b" "c")) ; "a"   ; <1>
-(peek (conj v "a" "b" "c")) ; "c"   ; <2>
-(peek (conj l "a" "b" "c")) ; "c"   ; <3>
+(peek q) ; 1   ; <1>
+(peek v) ; 3   ; <2>
+(peek l) ; 1   ; <3>

@@ -1,4 +1,4 @@
-(require '[clojure.string :refer [replace]])
+(require '[clojure.string :as s])
 
 (defprotocol Reflect ; <1>
   (declared-methods [this]))
@@ -8,8 +8,8 @@
   {:declared-methods
    (fn [this]
      (map
-       (comp #(replace % #"clojure\.lang\." "cl.")
-             #(replace % #"java\.lang\." "jl."))
+       (comp #(s/replace % #"clojure\.lang\." "cl.")
+             #(s/replace % #"java\.lang\." "jl."))
        (.getDeclaredMethods (class this))))})
 
 (pprint (declared-methods (atom nil))) ; <3>

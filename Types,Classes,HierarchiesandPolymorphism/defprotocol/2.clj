@@ -1,10 +1,10 @@
-(foo "arg") ; <1>
+(method1 "arg") ; <1>
 ;; IllegalArgumentException:
 ;; No single method: foo of interface: user.Foo found for class: java.lang.String
 
 (extend java.lang.String ; <2>
-  Foo
-  {:foo #(.toUpperCase %)}
+  MyProtocol
+  {:method1 #(.toUpperCase %)})
 
-(foo "arg") ; <3>
+(method1 "arg") ; <3>
 ;; ARG

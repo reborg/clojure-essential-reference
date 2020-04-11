@@ -1,23 +1,10 @@
-(require '[clojure.set :refer [map-invert]])
+(defn reverse-mapv [f v]          ; <1>
+  (loop [v v res (transient [])]  ; <2>
+    (if (peek v)                  ; <3>
+      (recur                      ; <4>
+        (pop v)
+        (conj! res (f (peek v))))
+      (persistent! res))))        ; <5>
 
-(defn queue [] []) ; <1>
-(def push conj) ; <2>
-(def brackets {\[ \] \( \) \{ \}}) ; <3>
-
-(defn check [form] ; <4>
-  (reduce (fn [q x]
-    (cond
-      (brackets x) (push q x) ; <5>
-      ((map-invert brackets) x) ; <6>
-      (if (= (brackets (peek q)) x)
-        (pop q)
-        (throw
-          (ex-info
-            (str "Unmatched delimiter " x) {})))
-      :else q)) (queue) form)) ; <7>
-
-(check "(let [a (inc 1]) (+ a 2))")
-;; ExceptionInfo Unmatched delimiter ]
-
-(check "(let [a (inc 1)] (+ a 2))")
-;; []
+(reverse-mapv str (vec (range 10)))
+;; ["9" "8" "7" "6" "5" "4" "3" "2" "1" "0"]

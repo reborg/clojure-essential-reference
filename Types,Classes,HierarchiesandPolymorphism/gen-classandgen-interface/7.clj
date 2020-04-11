@@ -1,5 +1,5 @@
-(ns bookgenclass
-  (:gen-class :name book.GenClass)) ; <1>
+(ns bookgenclass2
+  (:gen-class :name book.GenClass2)) ; <1>
 
-(defn -main [& args]
-  (println \"Hello from Java?\"))
+(defn -main [& args] ; <2>
+  (println "More greetings from Java!"))

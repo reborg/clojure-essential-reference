@@ -1,11 +1,11 @@
-(deftype FooImpl [] ; <1>
-  Foo
-  (foo [this] "FooImpl::foo"))
+(deftype MyProtocolImpl [] ; <1>
+  MyProtocol
+  (method1 [this] "MyProtocolImpl::method1"))
 
-(foo (FooImpl.)) ; <2>
-;; "FooImpl::foo"
+(method1 (MyProtocolImpl.)) ; <2>
+;; "MyProtocolImpl::foo"
 
-(extend FooImpl ; <3>
-  Foo
-  {:foo (constantly "extend::foo")})
+(extend MyProtocolImpl ; <3>
+  MyProtocol
+  {:method1 (constantly "extend::method1")})
 ;; IllegalArgumentException class FooImpl already implements interface user.Foo

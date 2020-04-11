@@ -1,16 +1,38 @@
-(require '[criterium.core :refer [quick-benchmark]]) ; <1>
-(import '[java.util ArrayList LinkedList])
+(import '(java.util UUID))
 
-(defmacro b [expr] `(first (:mean (quick-benchmark ~expr {})))) ; <2>
+(defn search-merchandise [& search-options]                           ; <1>
+  '({:description  "Pencil Dress"             :type        :dress
+     :color        :blue                      :price       60}
+    {:description  "Asymmetric Lace Dress"    :type        :dress
+     :color        :blue                      :price       70}
+    {:description  "Short Sleeve Wrap Dress"  :type        :dress
+     :color        :blue                      :price       45}))
 
-(let [c1 (range 1000) ; <3>
-      c2 (map inc c1)
-      c3 (ArrayList. c1)
-      c4 (LinkedList. c1)]
-      (for [t [c1 c2 c3 c4]]
-        [(type t) (b (vec t))]))
+(def cache (atom {}))                                                 ; <2>
 
-;; ([#<Class@2966123f clojure.lang.LongRange> 1.4480791079474646E-5]
-;;  [#<Class@1f97cf0d clojure.lang.LazySeq>   2.3406594077042973E-5]
-;;  [#<Class@5e1569af java.util.ArrayList>    1.1199960205728875E-5]
-;;  [#<Class@3253d771 java.util.LinkedList>   1.859095685005394E-5])
+(defn cache-user-search-results! [search-id search-results]
+  (swap! cache assoc search-id (vec search-results)))                 ; <3>
+
+(defn retrieve-user-search-results [search-id page]                   ; <4>
+  (get (get @cache search-id) page))
+
+(defn render-to-json [{:keys [description price]}]                    ; <5>
+  (format "[{'description':'%s', 'price':'%s'}]" description price))
+
+(def search-id (str (UUID/randomUUID)))                               ; <6>
+
+(cache-user-search-results!
+  search-id
+  (search-merchandise {:type :dress :color :blue}))
+
+(println
+  (-> (retrieve-user-search-results search-id 0)
+      render-to-json))
+
+;; [{'description':'Pencil Dress', 'price':'60'}]
+
+(println                                                              ; <7>
+  (-> (retrieve-user-search-results search-id 2)
+      render-to-json))
+
+;; [{'description':'Short Sleeve Wrap Dress', 'price':'45'}]

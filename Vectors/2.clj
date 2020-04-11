@@ -2,7 +2,7 @@
 ;; true
 
 ([:a :b :c] 2) ; <2>
-;; => :c
+;; :c
 
 ([:a :b :c] 3) ; <3>
-;; IndexOutOfBoundsException   clojure.lang.PersistentVector.arrayFor (PersistentVector.java:158)
+;; IndexOutOfBoundsException

@@ -1,6 +1,8 @@
-((juxt vec peek) (conj (PersistentQueue/EMPTY) "a" "b" "c"))
-;; [["a" "b" "c"] "a"] ; <1>
-((juxt identity peek) (conj [] "a" "b" "c"))
-;; [["a" "b" "c"] "c"] ; <2>
-((juxt identity peek) (conj () "a" "b" "c"))
-;; [("c" "b" "a") "c"] ; <3>
+(-> (PersistentQueue/EMPTY) (conj "a" "b" "c") pop vec) ; <1>
+;; ["b" "c"]
+
+(pop ["a" "b" "c"]) ; <2>
+;; ["a "b"]
+
+(pop '("a" "b" "c")) ; <3>
+;; ("b" "c")

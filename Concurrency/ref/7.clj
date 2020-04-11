@@ -1,32 +1,24 @@
-(dosync ; <1>
-  (ref-set op1 0)
-  (ref-set op2 1)
-  (ref-set res []))
+(def votes (ref {})) ; <1>
 
-(let [p1 (future (perform)) ; <2>
-      p2 (future (perform))]
-  [@p1 @p2]
-  @res)
+(defn counter [poll votes] ; <2>
+  (future
+    (dosync
+      (doseq [pref poll]
+        (commute votes update pref (fnil inc 0))))))
 
-;; ###-1539638732-### ; <3>
-;; ###-1047541620-###
-;; 1 + 2 = 3 (i=3)
-;; ###-1047541620-### ; <4>
-;; ###-1047541620-###
-;; ###-1047541620-###
-;; ###-1539638732-###
-;; 2 + 3 = 5 (i=2)
-;; ###-1047541620-###
-;; ###-1047541620-###
-;; ###-1539638732-###
-;; 3 + 4 = 7 (i=1)
-;; ###-1047541620-###
-;; ###-1047541620-###
-;; ###-1047541620-###
-;; ###-1047541620-### ; <5>
-;; 4 + 5 = 9 (i=3)
-;; ###-1047541620-###
-;; 5 + 6 = 11 (i=2)
-;; ###-1047541620-###
-;; 6 + 7 = 13 (i=1)
-;; [3 5 7 9 11 13]
+(defn generate-poll [& preference] ; <3>
+  (eduction
+    (map-indexed #(repeat %2 (str "candidate-" %1)))
+    cat
+    preference))
+
+(let [c1 (counter (generate-poll 40 64 19 82 11) votes) ; <4>
+      c2 (counter (generate-poll 10 89 23 75 22) votes)]
+  [@c1 @c2]
+  @votes)
+
+;; {"candidate-0" 50 ; <5>
+;;  "candidate-1" 153
+;;  "candidate-2" 42
+;;  "candidate-3" 157
+;;  "candidate-4" 33}

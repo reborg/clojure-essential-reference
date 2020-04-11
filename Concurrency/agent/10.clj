@@ -2,4 +2,5 @@
 (send-off a #(/ % 2)) ; <2>
 @a
 (restart-agent a 2) ; <3>
-;; 1
+;; Execution error at user/eval339 (REPL:1).
+;; Agent does not need a restart

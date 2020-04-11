@@ -1,3 +1,5 @@
+(ns user)
+
 (defn clean-ns [ns]
   (ns 'user)
   (create-ns ns)

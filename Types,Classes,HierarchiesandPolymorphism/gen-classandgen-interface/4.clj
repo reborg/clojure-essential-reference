@@ -1,7 +1,7 @@
-(spit "bookgenclass.clj"
+(spit (str *compile-path* "/bookgenclass.clj") ; <1>
   "(ns bookgenclass)
    (gen-class :name book.GenClass
-              :main true)")       ; <1>
+              :main true)")       ; <2>
 
-(binding [*compile-path* "."]
-  (compile 'bookgenclass)) ; <2>
+(compile 'bookgenclass) ; <3>
+;; bookgenclass

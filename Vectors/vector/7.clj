@@ -1,3 +1,8 @@
-(doc vector)
-([] [a] [a b] [a b c] [a b c d] [a b c d e] [a b c d e f] [a b c d e f & args])
-  Creates a new vector containing the args.
+(def m [[1 2 3] ; <1>
+        [4 5 6]
+        [7 8 9]])
+
+(apply map vector m) ; <2>
+;; ([1 4 7]
+;;  [2 5 8]
+;;  [3 6 9])
