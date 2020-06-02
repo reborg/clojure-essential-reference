@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<rss xmlns:wsj="http://dowjones.net/rss/" xmlns:dj="http://dowjones.net/rss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>WSJ.com: World News</title>
+<link>http://online.wsj.com/page/2_0006.html</link>
+<atom:link type="application/rss+xml" rel="self" href="http://online.wsj.com/page/2_0006.html"/>
+<description>World News</description>
+<language>en-us</language>
+<pubDate>Tue, 02 Jun 2020 10:09:24 -0400</pubDate>
+<lastBuildDate>Tue, 02 Jun 2020 10:09:24 -0400</lastBuildDate>
+<copyright>Dow Jones &amp; Company, Inc.</copyright>
+<generator>http://online.wsj.com/page/2_0006.html</generator>
+<docs>http://cyber.law.harvard.edu/rss/rss.html</docs>
+<image>
+<title>WSJ.com: World News</title>
+<link>http://online.wsj.com/page/2_0006.html</link>
+<url>http://online.wsj.com/img/wsj_sm_logo.gif</url>
+</image>
+<item>
+<title>Outlook for Poor Nations Is Grim</title>
+<link>https://www.wsj.com/articles/low-income-nations-likely-to-remain-deeply-damaged-five-years-after-pandemic-world-bank-says-11591106400</link>
+<description><![CDATA[The world’s low-income and emerging market economies will likely remain deeply damaged even five years after the coronavirus pandemic and associated lockdowns began, according to a new study from the World Bank.]]></description>
+<content:encoded/>
+<pubDate>Tue, 02 Jun 2020 10:00:00 -0400</pubDate>
+<guid isPermaLink="false">SB10178693316589754227204586421933751393552</guid>
+<category domain="AccessClassName">PAID</category>
+<wsj:articletype>World News</wsj:articletype>
+</item>
+<item>
+<title>Out of Favor With Australia's Central Government, China Targets States</title>
+<link>https://www.wsj.com/articles/out-of-favor-with-australias-central-government-china-targets-states-11591095602</link>
+<description><![CDATA[The leader of one of Australia’s biggest states has touted an infrastructure deal with Beijing as a way to create jobs in a coronavirus-afflicted economy. But others worry Chinese money may end up funding projects that are a national-security risk.]]></description>
+<content:encoded/>
+<pubDate>Tue, 02 Jun 2020 07:00:00 -0400</pubDate>
+<guid isPermaLink="false">SB11239190992445753783504586413814064905734</guid>
+<category domain="AccessClassName">PAID</category>
+<wsj:articletype>Asia News</wsj:articletype>
+</item>
+<item>
+<title>Cash in the Bank? Lebanese See Sports Cars, Ski Chalets as Safer Investments</title>
+<link>https://www.wsj.com/articles/cash-in-the-bank-lebanese-see-sports-cars-ski-chalets-and-italian-sculptures-as-safer-investments-11591090920</link>
+<description><![CDATA[In a desperate attempt to preserve their life savings, many well-off Lebanese are sinking money into Land Rovers, ski chalets and expensive artworks, triggering an unlikely boom at the top end of the luxury market.]]></description>
+<content:encoded/>
+<pubDate>Tue, 02 Jun 2020 05:42:00 -0400</pubDate>
+<guid isPermaLink="false">SB10201282051152144049304586419501004837630</guid>
+<category domain="AccessClassName">PAID</category>
+<wsj:articletype>Middle East News</wsj:articletype>
+</item>
+<item>
+<title>Taliban and al Qaeda Remain Linked, U.N. Study Says</title>
+<link>https://www.wsj.com/articles/taliban-and-al-qaeda-remain-linked-u-n-study-says-11591053642</link>
+<description><![CDATA[A United Nations report found that Afghanistan’s Taliban has maintained close ties with al Qaeda, holding at least six high-level meetings with leaders of the group during more than a year of talks with the United States.]]></description>
+<content:encoded/>
+<pubDate>Mon, 01 Jun 2020 19:20:00 -0400</pubDate>
+<guid isPermaLink="false">SB10178693316589754227204586420700240357280</guid>
+<category domain="AccessClassName">PAID</category>
+<wsj:articletype>World News</wsj:articletype>
+</item>
+<item>
+<title>Israel Presses Ahead With Plan to Annex Parts of West Bank</title>
+<link>https://www.wsj.com/articles/israel-presses-ahead-with-plan-to-annex-parts-of-west-bank-11591040156</link>
+<description><![CDATA[Israel’s government is preparing to begin annexing parts of the occupied West Bank as early as next month, ordering its military on Monday to bolster security there despite facing possible blowback from Europe and Arab states over the controversial plan.]]></description>
+<content:encoded/>
+<pubDate>Mon, 01 Jun 2020 15:35:00 -0400</pubDate>
+<guid isPermaLink="false">SB10178693316589754227204586420361582763174</guid>
+<category domain="AccessClassName">PAID</category>
+<wsj:articletype>Middle East News</wsj:articletype>
+</item>
+<item>
+<title>New Ebola Cases Found in Congo</title>
+<link>https://www.wsj.com/articles/new-ebola-cases-found-in-congo-11591023051</link>
+<description><![CDATA[The Democratic Republic of Congo’s health ministry reported a fresh cluster of Ebola infections in the country’s northwest.]]></description>
+<content:encoded/>
+<pubDate>Mon, 01 Jun 2020 14:32:00 -0400</pubDate>
+<guid isPermaLink="false">SB10178693316589754227204586419990395906476</guid>
+<category domain="AccessClassName">PAID</category>
+<wsj:articletype>Africa News</wsj:articletype>
+</item>
+</channel>
+</rss>

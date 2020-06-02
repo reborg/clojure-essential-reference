@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; World News</title>
+    <link>https://www.nytimes.com/section/world</link>
+    <atom:link href="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" rel="self" type="application/rss+xml"></atom:link>
+    <description></description>
+    <language>en-us</language>
+    <copyright>Copyright 2020 The New York Times Company</copyright>
+    <lastBuildDate>Tue, 02 Jun 2020 15:23:55 +0000</lastBuildDate>
+    <pubDate>Tue, 02 Jun 2020 15:23:55 +0000</pubDate>
+    <image>
+      <title>NYT &gt; World News</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com/section/world</link>
+    </image>
+    <item>
+      <title>Coronavirus Global News Tracker: Latest Updates</title>
+      <link>https://www.nytimes.com/2020/06/02/world/live-coronavirus.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/world/live-coronavirus.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/world/live-coronavirus.html" rel="standout"></atom:link>
+      <description>Some lessons: We will live with the virus for a long time and you should be wearing a mask. Paris is reopening cafe terraces.</description>
+      <pubDate>Tue, 02 Jun 2020 14:54:36 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/world/02virus-briefing-6months/merlin_171661209_dabe654e-2fde-4102-9bca-464283de1354-moth.jpg" width="151"></media:content>
+      <media:credit>Stephen Speranza for The New York Times</media:credit>
+      <media:description>A funeral home in Queens in April. The coronavirus has killed more than 29,000 people in New York.</media:description>
+    </item>
+    <item>
+      <title>​‘Tell Me Who My Mother Is’: A Korean Adoptee Seeks Her Roots</title>
+      <link>https://www.nytimes.com/2020/06/02/world/asia/south-korea-adoptions.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/world/asia/south-korea-adoptions.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/world/asia/south-korea-adoptions.html" rel="standout"></atom:link>
+      <description>Armed with DNA test results, Kara Bos is asking a South Korean court to rule that an 85-year-old man in Seoul is her father. Her paternity lawsuit could set a precedent for overseas adoptees.</description>
+      <dc:creator>Choe Sang-Hun</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 09:06:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Adoptions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Child Abandonment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Children and Childhood</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Parenting</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Seoul (South Korea)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Korea</category>
+    </item>
+    <item>
+      <title>In Egypt, Images From American Protests Evoke a Lost Revolution</title>
+      <link>https://www.nytimes.com/2020/06/02/world/middleeast/protests-egypt-floyd-arab-spring.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/world/middleeast/protests-egypt-floyd-arab-spring.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/world/middleeast/protests-egypt-floyd-arab-spring.html" rel="standout"></atom:link>
+      <description>Memories of 2011’s Arab Spring, and its fragile hopes, have been revived in the minds of many Egyptians as they’ve watched a strikingly similar dynamic play out in the United States.</description>
+      <dc:creator>Declan Walsh</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 07:00:14 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">George Floyd Protests (2020)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Middle East and North Africa Unrest (2010- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mubarak, Hosni</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sisi, Abdel Fattah el-</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Cairo (Egypt)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Egypt</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01egypt-fader-cover/01egypt-fader-cover-moth-v2.jpg" width="151"></media:content>
+      <media:credit>Ed Ou for The New York Times</media:credit>
+    </item>
+    <item>
+      <title>At Drive-in Disco, It ‘Feels like Saturday Again,’ Even Without a Dance Floor</title>
+      <link>https://www.nytimes.com/2020/06/02/world/europe/europe-germany-coronavirus-reopening.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/world/europe/europe-germany-coronavirus-reopening.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/world/europe/europe-germany-coronavirus-reopening.html" rel="standout"></atom:link>
+      <description>To stop the spread of the coronavirus, nightclubs are still shuttered as Europe emerges from a lockdown. But one German club has found another way to host a party. Honk if you’re having a good time.</description>
+      <dc:creator>Patrick Kingsley and Laetitia Vancon</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 12:52:30 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Bars and Nightclubs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus Reopenings</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Germany</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Netherlands</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/00roadtrip-disco-Promo/merlin_173056248_e80a4d67-712b-4230-8275-33ca662512e6-moth.jpg" width="151"></media:content>
+      <media:credit>Laetitia Vancon for The New York Times</media:credit>
+      <media:description>After German nightlife shut down in March, a club in Schüttorf, a small town in north-western Germany, pioneered the concept of a drive-in disco.</media:description>
+    </item>
+    <item>
+      <title>Abused Woman Who Killed Husband Is Granted the Family’s U.K. Estate</title>
+      <link>https://www.nytimes.com/2020/06/01/world/europe/sally-challen-domestic-abuse-uk.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/europe/sally-challen-domestic-abuse-uk.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/europe/sally-challen-domestic-abuse-uk.html" rel="standout"></atom:link>
+      <description>Sally Challen’s landmark case has put a spotlight on the fight against domestic abuse in Britain.</description>
+      <dc:creator>Elian Peltier</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 09:12:43 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Domestic Violence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Murders, Attempted Murders and Homicides</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Wills and Estates</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Decisions and Verdicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Inheritance and Estate Taxes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Challen, Sally</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/31inheritance-challen/31inheritance-challen-moth.jpg" width="151"></media:content>
+      <media:credit>Yui Mok/Press Association, via Associated Press</media:credit>
+      <media:description>Sally Challen with her son David after her conviction was quashed last June.</media:description>
+    </item>
+    <item>
+      <title>Hong Kong Bans Tiananmen Vigil for 1st Time, in New Challenge to Protests</title>
+      <link>https://www.nytimes.com/2020/06/01/world/asia/Hong-kong-Tiananmen-vigil-banned.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/asia/Hong-kong-Tiananmen-vigil-banned.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/asia/Hong-kong-Tiananmen-vigil-banned.html" rel="standout"></atom:link>
+      <description>Days after China moved to enact new security laws for Hong Kong, the territory’s police rejected permission for an annual vigil to honor the victims of the 1989 Tiananmen Square protests.</description>
+      <dc:creator>Austin Ramzy</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 02:42:44 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hong Kong Protests (2019)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Tiananmen Square (Beijing)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Xi Jinping</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Hong Kong Alliance in Support of Patriotic Democratic Movements of China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Hong Kong</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01virus-tiananmen/merlin_155919309_2db2f112-1218-4aff-9e2a-530f33398998-moth.jpg" width="151"></media:content>
+      <media:credit>Lam Yik Fei for The New York Times</media:credit>
+      <media:description> Hong Kong had held a vigil every year on the anniversary of the Tiananmen Square crackdown.  Thousands gathered for it in 2019.</media:description>
+    </item>
+    <item>
+      <title>Trump and Putin Discuss Russia’s Attendance at G7, but Allies Are Wary</title>
+      <link>https://www.nytimes.com/2020/06/01/us/politics/trump-putin-g7.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/us/politics/trump-putin-g7.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/us/politics/trump-putin-g7.html" rel="standout"></atom:link>
+      <description>The British and Canadian governments oppose admitting Russia into the bloc, as President Trump continues a renewed courtship of Russia’s leader.</description>
+      <dc:creator>Michael Crowley</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 23:04:32 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Group of Seven</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/us/politics/01dc-prexy/01dc-prexy-moth.jpg" width="151"></media:content>
+      <media:credit>Erin Schaff/The New York Times</media:credit>
+      <media:description>President Trump meeting with President Vladimir V. Putin of Russia during the G20 summit in Osaka, Japan, last year.</media:description>
+    </item>
+    <item>
+      <title>China Responds with Restraint to Trump&#39;s Move to End Hong Kong&#39;s &#39;Special Status&#39;</title>
+      <link>https://www.nytimes.com/2020/06/01/world/asia/china-trump-hong-kong.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/asia/china-trump-hong-kong.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/asia/china-trump-hong-kong.html" rel="standout"></atom:link>
+      <description>A foreign ministry spokesman stayed close to the Communist Party’s official position on Hong Kong, suggesting that Beijing was waiting to see the specifics of the U.S. plan.</description>
+      <dc:creator>Amy Qin</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 11:47:36 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Communist Party of China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Hong Kong</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01china/merlin_172912023_e9027d30-b4b5-4dbf-b823-31fcd2fec235-moth.jpg" width="151"></media:content>
+      <media:credit>Lam Yik Fei for The New York Times</media:credit>
+      <media:description>A screen in Hong Kong last month showed a broadcast about Beijing’s proposed national security legislation for the territory.</media:description>
+    </item>
+    <item>
+      <title>New Ebola Outbreak in Congo, Already Hit by Measles and Coronavirus</title>
+      <link>https://www.nytimes.com/2020/06/01/world/africa/ebola-outbreak-congo.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/africa/ebola-outbreak-congo.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/africa/ebola-outbreak-congo.html" rel="standout"></atom:link>
+      <description>Five people have died in Mbandaka, a western city more than 750 miles away from another Ebola outbreak in the country. It is unclear how the disease emerged in the city during lockdown.</description>
+      <dc:creator>Ruth Maclean</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 02:23:56 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ebola Virus</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Congo, Democratic Republic of (Congo-Kinshasa)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Vaccination and Immunization</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mbandaka (Congo, Democratic Republic of)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01ebola/01ebola-moth.jpg" width="151"></media:content>
+      <media:credit>Finbarr O&#39;Reilly for The New York Times</media:credit>
+      <media:description>An ebola treatment center in Mangima, a town outside of Beni in eastern Democratic Republic of the Congo, last year. Experts are trying to understand how the disease has now emerged in the west while the country is under travel restrictions because of the coronavirus.</media:description>
+    </item>
+    <item>
+      <title>As Protests Engulf the United States, China Revels in the Unrest</title>
+      <link>https://www.nytimes.com/2020/06/02/world/asia/china-george-floyd.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/world/asia/china-george-floyd.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/world/asia/china-george-floyd.html" rel="standout"></atom:link>
+      <description>Chinese officials and state media are seizing on the moment to tout Beijing’s authoritarian system and condemn American hypocrisy — a narrative that ignores many of their own issues.</description>
+      <dc:creator>Javier C. Hernández</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 12:22:36 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Propaganda</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Discrimination</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">George Floyd Protests (2020)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hong Kong Protests (2019)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Race and Ethnicity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Quarantines</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Communist Party of China</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/world/02unrest-china-topsub/02unrest-china-topsub-moth.jpg" width="151"></media:content>
+      <media:credit>Victor J. Blue for The New York Times</media:credit>
+      <media:description>Protesters being detained by the police in Minneapolis on Sunday.</media:description>
+    </item>
+    <item>
+      <title>Live Stock Market Tracker and Updates</title>
+      <link>https://www.nytimes.com/2020/06/02/business/live-stock-market-coronavirus.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/business/live-stock-market-coronavirus.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/business/live-stock-market-coronavirus.html" rel="standout"></atom:link>
+      <description>The latest on stock market and business news during the coronavirus outbreak.</description>
+      <pubDate>Tue, 02 Jun 2020 15:20:51 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Economy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Economic Conditions and Trends</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Standard &amp; Poor&#39;s 500-Stock Index</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/business/01itineraries1/01itineraries1-moth.jpg" width="151"></media:content>
+      <media:credit>Lynne Sladky/Associated Press</media:credit>
+      <media:description>Rosemary Arends, right, a nurse and flight attendant for South African Airways, checking the temperature of a passenger before a charter flight from Miami International Airport.</media:description>
+    </item>
+    <item>
+      <title>Voices From the Protests</title>
+      <link>https://www.nytimes.com/2020/06/02/briefing/protests-coronavirus-primary-election-your-tuesday-briefing.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/briefing/protests-coronavirus-primary-election-your-tuesday-briefing.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/briefing/protests-coronavirus-primary-election-your-tuesday-briefing.html" rel="standout"></atom:link>
+      <description>And what else you need to know today.</description>
+      <dc:creator>David Leonhardt</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 11:06:34 +0000</pubDate>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/us/02ambriefing-promo/02ambriefing-protesters-moth.jpg" width="151"></media:content>
+      <media:credit>Jonathan Ernst/Reuters</media:credit>
+      <media:description>Demonstrations near the White House in Washington on Sunday.</media:description>
+    </item>
+    <item>
+      <title>The Flynn Calls: His Dismissal of Russian Interference and the Kremlin’s Savvy</title>
+      <link>https://www.nytimes.com/2020/06/02/us/politics/michael-flynn-kislyak-calls.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/us/politics/michael-flynn-kislyak-calls.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/us/politics/michael-flynn-kislyak-calls.html" rel="standout"></atom:link>
+      <description>Newly declassified transcripts show the seeds of Russia’s overtures to the Trump administration as both sides sought to downplay Moscow’s election sabotage.</description>
+      <dc:creator>Mark Mazzetti</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 09:00:28 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Interference in 2016 US Elections and Ties to Trump Associates</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Presidential Election of 2016</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cyberwarfare and Defense</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Espionage and Intelligence Services</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Federal Bureau of Investigation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kislyak, Sergei I</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Flynn, Michael T</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/us/politics/02dc-flynn1/02dc-flynn1-moth.jpg" width="151"></media:content>
+      <media:credit>Tom Brenner for The New York Times</media:credit>
+      <media:description>In the calls, Michael T. Flynn referred to Russia’s election interference effort only as “the cyberstuff.”</media:description>
+    </item>
+    <item>
+      <title>Where the Virus Is Growing Most: Countries With ‘Illiberal Populist’ Leaders</title>
+      <link>https://www.nytimes.com/2020/06/02/briefing/coronavirus-populist-leaders.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/briefing/coronavirus-populist-leaders.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/briefing/coronavirus-populist-leaders.html" rel="standout"></atom:link>
+      <description>Brazil, Russia, Britain and the U.S. have something in common.</description>
+      <dc:creator>David Leonhardt and Lauren Leatherby</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 09:56:55 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bolsonaro, Jair (1955- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Johnson, Boris</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Brazil</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/21/world/31virus-leadership1/31virus-leadership1-moth-v3.jpg" width="151"></media:content>
+      <media:credit>Evaristo Sa/Agence France-Presse — Getty Images</media:credit>
+      <media:description>President Jair Bolsonaro of Brazil greeted supporters in Brasilia on Sunday.</media:description>
+    </item>
+    <item>
+      <title>His Family Fled Syria. He Didn’t Cry Until He Heard About His Sisters.</title>
+      <link>https://www.nytimes.com/2020/06/02/magazine/syrian-refugee-europe.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/magazine/syrian-refugee-europe.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/magazine/syrian-refugee-europe.html" rel="standout"></atom:link>
+      <description>Yousef was just 13 when his family left Syria for Europe. Five years later, he’s adjusting to life separated from his three sisters and the ups and downs of adolescence.</description>
+      <dc:creator>Alia Malek</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 09:00:15 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Middle East and Africa Migrant Crisis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Refugees and Displaced Persons</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Malek, Alia (1974- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Assad, Bashar al-</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Syria</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Netherlands</category>
+    </item>
+    <item>
+      <title>George Floyd, Donald Trump, Hong Kong: Your Tuesday Briefing</title>
+      <link>https://www.nytimes.com/2020/06/02/briefing/george-floyd-donald-trump-hong-kong.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/02/briefing/george-floyd-donald-trump-hong-kong.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/02/briefing/george-floyd-donald-trump-hong-kong.html" rel="standout"></atom:link>
+      <description>Here’s what you need to know.</description>
+      <dc:creator>Isabella Kwai</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 05:45:08 +0000</pubDate>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/briefing/02ambriefing-euro-promo/02ambriefing-euro-slide-AG2K-moth.jpg" width="151"></media:content>
+      <media:credit>Sean Gallup/Getty Images</media:credit>
+    </item>
+    <item>
+      <title>Coronavirus Briefing: What Happened Today</title>
+      <link>https://www.nytimes.com/2020/06/01/us/coronavirus-today.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/us/coronavirus-today.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/us/coronavirus-today.html" rel="standout"></atom:link>
+      <description>Public health experts are concerned that mass demonstrations could seed a possible second wave of infections.</description>
+      <dc:creator>Jonathan Wolfe</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 00:23:43 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/03/03/world/coronavirus-map-promo/coronavirus-map-promo-moth-v466.png" width="151"></media:content>
+      <media:credit>The New York Times</media:credit>
+    </item>
+    <item>
+      <title>Minneapolis, Tiananmen Vigil, Israel: Your Tuesday Briefing</title>
+      <link>https://www.nytimes.com/2020/06/01/briefing/minneapolis-protests-tiananmen-hong-kong.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/briefing/minneapolis-protests-tiananmen-hong-kong.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/briefing/minneapolis-protests-tiananmen-hong-kong.html" rel="standout"></atom:link>
+      <description>Here’s what you need to know.</description>
+      <dc:creator>Melina Delkic and Carole Landry</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 22:47:53 +0000</pubDate>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/briefing/02Briefing-Asia-slide-WS2M/02Briefing-Asia-slide-WS2M-moth.jpg" width="151"></media:content>
+      <media:credit>Piet Van Der Meer/EPA, via Shutterstock</media:credit>
+      <media:description>A demonstration in Amsterdam on Monday against racism and police brutality. </media:description>
+    </item>
+    <item>
+      <title>After Reality Star’s Death, Japan Vows to Rip the Mask Off Online Hate</title>
+      <link>https://www.nytimes.com/2020/06/01/business/hana-kimura-terrace-house.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/business/hana-kimura-terrace-house.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/business/hana-kimura-terrace-house.html" rel="standout"></atom:link>
+      <description>While many in the country abhor the kind of harassment Hana Kimura endured before her apparent suicide, some warn that cracking down on it could also chill rising internet activism.</description>
+      <dc:creator>Ben Dooley and Hikari Hida</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 20:51:28 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kimura, Hana (1997-2020)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cyberharassment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Japan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Computers and the Internet</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Freedom of Speech and Expression</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suicides and Suicide Attempts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Twitter</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Facebook Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Terrace House (TV Program)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/business/02japan-cyber/01japan-cyber-moth.jpg" width="151"></media:content>
+      <media:credit>Etsuo Hara/Getty Images</media:credit>
+      <media:description>Hana Kimura in Tokyo in 2019. She apparently committed suicide after facing relentless criticism online.</media:description>
+    </item>
+    <item>
+      <title>Mass Extinctions Are Accelerating, Scientists Report</title>
+      <link>https://www.nytimes.com/2020/06/01/science/mass-extinctions-are-accelerating-scientists-report.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/science/mass-extinctions-are-accelerating-scientists-report.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/science/mass-extinctions-are-accelerating-scientists-report.html" rel="standout"></atom:link>
+      <description>Five hundred species are likely to become extinct over the next two decades, according to a new study.</description>
+      <dc:creator>Rachel Nuwer</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 20:57:42 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">your-feed-science</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Endangered and Extinct Species</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conservation of Resources</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Animals</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Biodiversity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Population</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">International Union for Conservation of Nature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Missouri Botanical Garden</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Autonomous University</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Proceedings of the National Academy of Sciences</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ceballos, Gerardo</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ehrlich, Paul R</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/science/01EXTINCTION1/01EXTINCTION1-moth.jpg" width="151"></media:content>
+      <media:credit>Carl De Souza/Agence France-Presse — Getty Images</media:credit>
+      <media:description>A farmer walked through a burned area of Amazon rainforest near Porto Velho, Brazil, last year.</media:description>
+    </item>
+    <item>
+      <title>Putin Sets New Date for Vote on Extending His Rule</title>
+      <link>https://www.nytimes.com/2020/06/01/world/europe/russia-putin-coronavirus.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/europe/russia-putin-coronavirus.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/europe/russia-putin-coronavirus.html" rel="standout"></atom:link>
+      <description>His political program and ratings derailed by the coronavirus, President Vladimir Putin of Russia is pushing to get back on track.</description>
+      <dc:creator>Andrew Higgins</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 13:25:19 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Moscow (Russia)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01virus-russia/01virus-russia-moth.jpg" width="151"></media:content>
+      <media:credit>Pool photo by Alexei Nikolsky</media:credit>
+      <media:description>President Vladimir V. Putin of Russia at his Novo-Ogaryovo residence outside Moscow, on Monday.</media:description>
+    </item>
+    <item>
+      <title>Netanyahu’s Annexation Plans Meet Surprise Opponent: Israeli Settlers</title>
+      <link>https://www.nytimes.com/2020/06/01/world/middleeast/israel-annex-netanyahu-westbank.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/middleeast/israel-annex-netanyahu-westbank.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/middleeast/israel-annex-netanyahu-westbank.html" rel="standout"></atom:link>
+      <description>Prime Minister Benjamin Netanyahu has promised to annex much of the occupied West Bank. But now that he can, there are questions about whether he will.</description>
+      <dc:creator>David M. Halbfinger and Adam Rasgon</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 17:54:22 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Palestinians</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israeli Settlements</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Netanyahu, Benjamin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Friedman, David M</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kushner, Jared</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gantz, Benny</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">West Bank</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Israel</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01israel-annex/01israel-annex-moth.jpg" width="151"></media:content>
+      <media:credit>Dan Balilty for The New York Times</media:credit>
+      <media:description>The Israeli settlement of Ariel in the West Bank. Prime Minister Benjamin Netanyahu is suddenly facing resistance to annexation from settler leaders who have been agitating for it for years.</media:description>
+    </item>
+    <item>
+      <title>How India’s Police Used a Pandemic to Boost Its Image</title>
+      <link>https://www.nytimes.com/video/world/100000007141490/-india-police-pandemic-coronavirus.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/video/world/100000007141490/-india-police-pandemic-coronavirus.html</guid>
+      <atom:link href="https://www.nytimes.com/video/world/100000007141490/-india-police-pandemic-coronavirus.html" rel="standout"></atom:link>
+      <description>The police in New Delhi were roundly vilified for their role in religious violence. Now they’re on the front line of the city’s fight against coronavirus. Our reporters rode along as officers transported sick patients and served meals.</description>
+      <dc:creator>Jeffrey Gettleman, Karan Deep Singh, Caroline Kim and Hari Kumar</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 12:43:17 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus Reopenings</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Quarantines</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gettleman, Jeffrey</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">India</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/video/00vid-indiapoliceimage/00vid-indiapoliceimage-moth.jpg" width="151"></media:content>
+      <media:credit>Karan Deep Singh/The New York Times</media:credit>
+      <media:description>Karan Deep Singh/The New York Times</media:description>
+    </item>
+    <item>
+      <title>‘The Minnesota Paradox’</title>
+      <link>https://www.nytimes.com/2020/06/01/briefing/minneapolis-coronavirus-tara-reader-your-monday-briefing.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/briefing/minneapolis-coronavirus-tara-reader-your-monday-briefing.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/briefing/minneapolis-coronavirus-tara-reader-your-monday-briefing.html" rel="standout"></atom:link>
+      <description>And what else you need to know today.</description>
+      <dc:creator>David Leonhardt</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 16:48:42 +0000</pubDate>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/us/1ambriefing-promo/1ambriefing-minneapolis-moth-v2.jpg" width="151"></media:content>
+      <media:credit>Victor J. Blue for The New York Times</media:credit>
+      <media:description>Protesters in front of the 5th Precinct in Minneapolis on Saturday.</media:description>
+    </item>
+    <item>
+      <title>Tear Gas Clears Path for Trump to Visit Church</title>
+      <link>https://www.nytimes.com/2020/06/01/us/floyd-protests-live.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/us/floyd-protests-live.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/us/floyd-protests-live.html" rel="standout"></atom:link>
+      <description>Police officers used flash grenades to disperse a crowd so the president could visit for a photo opportunity. And in New York, protesters and looters defied a curfew.</description>
+      <pubDate>Tue, 02 Jun 2020 13:24:17 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Police Brutality, Misconduct and Shootings</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Minneapolis (Minn)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">George Floyd Protests (2020)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01unrest-briefing-wh/01unrest-briefing-wh-moth.jpg" width="151"></media:content>
+      <media:credit>Erin Schaff/The New York Times</media:credit>
+      <media:description>Protesters outside the White House, where President Trump called violent demonstrations in American cities “domestic terrorism.”</media:description>
+    </item>
+    <item>
+      <title>Finding Euphoria in Bangkok’s Food Scene</title>
+      <link>https://www.nytimes.com/2020/06/01/travel/bangkok-thailand-food-markets.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/travel/bangkok-thailand-food-markets.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/travel/bangkok-thailand-food-markets.html" rel="standout"></atom:link>
+      <description>In search of creative inspiration, a New York-based photographer spent two weeks documenting Bangkok’s fresh markets and street vendors.</description>
+      <dc:creator>Louise Palmberg</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 16:22:54 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cooking and Cookbooks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Street Vendors (Non-Food)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Photography</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Travel and Vacations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Bangkok (Thailand)</category>
+    </item>
+    <item>
+      <title>As Coronavirus Toll Preoccupies U.S., Rivals Test Limits of American Power</title>
+      <link>https://www.nytimes.com/2020/06/01/us/politics/coronavirus-global-competition-russia-china-iran-north-korea.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/us/politics/coronavirus-global-competition-russia-china-iran-north-korea.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/us/politics/coronavirus-global-competition-russia-china-iran-north-korea.html" rel="standout"></atom:link>
+      <description>The coronavirus may have changed almost everything, but it didn’t change this: Global competition spins ahead — and in many ways has accelerated.</description>
+      <dc:creator>David E. Sanger, Eric Schmitt and Edward Wong</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 13:10:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cyberwarfare and Defense</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Embargoes and Sanctions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Espionage and Intelligence Services</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Defense Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">State Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Iran</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Middle East</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South China Sea</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/us/politics/31dc-virus-globalcompetition-pix1/31dc-virus-globalcompetition-pix1-moth.jpg" width="151"></media:content>
+      <media:credit>Australia Department Of Defence, via Reuters</media:credit>
+      <media:description>The amphibious assault ship America conducted maneuvers with other Australian and U.S. Navy vessels in the South China Sea in April, one of four such operations this year.</media:description>
+    </item>
+    <item>
+      <title>U.S. Economy Faces Long-Term Recovery, C.B.O. Says</title>
+      <link>https://www.nytimes.com/2020/06/01/business/stock-market.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/business/stock-market.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/business/stock-market.html" rel="standout"></atom:link>
+      <description>The latest on stock market and business news during the coronavirus outbreak.</description>
+      <pubDate>Tue, 02 Jun 2020 12:06:15 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Economic Conditions and Trends</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Economy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Stocks and Bonds</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Standard &amp; Poor&#39;s 500-Stock Index</category>
+    </item>
+    <item>
+      <title>The Best Movies and TV Shows New to Netflix, Amazon and Stan in Australia in June</title>
+      <link>https://www.nytimes.com/2020/06/01/arts/television/netflix-stan-amazon-streaming-tv-movies-june-australia.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/arts/television/netflix-stan-amazon-streaming-tv-movies-june-australia.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/arts/television/netflix-stan-amazon-streaming-tv-movies-june-australia.html" rel="standout"></atom:link>
+      <description>Our picks for June, including ‘Queer Eye,’ ‘Da 5 Bloods,’ ‘Scarface’ and ‘LOL: Last One Laughing Australia’</description>
+      <dc:creator>Noel Murray</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 07:45:52 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Amazon.com Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Netflix Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Australia</category>
+    </item>
+    <item>
+      <title>Global Anger Grows Over George Floyd Death, and Becomes an Anti-Trump Cudgel</title>
+      <link>https://www.nytimes.com/2020/06/01/world/asia/george-floyd-protest-global.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/asia/george-floyd-protest-global.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/asia/george-floyd-protest-global.html" rel="standout"></atom:link>
+      <description>Public outcries over racism in the United States erupted from Addis Ababa to Vancouver. China and Iran, criticized on human rights by the Trump administration, called the killing of Mr. Floyd a symbol of American hypocrisy.</description>
+      <dc:creator>Javier C. Hernández and Benjamin Mueller</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 21:05:19 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black Lives Matter Movement</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Police Brutality, Misconduct and Shootings</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Indigenous Australians</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">George Floyd Protests (2020)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/world/01UNREST-GLOBAL-REACT1/merlin_173023953_6f18fff7-50c1-4e45-b51e-84b9d6af84b9-moth.jpg" width="151"></media:content>
+      <media:credit>Sean Gallup/Getty Images</media:credit>
+      <media:description>Demonstrators marched in Berlin on Sunday to protest the death of George Floyd at the hands of police in Minneapolis.</media:description>
+    </item>
+    <item>
+      <title>U.S. Protests, Coronavirus, SpaceX: Your Monday Briefing</title>
+      <link>https://www.nytimes.com/2020/06/01/briefing/us-protests-coronavirus-spacex.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/briefing/us-protests-coronavirus-spacex.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/briefing/us-protests-coronavirus-spacex.html" rel="standout"></atom:link>
+      <description>Here’s what you need to know.</description>
+      <dc:creator>Isabella Kwai</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 05:10:18 +0000</pubDate>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/briefing/01ambriefing-europe-promo/01ambriefing-asia-slide-5QK8-moth.jpg" width="151"></media:content>
+      <media:credit>Bryan Denton for The New York Times</media:credit>
+      <media:description>Protesters in Los Angeles on Saturday. </media:description>
+    </item>
+    <item>
+      <title>Pandemic to Cost U.S. Economy $7.9 Trillion Over 10 Years</title>
+      <link>https://www.nytimes.com/2020/06/01/world/coronavirus-world-news.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/06/01/world/coronavirus-world-news.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/06/01/world/coronavirus-world-news.html" rel="standout"></atom:link>
+      <description>Michigan’s governor lifted a stay-at-home order as other states announced steps to reopen. A Rohingya Muslim who lived in a Bangladesh refugee camp died of the coronavirus.</description>
+      <pubDate>Tue, 02 Jun 2020 13:31:29 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/us/01virus-briefing-lede2/01virus-briefing-moth.jpg" width="151"></media:content>
+      <media:credit>Chang W. Lee/The New York Times</media:credit>
+      <media:description>Protests in Manhattan on Sunday.</media:description>
+    </item>
+    <item>
+      <title>Your Monday Briefing</title>
+      <link>https://www.nytimes.com/2020/05/31/briefing/us-protests-coronavirus-hong-kong-spacex.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/briefing/us-protests-coronavirus-hong-kong-spacex.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/briefing/us-protests-coronavirus-hong-kong-spacex.html" rel="standout"></atom:link>
+      <description>U.S. protests, Hong Kong, SpaceX: Here’s what you need to know.</description>
+      <dc:creator>Carole Landry</dc:creator>
+      <pubDate>Sun, 31 May 2020 19:06:07 +0000</pubDate>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/01/briefing/01ambriefing-asia-slide-5QK8/01ambriefing-asia-slide-5QK8-moth.jpg" width="151"></media:content>
+      <media:credit>Bryan Denton for The New York Times</media:credit>
+      <media:description>Protesters in Los Angeles on Saturday. </media:description>
+    </item>
+    <item>
+      <title>Resisting Lockdown, Nicaragua Becomes a Place of Midnight Burials</title>
+      <link>https://www.nytimes.com/2020/05/31/world/americas/coronavirus-nicaragua-burials.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/world/americas/coronavirus-nicaragua-burials.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/world/americas/coronavirus-nicaragua-burials.html" rel="standout"></atom:link>
+      <description>The country is one of the last to reject the strict measures introduced globally to curb the spread of the coronavirus. Families say they are paying the price.</description>
+      <dc:creator>Alfonso Flores Bermúdez and Frances Robles</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 08:06:04 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Nicaragua</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ortega, Daniel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cemeteries</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Managua (Nicaragua)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/27/world/27virus-nicaragua-new/27virus-nicaragua-new-moth-v2.jpg" width="151"></media:content>
+      <media:credit>Inti Ocon for The New York Times</media:credit>
+      <media:description>Across Nicaragua, families are being forced to hold rushed funerals at all hours of the night, without time to call a priest or buy flowers.</media:description>
+    </item>
+    <item>
+      <title>Rogue Trip by Boris Johnson Aide Makes U.K.’s Spectator Part of the Story</title>
+      <link>https://www.nytimes.com/2020/05/31/world/europe/dominic-cummings-spectator-magazine.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/world/europe/dominic-cummings-spectator-magazine.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/world/europe/dominic-cummings-spectator-magazine.html" rel="standout"></atom:link>
+      <description>A senior editor of the magazine, Britain’s oldest, did not disclose in an article that her husband, Dominic Cummings, had taken a 260-mile trip that breached the nation’s stay-at-home order.</description>
+      <dc:creator>Mark Landler and Stephen Castle</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 08:05:50 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">News and News Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cummings, Dominic (1971- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">England</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Johnson, Boris</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wakefield, Mary (1975- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Quarantines</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">The Spectator (Magazine)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/31uk-spectator1/31uk-spectator1-moth.jpg" width="151"></media:content>
+      <media:credit>Jim Watson/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Boris Johnson in 2003, reading an  issue of The Spectator marking 175 years of publication, when he was the magazine’s editor.</media:description>
+    </item>
+    <item>
+      <title>Coronavirus Turns a Spanish Sea Delicacy Back Into Daily Fare</title>
+      <link>https://www.nytimes.com/2020/05/31/world/europe/coronavirus-prawn-spain.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/world/europe/coronavirus-prawn-spain.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/world/europe/coronavirus-prawn-spain.html" rel="standout"></atom:link>
+      <description>With high-end restaurants closed, the price of prawns has tumbled, allowing fishmongers to pick up the shellfish at a discount and offer them to a much broader clientele.</description>
+      <dc:creator>Raphael Minder</dc:creator>
+      <pubDate>Sun, 31 May 2020 16:50:54 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Restaurants</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Spain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Prices (Fares, Fees and Rates)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Catalonia (Spain)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Shutdowns (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Seafood</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Prawns</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fishing, Commercial</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Chefs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Perez, Paco (Chef)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/28/world/00virus-spain-fish01sub/00virus-spain-fish01sub-moth.jpg" width="151"></media:content>
+      <media:credit>Samuel Aranda for The New York Times</media:credit>
+      <media:description>Unloading the catch of the day in Llançà, Spain, in early May. When fishing for prawns, 12 hours at sea can yield barely a dozen kilograms.</media:description>
+    </item>
+    <item>
+      <title>Mexico’s President Says Most Domestic Violence Calls Are ‘Fake’</title>
+      <link>https://www.nytimes.com/2020/05/31/world/americas/violence-women-mexico-president.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/world/americas/violence-women-mexico-president.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/world/americas/violence-women-mexico-president.html" rel="standout"></atom:link>
+      <description>The leader compared the requests for help to prank calls, the latest controversy over his government’s response to record levels of violence against women.</description>
+      <dc:creator>Natalie Kitroeff</dc:creator>
+      <pubDate>Sun, 31 May 2020 18:15:26 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women&#39;s Rights</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Human Rights and Human Rights Violations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Domestic Violence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lopez Obrador, Andres Manuel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mexico City (Mexico)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/00mexico-women/merlin_171315315_e5f711f9-5129-4c5e-ae25-1f78f469738f-moth.jpg" width="151"></media:content>
+      <media:credit>Mexico&#39;s Presidency, via Reuters</media:credit>
+      <media:description>President Andrés Manuel López Obrador of Mexico’s messaging when addressing record-high levels of violence against women has been called dismissive or condescending by critics.</media:description>
+    </item>
+    <item>
+      <title>Western Countries Leave Children of ISIS in Syrian Camps</title>
+      <link>https://www.nytimes.com/2020/05/31/world/middleeast/isis-children-syria-camps.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/world/middleeast/isis-children-syria-camps.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/world/middleeast/isis-children-syria-camps.html" rel="standout"></atom:link>
+      <description>The children are living in squalid detention camps lacking schools, health care and clean water, and where disease and jihadist ideology are rampant.</description>
+      <dc:creator>Ben Hubbard and Constant Méheut</dc:creator>
+      <pubDate>Sun, 31 May 2020 13:48:55 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Children and Childhood</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Terrorism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Islamic State in Iraq and Syria (ISIS)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Syria</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Detainees</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Human Rights and Human Rights Violations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">France</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Canada</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/28ISIS-Children/28ISIS-Children-moth.jpg" width="151"></media:content>
+      <media:credit>Ivor Prickett for The New York Times</media:credit>
+      <media:description>Women and children who fled ISIS-controlled territory in southern Syria at Al Hol camp last year. </media:description>
+    </item>
+    <item>
+      <title>U.S. Sends Two Million Doses of Hydroxychloroquine to Brazil</title>
+      <link>https://www.nytimes.com/2020/05/31/world/coronavirus-news.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/31/world/coronavirus-news.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/31/world/coronavirus-news.html" rel="standout"></atom:link>
+      <description>The two countries are studying whether the drug is safe and effective for the prevention and early treatment of Covid-19. Nicaragua has become a place of midnight burials.</description>
+      <pubDate>Mon, 01 Jun 2020 21:47:51 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/31virus-wkd-briefing-brazil/merlin_172973061_f61f1776-7ee3-45ab-88bf-5f2a915e4680-moth.jpg" width="151"></media:content>
+      <media:credit>Antonio Lacerda/EPA, via Shutterstock</media:credit>
+      <media:description>Workers bury a victim of the coronavirus at a cemetery in Rio de Janeiro on Friday.</media:description>
+    </item>
+    <item>
+      <title>China and India Brawl at 14,000 Feet Along the Border</title>
+      <link>https://www.nytimes.com/2020/05/30/world/asia/india-china-border.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/world/asia/india-china-border.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/world/asia/india-china-border.html" rel="standout"></atom:link>
+      <description>As China projects its power across Asia, and along the disputed India-China border in the Himalayas, India is feeling surrounded. Both sides insist they don’t want a war, but thousands of troops have been sent.</description>
+      <dc:creator>Jeffrey Gettleman and Steven Lee Myers</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 08:14:07 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">India</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="">Territorial Disputes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">People&#39;s Liberation Army (China)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Global Times</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Xi Jinping</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Modi, Narendra</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Himalayas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Bhutan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Kashmir and Jammu (India)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/30india-china-border-top/30india-china-border-top-moth.jpg" width="151"></media:content>
+      <media:credit>Paula Bronstein/Getty Images</media:credit>
+      <media:description>An Indian military officer on patrol in Ladakh, India, in August.</media:description>
+    </item>
+    <item>
+      <title>Rabbis to Return to German Military Amid Growing Anti-Semitism</title>
+      <link>https://www.nytimes.com/2020/05/30/world/europe/germany-rabbis-military.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/world/europe/germany-rabbis-military.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/world/europe/germany-rabbis-military.html" rel="standout"></atom:link>
+      <description>The Army will welcome rabbis into its chaplaincy this year to provide spiritual support to Jewish soldiers as anti-Semitism surges in the country.</description>
+      <dc:creator>Melissa Eddy</dc:creator>
+      <pubDate>Sat, 30 May 2020 11:33:35 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Germany</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Jews and Judaism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rabbis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anti-Semitism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Chaplains</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/30/world/30germany-rabbis01/30germany-rabbis01-moth.jpg" width="151"></media:content>
+      <media:credit>Fabrizio Bensch/Reuters</media:credit>
+      <media:description>Army recruits in Viereck, Germany, in 2018. An estimated 300 Jewish soldiers serve the country in missions abroad.</media:description>
+    </item>
+    <item>
+      <title>In Some Nations, Coronavirus Is Only One of Many Outbreaks</title>
+      <link>https://www.nytimes.com/2020/05/30/world/americas/virus-central-america-dengue.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/world/americas/virus-central-america-dengue.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/world/americas/virus-central-america-dengue.html" rel="standout"></atom:link>
+      <description>In countries like Honduras, the virus has diverted resources from efforts to fight other serious diseases, straining weak public health systems, draining supplies and unraveling hard-won gains.</description>
+      <dc:creator>Kirk Semple</dc:creator>
+      <pubDate>Sat, 30 May 2020 10:00:11 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Dengue Fever</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Vaccination and Immunization</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Mosquitoes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Pan American Health Organization</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Honduras</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/00virus-diseases/00virus-diseases-moth.jpg" width="151"></media:content>
+      <media:credit>Daniele Volpe for The New York Times</media:credit>
+      <media:description>A ward for children with dengue at Mario Catarino Rivas Hospital in San Pedro Sula, Honduras, in December.</media:description>
+    </item>
+    <item>
+      <title>Coronavirus Slams Broken, Embattled Yemen</title>
+      <link>https://www.nytimes.com/2020/05/30/world/middleeast/virus-yemen.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/world/middleeast/virus-yemen.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/world/middleeast/virus-yemen.html" rel="standout"></atom:link>
+      <description>Lacking equipment, expertise and authority, a divided, war-torn country bobbles a response to a surging pandemic.</description>
+      <dc:creator>Vivian Yee</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 13:05:32 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Humanitarian Aid</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Doctors Without Borders</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Houthis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Aden (Yemen)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Sana (Yemen)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Yemen</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/world/30virus-yemen/29virus-yemen-moth.jpg" width="151"></media:content>
+      <media:credit>Khaled Abdullah/Reuters</media:credit>
+      <media:description>Security personnel in protective clothing in Sana, the Houthi-controlled capital of Yemen.</media:description>
+    </item>
+    <item>
+      <title>Twitter Had Been Drawing a Line for Months When Trump Crossed It</title>
+      <link>https://www.nytimes.com/2020/05/30/technology/twitter-trump-dorsey.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/technology/twitter-trump-dorsey.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/technology/twitter-trump-dorsey.html" rel="standout"></atom:link>
+      <description>Inside the company, one faction wanted Jack Dorsey, Twitter’s chief, to take a hard line against the president’s tweets while another urged him to remain hands-off.</description>
+      <dc:creator>Kate Conger</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 17:40:06 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Twitter</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dorsey, Jack</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cyberharassment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rumors and Misinformation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Executive Orders and Memorandums</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Freedom of Speech and Expression</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Censorship</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corporate Social Responsibility</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/31/business/31twitter-print/29twitter-moth.jpg" width="151"></media:content>
+      <media:credit>Toby Melville/Reuters</media:credit>
+      <media:description>Jack Dorsey, Twitter&amp;rsquo;s chief executive, has recently delegated policy decisions, watching internal debate from the sidelines.</media:description>
+    </item>
+    <item>
+      <title>In Hong Kong, Anxiety and Defiance Over Trump’s Move to Cut Ties</title>
+      <link>https://www.nytimes.com/2020/05/30/world/asia/hong-kong-trump-china.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/world/asia/hong-kong-trump-china.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/world/asia/hong-kong-trump-china.html" rel="standout"></atom:link>
+      <description>The reactions to President Trump’s decision fell along familiar political fault lines in a city wracked by nearly a year of protests.</description>
+      <dc:creator>Vivian Wang and Amy Qin</dc:creator>
+      <pubDate>Sat, 30 May 2020 17:29:07 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Hong Kong</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/30/world/30china-react1/30china-react1-moth.jpg" width="151"></media:content>
+      <media:credit>Lam Yik Fei for The New York Times</media:credit>
+      <media:description>News broadcasts in Hong Kong this week about China’s plan to impose national security legislation.</media:description>
+    </item>
+    <item>
+      <title>Live Coronavirus Pandemic Updates: G7, Lake of the Ozarks, W.H.O., India, California</title>
+      <link>https://www.nytimes.com/2020/05/30/world/coronavirus-news-update.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/30/world/coronavirus-news-update.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/30/world/coronavirus-news-update.html" rel="standout"></atom:link>
+      <description>The German chancellor had announced earlier Saturday that she would not travel to the U.S. for the G7. Businesses are starting up again, but workers commuting by public transportation face dilemmas.</description>
+      <pubDate>Sun, 31 May 2020 03:42:35 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/30/business/30virus-wkd-briefing-merkel/30virus-wkd-briefing-merkel-moth.jpg" width="151"></media:content>
+      <media:credit>Pool photo by Henning Schacht</media:credit>
+      <media:description>Chancellor Angela Merkel of Germany in Berlin on Wednesday.</media:description>
+    </item>
+    <item>
+      <title>Hong Kong&#39;s Protest Movement, Faced with Beijing&#39;s Security Push, is In Crisis</title>
+      <link>https://www.nytimes.com/2020/05/29/world/asia/hong-kong-protest-future-china.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/asia/hong-kong-protest-future-china.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/asia/hong-kong-protest-future-china.html" rel="standout"></atom:link>
+      <description>As the Chinese government’s grip tightens, protesters are debating how and why to keep fighting, or whether resistance is even possible.</description>
+      <dc:creator>Vivian Wang, Tiffany May, Austin Ramzy and Lam Yik Fei</dc:creator>
+      <pubDate>Mon, 01 Jun 2020 21:27:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hong Kong Protests (2019)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Hong Kong</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Secession and Independence Movements</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Boycotts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Strikes</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/30/world/30hk-protest-future-promo/30hk-protest-future-1-moth.jpg" width="151"></media:content>
+      <media:credit>Lam Yik Fei for The New York Times</media:credit>
+      <media:description>A protester against new security laws at Causeway Bay, Hong Kong, on Sunday.</media:description>
+    </item>
+    <item>
+      <title>Coronavirus Briefing: What Happened Today</title>
+      <link>https://www.nytimes.com/2020/05/29/us/coronavirus-today.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/us/coronavirus-today.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/us/coronavirus-today.html" rel="standout"></atom:link>
+      <description>The C.D.C. recommended big changes to the way office spaces are laid out.</description>
+      <dc:creator>Lara Takenaga and Jonathan Wolfe</dc:creator>
+      <pubDate>Fri, 29 May 2020 23:54:50 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/03/03/world/coronavirus-map-promo/coronavirus-map-promo-moth-v466.png" width="151"></media:content>
+      <media:credit>The New York Times</media:credit>
+    </item>
+    <item>
+      <title>A Continent Reopens</title>
+      <link>https://www.nytimes.com/2020/05/29/world/europe/a-continent-reopens.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/europe/a-continent-reopens.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/europe/a-continent-reopens.html" rel="standout"></atom:link>
+      <description>Patrick Kingsley, an international correspondent, and Laetitia Vancon, a photojournalist, are driving 3,700 miles to explore the reopening of the European continent after coronavirus lockdowns.</description>
+      <dc:creator>Patrick Kingsley and Laetitia Vancon</dc:creator>
+      <pubDate>Tue, 02 Jun 2020 11:16:39 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/world/00europe-roadtrip-top-1/merlin_172816392_d21339e3-1fe9-4e27-9771-e33442b5c515-moth.jpg" width="151"></media:content>
+      <media:credit>Laetitia Vancon for The New York Times</media:credit>
+      <media:description>Life is slowly returning to normal in Berlin.</media:description>
+    </item>
+    <item>
+      <title>When Going to Work Means Taking a Calculated Risk</title>
+      <link>https://www.nytimes.com/2020/05/29/world/canada/essential-workers.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/canada/essential-workers.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/canada/essential-workers.html" rel="standout"></atom:link>
+      <description>The coronavirus hasn’t gone away. But an increasing number of Canadians are heading back to workplaces that may increase their risk of infection.</description>
+      <dc:creator>Ian Austen</dc:creator>
+      <pubDate>Sat, 30 May 2020 00:53:14 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Meat Packers and Butchers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus Reopenings</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Canada</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Shutdowns (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Labor and Jobs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Factories and Manufacturing</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/world/29canadaletter-stores/29canadaletter-stores-moth.jpg" width="151"></media:content>
+      <media:credit>Sebastien St-Jean/Agence France-Presse — Getty Images</media:credit>
+      <media:description>An employee, left, at the Simons department store in downtown Montreal explaining safety procedures to a customer.</media:description>
+    </item>
+    <item>
+      <title>Blaming China for Pandemic, Trump Says U.S. Will Leave the W.H.O.</title>
+      <link>https://www.nytimes.com/2020/05/29/health/virus-who.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/health/virus-who.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/health/virus-who.html" rel="standout"></atom:link>
+      <description>America’s decades-long relationship with the organization has been instrumental in improving health around the world.</description>
+      <dc:creator>Donald G. McNeil Jr. and Andrew Jacobs</dc:creator>
+      <pubDate>Sat, 30 May 2020 03:52:14 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">World Health Organization</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Epidemics</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Centers for Disease Control and Prevention</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">your-feed-science</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/science/29VIRUS-WHO1/29VIRUS-WHO1-moth.jpg" width="151"></media:content>
+      <media:credit>Erin Schaff/The New York Times</media:credit>
+      <media:description>President Trump made the announcement Friday in the Rose Garden.</media:description>
+    </item>
+    <item>
+      <title>In Brazil, Bolsonaro Lashes Out at Investigators</title>
+      <link>https://www.nytimes.com/2020/05/29/world/americas/brazil-bolsonaro-supreme-court.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/americas/brazil-bolsonaro-supreme-court.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/americas/brazil-bolsonaro-supreme-court.html" rel="standout"></atom:link>
+      <description>President Jair Bolsonaro and his allies have taken an increasingly belligerent stance toward the array of criminal and legislative investigations engulfing his office.</description>
+      <dc:creator>Manuela Andreoni, Letícia Casado and Kirk Semple</dc:creator>
+      <pubDate>Fri, 29 May 2020 22:29:01 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Brazil</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bolsonaro, Jair (1955- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corruption (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rumors and Misinformation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Fatalities)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/world/29brazil/29brazil-moth.jpg" width="151"></media:content>
+      <media:credit>Adriano Machado/Reuters</media:credit>
+      <media:description>President Jair Bolsonaro of Brazil. The fast-spreading coronavirus has sent the economy into a tailspin and caused the deaths of more than 27,000 people.</media:description>
+    </item>
+    <item>
+      <title>It’s Not Whether You Were Exposed to the Coronavirus. It’s How Much.</title>
+      <link>https://www.nytimes.com/2020/05/29/health/coronavirus-transmission-dose.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/health/coronavirus-transmission-dose.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/health/coronavirus-transmission-dose.html" rel="standout"></atom:link>
+      <description>The pathogen is proving a familiar adage: The dose makes the poison.</description>
+      <dc:creator>Apoorva Mandavilli</dc:creator>
+      <pubDate>Fri, 29 May 2020 19:20:49 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Masks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hygiene and Cleanliness</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Bathrooms and Toilets</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Epidemics</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Viruses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Beth Israel Deaconess Medical Center</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Centers for Disease Control and Prevention</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Princeton University</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/06/02/science/29VIRUS-DOSE1/29VIRUS-DOSE1-moth.jpg" width="151"></media:content>
+      <media:credit>Misha Friedman for The New York Times</media:credit>
+      <media:description>Harry Henri, a research assistant, working with blood samples from coronavirus patients at SUNY Downstate’s BioBank in Brooklyn.</media:description>
+    </item>
+    <item>
+      <title>Taiwan Court Strikes Down Law Criminalizing Adultery</title>
+      <link>https://www.nytimes.com/2020/05/29/world/asia/taiwan-adultery.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/asia/taiwan-adultery.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/asia/taiwan-adultery.html" rel="standout"></atom:link>
+      <description>The decision was hailed by rights activists who said the law had disproportionately targeted women.</description>
+      <dc:creator>Amy Qin</dc:creator>
+      <pubDate>Fri, 29 May 2020 19:08:26 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women&#39;s Rights</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Adultery</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Taiwan</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/world/29taiwan-adultery-1/29taiwan-adultery-1-moth.jpg" width="151"></media:content>
+      <media:credit>Sam Yeh/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Chief Justice Hsu Tzong-li, center, in 2017. He called the law a “serious invasion of personal privacy.”</media:description>
+    </item>
+    <item>
+      <title>Economic Giants Are Restarting. Here’s What It Means for Climate Change.</title>
+      <link>https://www.nytimes.com/2020/05/29/climate/coronavirus-economic-stimulus-climate.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/climate/coronavirus-economic-stimulus-climate.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/climate/coronavirus-economic-stimulus-climate.html" rel="standout"></atom:link>
+      <description>Want to know whether the world can avert catastrophe? Watch the recovery plans coming out now in Europe, China and the United States.</description>
+      <dc:creator>Somini Sengupta</dc:creator>
+      <pubDate>Fri, 29 May 2020 18:59:26 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Stimulus (Economic)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Global Warming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Greenhouse Gas Emissions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Alternative and Renewable Energy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">European Union</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/climate/29CLI-RECOVERY1/29CLI-RECOVERY1-moth.jpg" width="151"></media:content>
+      <media:credit>Kola Sulaimon/Agence France-Presse — Getty Images</media:credit>
+      <media:description>A demonstrator in Abuja, Nigeria, on a day of global climate strikes in September.</media:description>
+    </item>
+    <item>
+      <title>Congress Calls State Dept. Officials for Interviews in Expanded Pompeo Inquiry</title>
+      <link>https://www.nytimes.com/2020/05/29/us/politics/mike-pompeo-inspector-general-congress.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/us/politics/mike-pompeo-inspector-general-congress.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/us/politics/mike-pompeo-inspector-general-congress.html" rel="standout"></atom:link>
+      <description>Lawmakers are investigating whether Secretary of State Mike Pompeo urged President Trump to fire Steve A. Linick, the department’s inspector general, to shield himself from Mr. Linick’s inquiries.</description>
+      <dc:creator>Edward Wong</dc:creator>
+      <pubDate>Fri, 29 May 2020 18:47:47 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Pompeo, Mike</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Linick, Steve A</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">State Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">House Committee on Foreign Affairs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Senate Committee on Foreign Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">House Committee on Oversight and Government Reform</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/us/politics/29dc-pompeo/29dc-pompeo-moth.jpg" width="151"></media:content>
+      <media:credit>Pool photo by Nicholas Kamm</media:credit>
+      <media:description>Secretary of State Mike Pompeo urged the ouster of Steve A. Linick, who was the State Department inspector general.</media:description>
+    </item>
+    <item>
+      <title>Testing Is Key to Beating Coronavirus, Right? Japan Has Other Ideas</title>
+      <link>https://www.nytimes.com/2020/05/29/world/asia/japan-coronavirus.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/asia/japan-coronavirus.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/asia/japan-coronavirus.html" rel="standout"></atom:link>
+      <description>The country has reported fewer deaths than other major nations and ended a state of emergency even while maintaining a low testing rate.</description>
+      <dc:creator>Ben Dooley and Makiko Inoue</dc:creator>
+      <pubDate>Sun, 31 May 2020 04:47:26 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Japan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Abe, Shinzo</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tests (Medical)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus Reopenings</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Contact Tracing (Public Health)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Quarantines</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Fatalities)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/26/world/00virus-japan-testing-1/00virus-japan-testing-1-moth.jpg" width="151"></media:content>
+      <media:credit>Philip Fong/Agence France-Presse — Getty Images</media:credit>
+      <media:description>A demonstration in Tokyo of a swab test for the coronavirus.</media:description>
+    </item>
+    <item>
+      <title>Russians Are Angry, but Putin’s Foes Struggle to Seize the Moment</title>
+      <link>https://www.nytimes.com/2020/05/29/world/europe/russia-navalny-putin-coronavirus.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2020/05/29/world/europe/russia-navalny-putin-coronavirus.html</guid>
+      <atom:link href="https://www.nytimes.com/2020/05/29/world/europe/russia-navalny-putin-coronavirus.html" rel="standout"></atom:link>
+      <description>The main opposition leader, Aleksei A. Navalny, has seen his YouTube audience triple during the coronavirus crisis. But street protest, his most potent weapon, is off the table.</description>
+      <dc:creator>Anton Troianovski</dc:creator>
+      <pubDate>Fri, 29 May 2020 15:07:14 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coronavirus (2019-nCoV)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corruption (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Polls and Public Opinion</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Anti-Corruption Foundation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Navalny, Aleksei A</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Moscow (Russia)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Yekaterinburg (Russia)</category>
+      <media:content height="151" medium="image" url="https://static01.nyt.com/images/2020/05/29/world/29russia-navalny01sub/29russia-navalny01sub-moth.jpg" width="151"></media:content>
+      <media:credit>Sergey Ponomarev for The New York Times</media:credit>
+      <media:description>In Moscow last month. As Russia fights the coronavirus, the authorities have moved against even one-person public protests.</media:description>
+    </item>
+  </channel>
+</rss>
