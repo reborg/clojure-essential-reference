@@ -14,10 +14,12 @@
 
 (:min (race1 {:athlete "Souza J." :time 38.34}))          ; <7>
 ;; {:athlete "Souza J.", :time 38.34}
+
 (:min (race1 {:athlete "Kinley F." :time 37.21}))
 ;; {:athlete "Kinley F.", :time 37.21}
+
 (:max (race1 {:athlete "Won T." :time 36.44}))
-{:athlete "Souza J.", :time 38.34}
+;; {:athlete "Souza J.", :time 38.34}
 
 (race1)                                                   ; <8>
 ;; "The winner is: {:athlete \"Won T.\", :time 36.44}"

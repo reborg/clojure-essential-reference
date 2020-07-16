@@ -12,7 +12,6 @@
 
 (let [v (vec (range 1000))]
   (quick-bench (norm v)))
-
 ;; Execution time mean : 91.908294 µs ; <2>
 
 (defn norm-idx [v] ; <3>
@@ -25,5 +24,4 @@
 
 (let [v (vec (range 1000))]
   (quick-bench (norm-idx v)))
-
 ;; Execution time mean : 15.174786 µs ; <4>

@@ -1,5 +1,5 @@
 (import '[java.net
-          Socket InetAddressi
+          Socket InetAddress
           ConnectException SocketException])
 
 (try
@@ -11,3 +11,4 @@
   (catch Exception e ; <4>
     (println "Something weird happened." e)
     (throw e)))
+;; nil

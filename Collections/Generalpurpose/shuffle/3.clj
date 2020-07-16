@@ -11,6 +11,6 @@
 (def hosts ["10.100.89.42" "10.100.86.57" "10.100.23.12"])
 (def get-host (round-robin request hosts)) ; <6>
 
-(get) ; <7>
+(get-host) ; <7>
 ;; calling http://10.100.23.12/index.html
 ;; 1

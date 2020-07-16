@@ -1,4 +1,4 @@
-(->> vz
+(->> vzip
   (iterate zip/next) ; <1>
   (take-while (complement zip/end?)) ; <2>
   (map zip/node)) ; <3>

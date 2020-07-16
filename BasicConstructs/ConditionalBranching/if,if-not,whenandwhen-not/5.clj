@@ -1,4 +1,4 @@
-(defn start []                                          ; <1>
+(defn start []   ; <1>
   (try
     (java.net.ServerSocket. 9393 0
       (java.net.InetAddress/getByName "localhost"))
@@ -6,7 +6,7 @@
       (println "error starting the socket"))))
 
 (defn stop [s]
-  (when s                                               ; <2>
+  (when s    ; <2>
     (try
       (.close s)
     (catch Exception e
@@ -15,7 +15,7 @@
 (def socket (start))
 (.isClosed socket)
 ;; false
-(stop socket)                                           ; <3>
+(stop socket) ; <3>
 ;; nil
 (.isClosed socket)
 ;; true

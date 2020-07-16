@@ -1,5 +1,5 @@
 (defn next-loop [coll] ; <1>
-  (loop [xs coll results []]
+  (loop [xs (seq coll) results []]
     (if xs ; <2>
       (recur
         (next xs) ; <3>

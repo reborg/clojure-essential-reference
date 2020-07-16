@@ -1,4 +1,4 @@
-(import 'org.github.jamm MemoryMeter)
+(import 'org.github.jamm.MemoryMeter)
 
 (defn test-memory-vector-of-jamm []
   (let [meter (MemoryMeter.)

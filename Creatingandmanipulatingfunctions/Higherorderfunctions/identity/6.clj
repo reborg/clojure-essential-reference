@@ -22,6 +22,7 @@
 ;; 2
 
 (dosync (make-available! 2))
+;; 2
 
 @cashiers
 ;; [false 2 3 4 5]

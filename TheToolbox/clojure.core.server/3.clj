@@ -1,9 +1,8 @@
-(ns data-server) ; <1>
-
-(require '[clojure.main :as main]
-         '[clojure.core.server :as server])
-(import '[java.net ServerSocket]
-        '[java.io BufferedWriter StringWriter])
+(ns data-server
+  (:require [clojure.main :as main]
+            [clojure.core.server :as server])
+  (:import [java.net ServerSocket]
+           [java.io BufferedWriter StringWriter])) ; <1>
 
 (defn data-eval [form] ; <2>
   (let [out-writer (StringWriter.)

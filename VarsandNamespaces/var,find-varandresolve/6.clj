@@ -1,4 +1,5 @@
 (require '[clojure.repl :refer [dir-fn dir]])
+(require 'clojure.set)
 
 (dir-fn 'clojure.set) ; <1>
 ;; (difference index intersection
@@ -11,3 +12,5 @@
 ;; index
 ;; intersection
 ;; [..]
+;; union
+;; nil

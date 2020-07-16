@@ -16,7 +16,8 @@
       (assoc! res i (fizz-buzz-for i)))     ; <4>
     (persistent! res)))                     ; <5>
 
- (quick-bench (fizz-buzz-slow 1000))
+(quick-bench (fizz-buzz-slow 1000))
 ;; Execution time mean : 34.320885 µs
- (quick-bench (fizz-buzz 1000))
+
+(quick-bench (fizz-buzz 1000))
 ;; Execution time mean : 28.308923 µs

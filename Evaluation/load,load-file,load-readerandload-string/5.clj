@@ -9,4 +9,4 @@
 (ns code2) ; <3>
 (eval (read-string user/code))
 (map (comp :line meta) [#'a #'b #'c])
-;; 1
+;; (1 1 1)

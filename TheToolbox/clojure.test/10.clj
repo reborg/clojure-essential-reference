@@ -1,21 +1,25 @@
-(ns composable-tests)
-(require '[clojure.test :refer [is deftest]])
+(require '[clojure.test :refer [is deftest] :as t])
 
-(deftest fail-a (is (= 1 (+ 2 2)))) ; <1>
-(deftest fail-b (is (= 1 (+ 2 2))))
-(deftest fail-c (is (= 1 (+ 2 2))))
+(defmethod t/assert-expr 'roughly [msg form] ; <1>
+  `(let [op1# ~(nth form 1) ; <2>
+         op2# ~(nth form 2)
+         tolerance# (if (= 4 ~(count form)) ~(last form) 2)
+         decimals# (/ 1. (Math/pow 10 tolerance#))
+         result# (< (Math/abs (- op1# op2#)) decimals#)]
+     (t/do-report   ; <3>
+       {:type (if result# :pass :fail)
+        :message ~msg
+        :expected (format "%s should be roughly %s with %s tolerance"
+                          op1# op2# decimals#)
+        :actual result#})
+     result#))
 
-(defn test-ns-hook [] (fail-a) (fail-c)) ; <2>
+(deftest sqrt-test ; <4>
+  (is (roughly 2 (sqrt 4) 14))
+  (is (roughly 2 (sqrt 4) 15)))
 
-(ns user)
-(require '[clojure.test :refer [test-ns]])
+(t/test-var #'sqrt-test)
 
-(test-ns 'composable-tests) ; <3>
-;; FAIL in (fail-a) (form-init2059340.clj:1)
-;; expected: (= 1 (+ 2 2))
-;;   actual: (not (= 1 4))
-;;
-;; FAIL in (fail-c) (form-init2059340.clj:1)
-;; expected: (= 1 (+ 2 2))
-;;   actual: (not (= 1 4))
-;; {:test 2, :pass 0, :fail 2, :error 0}
+;; FAIL in (sqrt-test) (form-init205.clj:3)
+;; expected: "2 should be roughly 2.000000000000002 with 1.0E-15 tolerance"
+;;   actual: false

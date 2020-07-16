@@ -9,3 +9,4 @@
 
 (with-reader r "/etc/hosts"
   (last (line-seq r)))
+;; ::1

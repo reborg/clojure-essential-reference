@@ -2,7 +2,7 @@
   (contains? #{"saturday" "sunday"} day))
 
 (defn weekday? [day]
-  (not (weekend? day)))                     ; <1>
+  (not (weekend? day)))  ; <1>
 
 (weekday? "monday")
 ;; true

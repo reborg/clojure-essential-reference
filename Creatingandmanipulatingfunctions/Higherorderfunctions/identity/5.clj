@@ -1,5 +1,5 @@
 (defn custom-filter [x] ; <1>
-  (if (or (= x nil) (= false x))
+  (if (or (nil? x) (false? x))
     false
     true))
 

@@ -1,7 +1,7 @@
-(defn symmetric? [xs]
+(defn symmetric? [xs] ; <1>
   (= (seq xs) (reverse xs)))
 
-(defn palindromes [coll] ; <1>
+(defn palindromes [coll] ; <2>
   (filter
     (fn [word]
       (and

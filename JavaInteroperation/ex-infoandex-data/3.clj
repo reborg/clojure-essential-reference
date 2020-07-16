@@ -1,4 +1,4 @@
-(defn randomly-failing-operation [] ; <1>
+(defn randomly-recoverable-operation [] ; <1>
   (throw
     (ex-info "Weak connection."
       {:type :connection
@@ -7,7 +7,7 @@
 (defn main-program-loop []
   (try
     (println "Attempting operation...")
-    (randomly-failing-operation)
+    (randomly-recoverable-operation)
     (catch Exception e
       (let [{:keys [type recoverable?]} (ex-data e)] ; <2>
         (if (and (= :connection type) recoverable?)

@@ -1,9 +1,7 @@
-(require '[clojure.test :refer [is deftest test-var]])
+(require '[clojure.test :refer [deftest-]])
 
-(deftest sqrt-test (is (= 2 (sqrt 4)) "Expecting 2")) ; <1>
+(deftest- this-is-not-public) ; <1>
 
-(test-var #'sqrt-test) ; <2>
-;; FAIL in () (form-init796879.clj:1) ; <3>
-;; Expecting 2
-;; expected: (= 2 (sqrt 4))
-;;   actual: (not (= 2 2.000000000000002))
+(keys (ns-publics *ns*)) ; <2>
+;; (clojuredocs help find-name sqrt sqrt-test
+;;  cdoc cjio apropos-better)

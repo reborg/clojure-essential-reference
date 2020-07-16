@@ -1,10 +1,10 @@
-(defn top-10-domains-by-traffic []
- (with-open [r (zip-reader alexa)]
+(defn top-10-domains-by-traffic [archive]
+ (with-open [r (zip-reader archive)]
   (->> (line-seq r)
        (map domain)
        frequencies        ; <1>
        (sort-by last >)
-       (take 10)))
+       (take 10))))
 
 (top-10-domains-by-traffic alexa)
 ;; ["com" 487682] ["org" 50189] ["ru" 43619]

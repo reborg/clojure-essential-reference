@@ -2,5 +2,6 @@
 ;; "潳琠䑡瑡扡獥ਣਣ潣慬桯"
 
 (spit "/tmp/txt" "Something." :append true) ; <2>
+(spit "/tmp/txt" "Something." :append true)
 (slurp "/tmp/txt")
 ;; "Something.Something."

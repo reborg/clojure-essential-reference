@@ -7,3 +7,4 @@
              {:time "2017-05-04T23:13:23Z" :msg "msg5"}])
 
 (inspect-table events)
+;; See image below

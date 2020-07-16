@@ -6,7 +6,7 @@
 (defn metric? [[name & measures]] ; <2>
   (and
     name
-    (re-matches #"Class\D{1}" name)
+    (re-matches #"Class\D" name)
     (every? measure? measures)))
 
 (defn header? [[kind & [code]]] ; <3>

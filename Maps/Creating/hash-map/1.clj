@@ -1,1 +1,3 @@
-(hash-map [& keyvals])
+(hash-map
+  ([])
+  ([& keyvals]))

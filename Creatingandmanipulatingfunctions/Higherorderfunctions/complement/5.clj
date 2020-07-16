@@ -1,7 +1,15 @@
-(filter ; <1>
-  (complement #{:a :b :c})
-  [:d 2 :a 4 5 :c])
-;; (:d 2 4 5)
+(defn turning-left? [wheel]
+  (= :left (:turn wheel)))
 
-(filter (complement #{nil :a 2}) [:a 2 nil nil]) ; <2>
-;; (nil nil)
+(def turning-right?
+  (complement turning-left?)) ; <1>
+
+(defn turn-left [wheel]
+  (if (turning-left? wheel)
+    (println "already turning left")
+    (println "turning left")))
+
+(defn turn-right [wheel]
+  (if (turning-right? wheel) ; <2>
+    (println "already turning right")
+    (println "turning right")))

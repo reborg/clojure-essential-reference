@@ -1,7 +1,7 @@
 (require '[criterium.core :refer [quick-bench]])
 (import '[clojure.lang PersistentTreeMap])
 
-(let [m (apply sorted-map (range 10))]
+(let [m (apply sorted-map (range 10))] ; <1>
   (quick-bench (first m))) ; <1>
 ;; Execution time mean : 57.393946 ns
 

@@ -6,5 +6,5 @@
 (quick-bench (check small ())) ;; 3.24 ms
 (quick-bench (check small [])) ;; 4.80 ms
 
-(quick-bench (check medium ())) ;; 317 ms
-(quick-bench (check medium [])) ;; 386 ms
+(quick-bench (check large ())) ;; 317 ms
+(quick-bench (check large [])) ;; 386 ms

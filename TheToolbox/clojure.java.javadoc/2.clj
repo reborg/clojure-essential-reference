@@ -15,7 +15,7 @@
 (doseq [prefix known-prefix] ; <4>
   (browse/add-remote-javadoc prefix jdocs-template))
 
-(pprint @browse/*remote-javadocs*) ; <5>
+(clojure.pprint/pprint @browse/*remote-javadocs*) ; <5>
 ;; {"java." "https://docs.oracle.com/javase/8/docs/api/",
 ;;  "javax." "https://docs.oracle.com/javase/8/docs/api/",
 ;;  "org.apache.commons.codec."

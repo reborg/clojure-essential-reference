@@ -1,5 +1,4 @@
-(require '[clojure.java.browse :refer [browse-url *open-url-script*]])
+(require '[clojure.java.browse-ui :as bu]) ; <1>
 
-(binding [*open-url-script* (atom "wget")]  ; <1>
-  (browse-url "http://www.gutenberg.org/files/2600/2600-0.txt"))
-;; true
+(#'bu/open-url-in-swing "http://google.com") ; <2>
+;; #object[javax.swing.JFrame 0x268234e0...]

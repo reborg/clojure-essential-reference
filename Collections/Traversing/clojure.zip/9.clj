@@ -1,4 +1,4 @@
-(def document ; (1)
+(def document ; <1>
   {:tag :balance
    :meta {:class "bold"}
    :node

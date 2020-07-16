@@ -1,7 +1,7 @@
-(def s "A drink here and a drink home.")
+(def s "I could have a drink here and wine home.")
 
-(s/replace s #"drink|soda|water" "beer") ; <1>
-;; "A beer here and a beer home."
+(s/replace s #"a drink|beer|wine" "water") ; <1>
+;; "I could have water here and water home."
 
-(s/replace-first s #"drink|soda|water" "beer") ; <2>
-;; "A beer here and a drink home."
+(s/replace-first s #"a drink|beer|wine" "water") ; <2>
+;; "I could have water here and wine home."

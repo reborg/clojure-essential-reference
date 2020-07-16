@@ -8,7 +8,6 @@
 
 (= k1 k2)
 ;; true
-;; IllegalArgumentException: Duplicate key [1, 2, 3]
 
 (def hashmap (hash-map k1 :v1 k2 :v2)) ; <3>
 (= (hash k1) (hash k2))

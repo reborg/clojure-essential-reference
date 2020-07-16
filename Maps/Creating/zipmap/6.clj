@@ -7,7 +7,7 @@ Mrs,Mary,Black,20,Hillbank St,Kelso,TD5 7JW,01/05/2012 12:51
 Miss,Chris,Bowie,44,Hall Rd,Sheffield,S5 7PW,01/05/2012 17:02
 Mr,John,Burton,41,Warren Rd,Yarmouth,NR31 9AB,01/05/2012 17:08")
 
-(defn split [line] ; <2>
+(defn split-line [line] ; <2>
   (s/split line #","))
 
 (defn transform [data] ; <3>
@@ -29,4 +29,4 @@ Mr,John,Burton,41,Warren Rd,Yarmouth,NR31 9AB,01/05/2012 17:08")
 ;;   "JOINED" "01/05/2012 17:02"}
 ;;  {"TITLE" "Mr", "FIRST" "John", "LAST" "Burton", "NUMBER" "41",
 ;;   "STREET" "Warren Rd", "CITY" "Yarmouth", "POST" "NR31 9AB",
-;;   "JOINED" "01/05/2012 17:08"})nil
+;;   "JOINED" "01/05/2012 17:08"})

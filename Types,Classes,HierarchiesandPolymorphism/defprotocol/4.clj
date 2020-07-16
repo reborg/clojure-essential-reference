@@ -1,13 +1,7 @@
-(require '[criterium.core :refer [bench]])
+(defprotocol Foo
+  :extend-via-metadata true ; <1>
+  (foo [x]))
+;; Foo
 
-(defprotocol Bench (m [this])) ; <1>
-
-(deftype DirectBench [] Bench (m [this])) ; <2>
-
-(deftype LaterBench [])
-(extend-type LaterBench Bench (m [this])) ; <3>
-
-(let [db (DirectBench.)] (bench (m db))) ; <4>
-;; Execution time mean : 3.052222 ns
-(let [lb (LaterBench.)]  (bench (m lb)))
-;; Execution time mean : 4.168180 ns
+(foo (with-meta [42] {`foo (fn [x] :boo)})) ; <2>
+;; :boo

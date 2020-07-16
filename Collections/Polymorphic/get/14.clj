@@ -3,5 +3,5 @@
 (get (get m :b) 0)  ; <1>
 ;; :x
 
-(get-in m [:b 0]))  ; <2>
+(get-in m [:b 0])  ; <2>
 ;; x

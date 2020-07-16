@@ -1,14 +1,14 @@
-(find-doc "xml") ; <1>
+(in-ns 'user)
+(find-doc "^to-") ; <1>
 
 ;; ------------------------- ; <2>
-;; clojure.xml/parse
-;; ([s] [s startparse])
-;;   Parses and loads the source s, which can be a File, InputStream or
-;;   String naming a URI.
+;; clojure.core/to-array
+;; ([coll])
+;;   Returns an array of Objects containing the contents of coll, which
+;;   can be any Collection.  Maps to java.util.Collection.toArray().
 ;; -------------------------
-;; clojure.core/xml-seq
-;; ([root])
-;;   A tree seq on the xml elements as per xml/parse
-;; -------------------------
-;; clojure.xml
-;;   XML reading/writing.
+;; clojure.core/to-array-2d
+;; ([coll])
+;;   Returns a (potentially-ragged) 2-dimensional array of Objects
+;;   containing the contents of coll, which can be any Collection of any
+;;   Collection.

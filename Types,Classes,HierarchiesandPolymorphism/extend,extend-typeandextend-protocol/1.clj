@@ -16,5 +16,8 @@
 
 ;; ("public jl.Object cl.Atom.reset(jl.Object)"
 ;;  "public jl.Object cl.Atom.swap(cl.IFn,jl.Object)"
+;;  "public jl.Object cl.Atom.swap(cl.IFn,jl.Object,jl.Object,cl.ISeq)"
+;;  "public jl.Object cl.Atom.swap(cl.IFn,jl.Object,jl.Object)"
+;;  "public jl.Object cl.Atom.swap(cl.IFn)"
 ;;  "public boolean cl.Atom.compareAndSet(jl.Object,jl.Object)"
 ;;  "public jl.Object cl.Atom.deref()")

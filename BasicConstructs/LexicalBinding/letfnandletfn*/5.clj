@@ -1,4 +1,4 @@
-(require '[clojure.string :refer [split-lines]]
+(require '[clojure.string :as s]
          '[clojure.repl :refer [source-fn]])
 
 (defn locs-xform [match]
@@ -15,7 +15,7 @@
     (map (juxt identity
                (fn [sym]
                  (count
-                   (split-lines           ; <3>
+                   (s/split-lines         ; <3>
                      (or (source-fn sym) ""))))))))
 
 (defn top-locs

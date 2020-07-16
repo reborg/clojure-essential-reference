@@ -12,5 +12,5 @@
       (while (> (.read dis) -1)))                                     ; <3>
     (DatatypeConverter/printHexBinary (.digest sha))))                ; <4>
 
-(md5-file (File. "/etc/hosts"))
+(sha (File. "/etc/hosts"))
 ;; "04F186E74288A10E09DFBF8A88D64A1F33C0E698AAA6B75CDB0AC3ABA87D5644"

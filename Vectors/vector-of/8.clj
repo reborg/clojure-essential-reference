@@ -11,6 +11,6 @@
     (println (str "Saving " (format "%3.2f" saving) "%"))))
 
 (memory-vector-of) ; <2>
-Bytes used by vector 29456
-Bytes used by vector of 9472
-Saving 67.84%
+;; Bytes used by vector 29456
+;; Bytes used by vector of 9472
+;; Saving 67.84%

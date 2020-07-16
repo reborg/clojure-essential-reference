@@ -1,4 +1,4 @@
-(def manning-contacts (slurp "https://www.manning.com/contact"))
+(def so-contacts (slurp "https://stackoverflow.com/company/contact"))
 
-(set (map last (re-seq #">(\S+@\S+\.com)<" manning-contact))) ; <1>
-;; #{"support@manning.com" "mkt@manning.com" "rights@manning.com"}
+(set (map last (re-seq #">(\S+@\S+\.com)<" so-contacts))) ; <1>
+;; #{"legal@stackoverflow.com"}

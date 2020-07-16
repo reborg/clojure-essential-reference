@@ -6,7 +6,7 @@
       [1 2
        [3
         [4
-         [0]]]]]                                ; <1>
+         [0]]]]]    ; <1>
      [:z
       [1 2
        [1]]]
@@ -14,12 +14,12 @@
    nil])
 
 (defn walk [depth tree]
-  (if-not (vector? tree)                        ; <2>
+  (if-not (vector? tree)   ; <2>
     depth
     (map (partial walk (inc depth)) tree)))
 
 (defn depth [tree]
-  (apply max (flatten (walk 0 tree))))          ; <3>
+  (apply max (flatten (walk 0 tree))))  ; <3>
 
 (depth tree)
 ;; 8

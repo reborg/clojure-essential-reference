@@ -3,5 +3,5 @@
 (time (dorun (map #(Thread/sleep %) xs))) ; <2>
 ;; "Elapsed time: 10019.599748 msecs"
 
-(time (dorun (pmap #(Thread/sleep %) xs)))
+(time (dorun (pmap #(Thread/sleep %) xs))) ; <3>
 ;; "Elapsed time: 10024.762327 msecs"

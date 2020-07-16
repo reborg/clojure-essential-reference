@@ -4,7 +4,7 @@
   (with-open [r (reader url)]
     (line-seq r)))
 
-(def lines (get-lines "http://gutenberg.org/files/50/50.txt")) ; <2>
+(def lines (get-lines "https://tinyurl.com/pi-digits")) ; <2>
 
-(count lines)
+(count lines) ; <3>
 ;; IOException Stream closed

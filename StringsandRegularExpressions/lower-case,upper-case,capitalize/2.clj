@@ -1,6 +1,6 @@
 (def primary-colors #{"red" "green" "blue"}); <1>
 
-(def book (slurp "http://www.gutenberg.org/files/2600/2600-0.txt")) ; <2>
+(def book (slurp "https://tinyurl.com/wandpeace")) ; <2>
 
 (->> (s/split book #"\s+") ; <3>
      (filter primary-colors)

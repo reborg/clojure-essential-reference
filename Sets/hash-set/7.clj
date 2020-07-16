@@ -7,5 +7,5 @@
 set-with-meta ; <2>
 ;; #{a}
 
-(meta (first set-with-meta))
+(meta (first set-with-meta)) ; <3>
 ;; {:pos 1}

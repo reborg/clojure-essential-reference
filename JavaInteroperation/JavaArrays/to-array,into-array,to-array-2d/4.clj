@@ -3,7 +3,7 @@
 (type a) ; <2>
 ;; [S
 
-(map type a) ; <2>
+(map type a) ; <3>
 ;; (java.lang.Short java.lang.Short java.lang.Short)
 
 (into-array Short/TYPE [Integer/MAX_VALUE]) ; <4>

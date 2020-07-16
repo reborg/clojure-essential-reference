@@ -8,7 +8,7 @@
 (defn to-waypoints [coords] ; <3>
   (map #(apply struct-map waypoint (mapcat identity %)) coords))
 
-(to-waypoints coordinates)
+(to-waypoints coordinates) ; <4>
 
 ;; ({:type nil, :lat "18.3112", :lon "3.1314", :id "XVA", :alt 150}
 ;;  {:type "XFV", :lat nil, :lon "10.04883", :id "FFA", :alt 312}

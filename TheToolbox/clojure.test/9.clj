@@ -1,18 +1,24 @@
-(ns my-tests) ; <1>
 (require '[clojure.test :refer [is deftest] :as t])
 
-(deftest a (is (= 1 (+ 2 2))))
-(deftest b (is (= 2 (+ 2 2))))
-(deftest c (is (= 4 (+ 2 2))))
+(deftest sqrt-test
+  (is (thrown? IllegalArgumentException (sqrt -4))) ; <1>
+  (is (thrown-with-msg? IllegalArgumentException #"negative" (sqrt -4))) ; <2>
+  (is (instance? Double (sqrt nil)))) ; <3>
 
-(ns user) ; <2>
-(require '[clojure.test :refer [test-all-vars]])
+(binding [t/*stack-trace-depth* 3] ; <4>
+  (t/test-var #'sqrt-test)) ; <5>
 
-(test-all-vars 'my-tests)
-;; FAIL in (a) (form-init205934.clj:1)
-;; expected: (= 1 (+ 2 2))
-;;   actual: (not (= 1 4))
+;; FAIL in () (form-init7968799.clj:2)
+;; expected: (thrown? IllegalArgumentException (sqrt -4))
+;;   actual: nil
 ;;
-;; FAIL in (b) (form-init20593408.clj:1)
-;; expected: (= 2 (+ 2 2))
-;;   actual: (not (= 2 4))
+;; FAIL in () (form-init7968799.clj:3)
+;; expected: (thrown-with-msg? IllegalArgumentException #"negative" (sqrt -4))
+;;   actual: nil
+;;
+;; ERROR in () (Numbers.java:1013)
+;; expected: (instance? Double (sqrt nil))
+;;   actual: java.lang.NullPointerException: null
+;;  at clojure.lang.Numbers.ops (Numbers.java:1013)
+;;     clojure.lang.Numbers.isNeg (Numbers.java:100)
+;;     user$sqrt.invokeStatic (form-init7968.clj:2)

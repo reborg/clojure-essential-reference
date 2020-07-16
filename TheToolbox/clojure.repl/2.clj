@@ -5,7 +5,13 @@
 ;; Macro
 ;;   Prints documentation for a var or special form given its name
 
-(doc clojure.repl) ; <2>
+(ns my-namespace
+  "This namespace contains useful functions."
+  (:require [clojure.repl :refer [doc]]))
 
-;; clojure.repl
-;;   Utilities meant to be used interactively at the REPL
+(doc my-namespace) ; <2>
+
+;; -------------------------
+;; my-namespace
+;;   This namespace contains useful functions.
+;; nil

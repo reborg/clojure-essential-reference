@@ -1,4 +1,11 @@
-(let [xs (range 1000)]
-  (* 10e6 (b (last (reductions unchecked-add-int xs))))) ; <1>
+(require '[criterium.core :refer [quick-bench]])
 
-;; 530.79127793974734 (µs)
+(let [xs (range 1000)]
+  (quick-bench (last (reductions unchecked-add-int xs))))
+
+;; Execution time mean : 56.880736 µs
+
+(let [xs (range 1000)]
+  (quick-bench (reduce unchecked-add-int xs)))
+
+;; Execution time mean : 4.692101 µs ; <1>

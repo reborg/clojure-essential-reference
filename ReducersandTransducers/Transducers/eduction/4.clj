@@ -4,4 +4,4 @@
     (if (> (first odds) (first evens))
       (println "ok")
       (println "ko")))
-;; ....................ok
+;; ....................ok ; <2>

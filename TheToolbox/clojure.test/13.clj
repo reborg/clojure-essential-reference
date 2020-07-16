@@ -1,23 +1,13 @@
-(ns fixture-test-1
-  (:require [clojure.test :refer :all]))
+(ns running-tests)
+(require '[clojure.test :refer [is deftest run-tests]])
 
-(defn setup [tests] ; <1>
-  (println "### before")
-  (tests)
-  (println "### after"))
+(deftest a (is (= 4 (+ 2 2))))
+(deftest b (is (= 4 (+ 2 2))))
+(deftest c (is (= 4 (+ 2 2))))
 
-(use-fixtures :each setup) ; <2>
-
-(deftest a-test (is (= 1 1)))
-(deftest b-test (is (= 1 1)))
-
-(run-tests) ; <3>
-;; Testing fixture-test-1
-;; ### before
-;; ### after
-;; ### before
-;; ### after
+(run-tests)
+;; Testing running-tests
 ;;
-;; Ran 2 tests containing 2 assertions.
+;; Ran 3 tests containing 3 assertions.
 ;; 0 failures, 0 errors.
-;; {:test 2, :pass 2, :fail 0, :error 0, :type :summary}
+;; {:test 3, :pass 3, :fail 0, :error 0, :type :summary}

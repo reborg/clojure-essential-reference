@@ -1,3 +1,5 @@
+(in-ns 'user)
+
 (def ^:dynamic *trace*) ; <1>
 
 (defmacro trace! [msg & body] ; <2>

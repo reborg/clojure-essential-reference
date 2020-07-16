@@ -6,4 +6,4 @@ clojure.core.reducers/fold ; <2>
 (main/load-script "@clojure/core/reducers.clj") ; <3>
 
 clojure.core.reducers/fold ; <4>
-#object[clojure.core.reducers$fold 0x41414539 "clojure.core.reducers$fold@41414539"]
+#object["clojure.core.reducers$fold@41414539"]

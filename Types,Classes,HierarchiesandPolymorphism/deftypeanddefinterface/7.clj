@@ -1,4 +1,5 @@
-(import 'bookdeftype.Foo) ;; After restarting the REPL
+;; After restarting the REPL
+(import 'bookdeftype.Foo) ; <1>
 ;; bookdeftype.Foo
 
 (def p (Foo.))

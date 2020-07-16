@@ -1,2 +1,2 @@
-(str "Should " "this " "be " "a " "single " "sentence?") ; <1>
-;; "Should this be a single sentence?"
+(str "This " 'is \space 1 " sentence") ; <1>
+;; "This is 1 sentence"

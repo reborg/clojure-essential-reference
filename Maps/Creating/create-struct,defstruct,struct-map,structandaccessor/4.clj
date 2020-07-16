@@ -4,5 +4,5 @@
 (type (defrecord abc [a b c])) ; <2>
 ;; java.lang.Class
 
-(abc. 1 2 3)
+(abc. 1 2 3) ; <3>
 ;; #user.abc{:a 1, :b 2, :c 3}

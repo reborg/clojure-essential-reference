@@ -9,8 +9,9 @@
     (if title
       (let [dir (str root "/" title)
             paths (map-indexed #(vector (fname dir %1) %2) forms)] ; <3>
-        (io/make-parents (io/file dir))                            ; <4>
-        (doseq [[path content] paths] (spit path content))         ; <5>
+        (doseq [[path content] paths]
+          (io/make-parents (io/file path))                         ; <4>
+          (spit path content))                                     ; <5>
         (recur (nnext more) (apply conj files paths)))             ; <6>
       (map first files))))
 

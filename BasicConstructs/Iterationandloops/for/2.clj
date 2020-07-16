@@ -3,5 +3,5 @@
       :let [s (str i k v)]              ; <3>
       :while (not= :b k)                ; <4>
       :when (odd? i)]                   ; <5>
-  s)                                    ; <6>
+  s)
 ;; ("1:a!" "3:a!" "5:a!" "7:a!" "9:a!")

@@ -1,4 +1,5 @@
 (/ 1 0)
+;; ArithmeticException Divide by zero  clojure.lang.Numbers.divide (Numbers.java:158)
 
 *e ; <1>
 

@@ -1,6 +1,6 @@
   (target [binding-parameters]
     (<body>
-      (recur binding-parameters)))
+      (recur <params>?)))
 
   target :=> <loop> | <defn> | <defn-> | <fn> | <fn*> | <#()>
   binding-parameters :=> params | bindings

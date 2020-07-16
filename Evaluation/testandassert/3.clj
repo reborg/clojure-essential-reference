@@ -6,6 +6,6 @@
       (recur (/ (+ (/ x guess) guess) 2.))
       guess)))
 
-(test #'sqrt) ; <2>
+(test #'sqrt)
 ;; AssertionError Assert failed: sqrt(4) should be 2
 ;; (== (sqrt 4) 2.0)

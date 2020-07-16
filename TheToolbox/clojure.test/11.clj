@@ -1,13 +1,18 @@
-(ns running-tests)
-(require '[clojure.test :refer [is deftest run-tests]])
+(ns my-tests) ; <1>
+(require '[clojure.test :refer [is deftest] :as t])
 
-(deftest a (is (= 4 (+ 2 2))))
-(deftest b (is (= 4 (+ 2 2))))
+(deftest a (is (= 1 (+ 2 2))))
+(deftest b (is (= 2 (+ 2 2))))
 (deftest c (is (= 4 (+ 2 2))))
 
-(run-tests)
-Testing running-tests
+(ns user) ; <2>
+(require '[clojure.test :refer [test-all-vars]])
 
-Ran 3 tests containing 3 assertions.
-0 failures, 0 errors.
-{:test 3, :pass 3, :fail 0, :error 0, :type :summary}
+(test-all-vars 'my-tests)
+;; FAIL in (a) (form-init205934.clj:1)
+;; expected: (= 1 (+ 2 2))
+;;   actual: (not (= 1 4))
+;;
+;; FAIL in (b) (form-init20593408.clj:1)
+;; expected: (= 2 (+ 2 2))
+;;   actual: (not (= 2 4))

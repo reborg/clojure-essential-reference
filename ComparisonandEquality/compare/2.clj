@@ -2,5 +2,5 @@
   (cond
      (neg? c) "less than" ; <1>
      (zero? c) "equal"
-     (pos? c) "more than"))
+     (pos? c) "greater than"))
 ;; "less than"

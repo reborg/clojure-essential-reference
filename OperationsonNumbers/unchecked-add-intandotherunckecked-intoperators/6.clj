@@ -23,18 +23,8 @@
                       (unchecked-subtract error dy)
                       (conj points [x y]))))))))
 
-user=> (bench (to-points 3 0 214 197))                    ; <1>
-Evaluation count : 5938980 in 60 samples of 98983 calls.
-             Execution time mean : 10.191922 µs
-    Execution time std-deviation : 227.488123 ns
-   Execution time lower quantile : 9.853480 µs ( 2.5%)
-   Execution time upper quantile : 10.691538 µs (97.5%)
-                   Overhead used : 1.761849 ns
+(bench (to-points 3 0 214 197))                    ; <1>
+;; Execution time mean : 10.191922 µs
 
-user=> (bench (to-points-long 3 0 214 197))               ; <2>
-Evaluation count : 6305160 in 60 samples of 105086 calls.
-             Execution time mean : 9.765748 µs
-    Execution time std-deviation : 182.351039 ns
-   Execution time lower quantile : 9.557755 µs ( 2.5%)
-   Execution time upper quantile : 10.181140 µs (97.5%)
-                   Overhead used : 1.761849 ns
+(bench (to-points-long 3 0 214 197))               ; <2>
+;; Execution time mean : 9.765748 µs

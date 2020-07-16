@@ -4,7 +4,7 @@
 (defn- to-double [k m]
   (update-in m [k] #(Double/valueOf %)))
 
-(defn parse [xml]                                         ; <1>
+(defn parse [xml] ; <1>
   (let [xml-in (java.io.ByteArrayInputStream. (.getBytes xml))
         results (to-double
                   :currentBalance
@@ -14,7 +14,7 @@
     (.close xml-in)
     results))
 
-(defn clean-key [k]                                       ; <2>
+(defn clean-key [k] ; <2>
   (let [kstr (str k)]
     (if (= \: (first kstr))
       (apply str (rest kstr))
@@ -23,11 +23,11 @@
 (defn- up-first [[head & others]]
   (apply str (conj others (.toUpperCase (str head)))))
 
-(defn separate-words [k]                                  ; <3>
+(defn separate-words [k] ; <3>
   (let [letters (map str k)]
     (up-first (reduce #(str %1 (if (= %2 (.toLowerCase %2)) %2 (str " " %2))) "" letters))))
 
-(defn format-decimals [v]                                 ; <4>
+(defn format-decimals [v] ; <4>
   (if (float? v)
     (let [[_ nat dec] (re-find #"(\d+)\.(\d+)" (str v))]
       (cond
@@ -36,7 +36,7 @@
         :default (str v)))
     v))
 
-(defn print-balance [xml]                                 ; <5>
+(defn print-balance [xml] ; <5>
   (let [balance (parse xml)]
     (letfn [(transform [acc item]
               (assoc acc

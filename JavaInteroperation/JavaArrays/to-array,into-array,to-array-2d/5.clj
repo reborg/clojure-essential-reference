@@ -3,5 +3,5 @@
 (map type a) ; <2>
 ;; ([Ljava.lang.Object; [Ljava.lang.Object;)
 
-(mapv vec a)
+(mapv vec a) ; <3>
 ;; [[1 2] [3 4]]

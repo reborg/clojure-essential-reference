@@ -8,8 +8,7 @@
     (newSAXParser)
     (parse s ch)))
 
-(def xml ; <3>
-  (-> conforming .getBytes io/input-stream (xml/parse non-validating)))
+(-> conforming .getBytes io/input-stream (xml/parse non-validating)) ; <3>
 ;; {:tag :html,
 ;;  :attrs {:xmlns "http://www.w3.org/1999/xhtml"},
 ;;  :content [{:tag :article, :attrs nil, :content ["Hello"]}]}

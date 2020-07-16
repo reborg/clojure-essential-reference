@@ -1,5 +1,5 @@
 (defn rule [moves]
-  (let [[p1 p2] moves]                                      ; <1>
+  (let [[p1 p2] moves]  ; <1>
       (cond
         (= p1 p2) "tie game"
         (every? #{"rock" "paper"} moves) "paper wins over rock"
@@ -7,16 +7,16 @@
         (every? #{"paper" "scissor"} moves) "scissor wins over paper"
         :else "computer can't win that!")))
 
-(defn game-loop []                                          ; <2>
+(defn game-loop []   ; <2>
   (println "Rock, paper or scissors?")
-  (let [human (read-line)                                   ; <3>
+  (let [human (read-line)              ; <3>
         ai (rand-nth ["rock" "paper" "scissor"])
         res (rule [human ai])]
     (if (= "exit" human)
       "Game over"
       (do
         (println (format "Computer played %s: %s" ai res))
-        (recur)))))                                         ; <4>
+        (recur)))))    ; <4>
 
 (game-loop)
 ;; Rock, paper or scissors?

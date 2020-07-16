@@ -1,3 +1,3 @@
-  (letfn [fnspec+ & body])
+  (letfn [fnspec+ & <body>])
 
-  fnspec ==> (fname [params*] exprs)
+  fnspec ==> (<fname> [<params>*] <exprs>?)

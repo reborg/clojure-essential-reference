@@ -1,5 +1,5 @@
 (dotimes [i 10] ; <1>
-  (remove-watch a i))
+  (remove-watch multi-watch i))
 
-(swap! a inc) ; <2>
+(swap! multi-watch inc) ; <2>
 ;; 2

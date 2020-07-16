@@ -1,4 +1,5 @@
 (require '[criterium.core :refer [quick-bench]])
+(import 'java.util.HashMap)
 
 (let [pairs (into [] (range 2e6))] ; <1>
   (quick-bench (apply hash-map pairs)))

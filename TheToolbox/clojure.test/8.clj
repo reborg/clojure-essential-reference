@@ -1,25 +1,21 @@
-(require '[clojure.test :refer [is deftest] :as t])
+(require '[clojure.test :refer [are deftest test-var]])
 
-(defmethod t/assert-expr 'roughly [msg form] ; <1>
-  `(let [op1# ~(nth form 1) ; <2>
-         op2# ~(nth form 2)
-         tolerance# (if (= 4 ~(count form)) ~(last form) 2)
-         decimals# (/ 1. (Math/pow 10 tolerance#))
-         result# (< (Math/abs (- op1# op2#)) decimals#)]
-     (t/do-report ; <3>
-       {:type (if result# :pass :fail)
-        :message ~msg
-        :expected (format "%s should be roughly %s with %s tolerance"
-                          op1# op2# decimals#)
-        :actual result#})
-     result#))
+(deftest sqrt-test
+  (are [x y] (= (sqrt x) y) ; <1>
+    9 3
+    0 0
+    Double/NaN Double/NaN))
 
-(deftest sqrt-test ; <4>
-  (is (roughly 2 (sqrt 4) 14))
-  (is (roughly 2 (sqrt 4) 15)))
+(test-var #'sqrt-test) ; <2>
 
-(t/test-var #'sqrt-test)
-
-FAIL in (sqrt-test) (form-init205.clj:3)
-expected: "2 should be roughly 2.000000000000002 with 1.0E-15 tolerance"
-  actual: false
+;; FAIL in () (form-init7968799.clj:2)
+;; expected: (= (sqrt 9) 3)
+;;   actual: (not (= 3.000000001396984 3))
+;;
+;; FAIL in () (form-init7968799.clj:2)
+;; expected: (= (sqrt 0) 0)
+;;   actual: (not (= 6.103515625E-5 0))
+;;
+;; FAIL in () (form-init7968799.clj:2)
+;; expected: (= (sqrt Double/NaN) Double/NaN)
+;;   actual: (not (= 1.0 NaN))

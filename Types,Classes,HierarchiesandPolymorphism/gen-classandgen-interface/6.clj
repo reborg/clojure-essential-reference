@@ -10,4 +10,4 @@
 (compile 'bookgenclass) ; <2>
 
 (GenClass/main (make-array String 0)) ; <3>
-Hello from Java!
+;; Hello from Java!

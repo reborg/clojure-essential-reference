@@ -1,6 +1,6 @@
-(require '[clojure.pprint :as p])
+(require '[clojure.pprint :as pretty])
 
-(p/print-table (repeat 4 (zipmap (range 10) (range 100 110)))) ; <1>
+(pretty/print-table (repeat 4 (zipmap (range 10) (range 100 110)))) ; <1>
 
 ;; |   0 |   7 |   1 |   4 |   6 |   3 |   2 |   9 |   5 |   8 |
 ;; |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|

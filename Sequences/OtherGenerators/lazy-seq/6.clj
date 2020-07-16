@@ -18,5 +18,5 @@
 
 (def lazy-out (lazy-map str '(0 1 2))) ; <4>
 (first lazy-out) ; <5>
-"iteration"
-"0"
+;; "iteration"
+;; "0"

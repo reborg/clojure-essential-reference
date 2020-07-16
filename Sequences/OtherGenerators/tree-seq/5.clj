@@ -14,7 +14,7 @@
              :meta nil
              :node [90.11]}]}]})
 
-(def branch? <2>
+(def branch?    ; <2>
   (complement (some-fn string? number?)))
 
 (def document-seq ; <3>

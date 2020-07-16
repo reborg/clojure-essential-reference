@@ -1,10 +1,10 @@
-(defn is-digit [s]
+(defn digit? [s]
   (every? #(Character/isDigit %) s)) ; <1>
 
 (defn to-num [s]
   (and
     (not-empty s)
-    (is-digit s)
+    (digit? s)
     (Long/valueOf s))) ; <2>
 
 (to-num nil) ; <3>

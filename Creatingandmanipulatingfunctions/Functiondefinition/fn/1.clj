@@ -1,1 +1,1 @@
-(fn [& fdecl]) ; <1>
+(fn [params] exprs)

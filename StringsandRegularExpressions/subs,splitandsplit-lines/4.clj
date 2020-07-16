@@ -8,7 +8,7 @@
 (sequence
 	(comp (map #(s/split % #"\s+")) ; <5>
 				(map last)
-				(filter #(re-find #"ppd" %))) ; <6>
+				(filter #(re-find #"\.ppd" %))) ; <6>
 	printers)
 
 ;; ("Brother_DCP_7055.ppd" ; <7>

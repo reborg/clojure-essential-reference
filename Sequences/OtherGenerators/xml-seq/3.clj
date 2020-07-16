@@ -2,11 +2,11 @@
 (require '[clojure.xml :as xml])
 
 (def feeds
- [[:guardian  "https://www.theguardian.com/world/rss"]
-  [:wash-post "http://feeds.washingtonpost.com/rss/rss_blogpost"]
-  [:nytimes "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"]
-  [:wsj "https://feeds.a.dj.com/rss/RSSWorldNews.xml"]
-  [:reuters "http://feeds.reuters.com/reuters/UKTopNews"]])
+ [[:guardian "https://git.io/guardian-world-rss-xml"]
+  [:wash-post "https://git.io/washpost-rss-xml"]
+  [:nytimes "https://git.io/nyt-world-rss-xml"]
+  [:wsj "https://git.io/wsj-rss-xml"]
+  [:reuters "https://git.io/reuters-rss-xml"]])
 
 (defn search-news [q [feed url]]
   (let [content (comp first :content)]
@@ -21,8 +21,10 @@
 
 (pmap (partial search-news #"(?i)climate") feeds) ; <4>
 
-;;([:guardian ("30 years of Australia's hollow promises on climate policy")]
-;; [:wash-post ()]
-;; [:nytimes ()]
-;; [:wsj ()]
-;; [:reuters ()])
+;; ([:guardian ()]
+;;  [:wash-post ()]
+;;  [:nytimes
+;;   ("Economic Giants Are Restarting.
+;;     Here’s What It Means for Climate Change.")]
+;;  [:wsj ()]
+;;  [:reuters ()])

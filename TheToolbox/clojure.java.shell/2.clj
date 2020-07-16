@@ -1,3 +1,8 @@
-(sh "grep" "5" :in (apply str (interpose "\n" (range 50)))) ; <1>
+(def result (sh "grep" "5" :in (apply str (interpose "\n" (range 50))))) ; <1>
 
-{:exit 0, :out "5\n15\n25\n35\n45\n", :err ""}
+(println (:out result)) ; <2>
+;; 5
+;; 15
+;; 25
+;; 35
+;; 45

@@ -1,24 +1,25 @@
-(require '[clojure.test :refer [is deftest] :as t])
+(require '[clojure.test :refer [is deftest testing test-var]])
 
 (deftest sqrt-test
-  (is (thrown? IllegalArgumentException (sqrt -4))) ; <1>
-  (is (thrown-with-msg? IllegalArgumentException #"negative" (sqrt -4))) ; <2>
-  (is (instance? Double (sqrt nil)))) ; <3>
+  (testing "The basics of squaring a number" ; <1>
+    (is (= 3 (sqrt 9))))
+  (testing "Known corner cases"
+    (is (= 0 (sqrt 0)))
+    (is (= Double/NaN (sqrt Double/NaN)))))
 
-(binding [t/*stack-trace-depth* 3] ; <4>
-  (t/test-var #'sqrt-test)) ; <2>
+(test-var #'sqrt-test) ; <2>
 
-;; FAIL in () (form-init7968799.clj:2)
-;; expected: (thrown? IllegalArgumentException (sqrt -4))
-;;   actual: nil
+;; FAIL in () (form-init796879.clj:3)
+;; The basics of squaring a number
+;; expected: (= 3 (sqrt 9))
+;;   actual: (not (= 3 3.000000001396984))
 ;;
-;; FAIL in () (form-init7968799.clj:3)
-;; expected: (thrown-with-msg? IllegalArgumentException #"negative" (sqrt -4))
-;;   actual: nil
+;; FAIL in () (form-init796879.clj:5)
+;; Known corner cases
+;; expected: (= 0 (sqrt 0))
+;;   actual: (not (= 0 6.103515625E-5))
 ;;
-;; ERROR in () (Numbers.java:1013)
-;; expected: (instance? Double (sqrt nil))
-;;   actual: java.lang.NullPointerException: null
-;;  at clojure.lang.Numbers.ops (Numbers.java:1013)
-;;     clojure.lang.Numbers.isNeg (Numbers.java:100)
-;;     user$sqrt.invokeStatic (form-init7968.clj:2)
+;; FAIL in () (form-init796879.clj:6)
+;; Known corner cases
+;; expected: (= Double/NaN (sqrt Double/NaN))
+;;   actual: (not (= NaN 1.0))

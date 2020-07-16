@@ -1,9 +1,4 @@
-(require '[clojure.test :refer [with-test]])
-
-(with-test ; <1>
-  (defn sum [a b] (+ a b))
-  (println "test called"))
-
-(test #'sum) ; <2>
-;; test called
-;; :ok ; <3>
+(macroexpand '(deftest sqrt-test)) ; <1>
+;; (def sqrt-test
+;;   (clojure.core/fn []
+;;     (clojure.test/test-var (var sqrt-test))))

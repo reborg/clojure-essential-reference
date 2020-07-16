@@ -1,12 +1,20 @@
-(dir clojure.walk) ; <1>
+(require 'clojure.reflect)
+(dir clojure.reflect) ; <1>
 
-;; keywordize-keys
-;; macroexpand-all
-;; postwalk
-;; postwalk-demo
-;; postwalk-replace
-;; prewalk
-;; prewalk-demo
-;; prewalk-replace
-;; stringify-keys
-;; walk
+;; ->AsmReflector
+;; ->Constructor
+;; ->Field
+;; ->JavaReflector
+;; ->Method
+;; ClassResolver
+;; Reflector
+;; TypeReference
+;; do-reflect
+;; flag-descriptors
+;; map->Constructor
+;; map->Field
+;; map->Method
+;; reflect
+;; resolve-class
+;; type-reflect
+;; typename

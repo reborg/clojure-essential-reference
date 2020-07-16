@@ -9,6 +9,6 @@
 ;;  sort-by #'clojure.core/sort-by,
 ;; [...]
 
-(distinct (map #(map type %) (ns-map 'myns)))
+(distinct (map #(map type %) (ns-map 'myns))) ; <2>
 ;; ((clojure.lang.Symbol clojure.lang.Var)
 ;;  (clojure.lang.Symbol java.lang.Class))

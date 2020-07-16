@@ -1,5 +1,5 @@
 (defn response-code [data]
-  (cond                                     ; <1>
+  (cond                     ; <1>
     (:error data) 500
     (not= :failure (:status data)) 200
     :else 400))

@@ -4,12 +4,11 @@
    "Cassandra Wilson"
    "andrew cormack"])
 
-(sequence
-  (comp
-    (mapcat #(s/split % #"\b")) ; <1>
-    (map s/capitalize)          ; <2>
-    (partition-all 3)           ; <3>
-    (map s/join))               ; <4>
+(map
+  (fn [name]
+    (->> (s/split name #"\b") ; <1>
+         (map s/capitalize)   ; <2>
+         s/join))             ; <3>
   names)
 
 ;; ("John Abercrombie"

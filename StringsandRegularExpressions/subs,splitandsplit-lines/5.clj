@@ -1,4 +1,4 @@
-(require '[criterium.core :as [quick-bench]])
+(require '[criterium.core :refer [quick-bench]])
 
 (let [s "String index out of range: 34"]
   (quick-bench (subs s 27))) ; <1>

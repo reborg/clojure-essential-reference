@@ -3,8 +3,8 @@
   (method2 [this]))
 
 (pprint (vec (.getDeclaredMethods user.MyProtocol))) ; <2>
-[#object[Method "public abstract java.lang.Object user.MyProtocol.method1()"]
- #object[Method "public abstract java.lang.Object user.MyProtocol.method2()"]]
+;; [#object[Method "public abstract java.lang.Object user.MyProtocol.method1()"]
+;;  #object[Method "public abstract java.lang.Object user.MyProtocol.method2()"]]
 
 (pprint MyProtocol) ; <3>
 

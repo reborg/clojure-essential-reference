@@ -3,7 +3,7 @@
 (defn right-pad [n] ; <1>
   (cl-format nil "~64,'0d" n))
 
-(dotimes [i 5] ; <1>
+(dotimes [i 5] ; <2>
   (->> i
        (unsigned-bit-shift-right -22)
        Long/toBinaryString

@@ -1,4 +1,4 @@
-(require '[clojure.string :as s :refer [lower-case])
+(require '[clojure.string :as s :refer [lower-case]])
 
 `s/upper-case
 ;; clojure.string/upper-case

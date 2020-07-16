@@ -1,5 +1,5 @@
-(bit-shift-right -146 1) ; <1>
-;; -74
+(bit-shift-right -144 1) ; <1>
+;; -72
 
-(bit-shift-right -146 2) ; <2>
-;; -37
+(bit-shift-right -144 2) ; <2>
+;; -36

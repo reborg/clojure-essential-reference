@@ -1,11 +1,17 @@
-(type []) ; <1>
+(class []) ; <1>
 ;; clojure.lang.PersistentVector
 
-(type "") ; <2>
+(class "") ; <2>
 ;; java.lang.String
 
-(type #()) ; <3>
+(class #()) ; <3>
 ;; user$eval25$fn__26
 
-(type nil) ; <4>
+(class nil) ; <4>
 ;; nil
+
+(type {:a 1}) ; <5>
+;; clojure.lang.PersistentArrayMap
+
+(type (with-meta {:a 1} {:type :custom})) ; <6>
+;; :custom

@@ -13,5 +13,5 @@
 (var test-var/a) ; <4>
 ;; #'test-var/a
 
-(= (var a) (var test-var/a))
+(= (var a) (var test-var/a)) ; <5>
 ;; false

@@ -1,3 +1,3 @@
-(def book (slurp "http://www.gutenberg.org/files/2600/2600-0.txt")) ; <1>
-(reduce str (take 22 book))
-;; "The Project Gutenberg"
+(def book (slurp "https://tinyurl.com/wandpeace")) ; <1>
+(reduce str (take 24 book))
+;; "\r\nThe Project Gutenberg"

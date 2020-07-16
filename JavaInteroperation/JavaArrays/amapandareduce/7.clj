@@ -9,10 +9,10 @@
       (if (> (+ new sum) limit) old new))))
 
 ; <2>
-Reflection warning, method aclone on RT can't be resolved (argument types: unknown).
-Reflection warning, alength on RT can't be resolved (argument types: unknown).
-Boxed math warning, boolean Numbers.lt(long,Object).
-Reflection warning, aget on RT can't be resolved (argument types: unknown, int).
-Boxed math warning, Number Numbers.unchecked_add(Object,Object).
-Boxed math warning, boolean Numbers.gt(Object,Object).
-Reflection warning, aset on RT can't be resolved.
+;; Reflection warning, method aclone on RT can't be resolved (argument types: unknown).
+;; Reflection warning, alength on RT can't be resolved (argument types: unknown).
+;; Boxed math warning, boolean Numbers.lt(long,Object).
+;; Reflection warning, aget on RT can't be resolved (argument types: unknown, int).
+;; Boxed math warning, Number Numbers.unchecked_add(Object,Object).
+;; Boxed math warning, boolean Numbers.gt(Object,Object).
+;; Reflection warning, aset on RT can't be resolved.

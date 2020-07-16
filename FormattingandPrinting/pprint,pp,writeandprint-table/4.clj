@@ -1,12 +1,30 @@
-(pretty/with-pprint-dispatch
-  pretty/code-dispatch ; <1>
-  (pprint (read-string op-fn)))
+(def op-fn ; <1>
+  "(defn op [sel]
+     (condp = sel
+        \"plus\" +
+        \"minus\" -
+        \"mult\" *
+        \"div\" /
+        \"rem\" rem
+        \"quot\" quot))")
 
-;; (defn op [sel]
-;;   (condp = sel
-;;     "plus" +
-;;     "minus" -
-;;     "mult" *
-;;     "div" /
-;;     "rem" rem
-;;     "quot" quot))
+(pprint (read-string op-fn)) ; <2>
+
+;; (defn ; <3>
+;; op
+;;  [sel]
+;;  (condp
+;;   =
+;;   sel
+;;   "plus"
+;;   +
+;;   "minus"
+;;   -
+;;   "mult"
+;;   *
+;;   "div"
+;;   /
+;;   "rem"
+;;   rem
+;;   "quot"
+;;   quot))

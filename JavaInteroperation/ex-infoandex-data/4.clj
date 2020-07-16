@@ -6,10 +6,10 @@
           (Throwable->map t))))))
 
 (keys error-data) ; <2>
-;; (:cause :via :trace)
+;; (:cause :via :trace :data)
 
 (:cause error-data) ; <3>
-;; "Inner"
+;; "inner"
 
 (:via error-data) ; <4>
 ;; [{:type clojure.lang.ExceptionInfo,
@@ -23,3 +23,6 @@
 
 (nth (:trace error-data) 3) ; <5>
 ;; [user$fn__2151 invoke "form-init5670973898278733609.clj" 1]
+
+(:data error-data) ; <6>
+;; {:recoverable? false}

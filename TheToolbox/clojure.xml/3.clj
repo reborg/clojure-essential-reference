@@ -8,10 +8,10 @@
        <article>Hello</article>
      </html>")
 
-(def xml ; <2>
-  (-> conforming .getBytes io/input-stream xml/parse))
+(-> conforming .getBytes io/input-stream xml/parse) ; <2>
 
-;; hangs 60 seconds if missing network ; <3>
+;; hangs 60 seconds if missing or misconfigured network ; <3>
+
 ;; {:tag :html,
 ;;  :attrs {:xmlns "http://www.w3.org/1999/xhtml"},
 ;;  :content [{:tag :article, :attrs nil, :content ["Hello"]}]}
