@@ -4,7 +4,7 @@
   (with-open [r (reader url)]
     (doall (line-seq r))))
 
-(def lines (get-lines "http://gutenberg.org/files/50/50.txt"))
+(def lines (get-lines "https://tinyurl.com/pi-digits"))
 
 (count lines) ; <2>
 ;; 29301

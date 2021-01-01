@@ -9,7 +9,7 @@
 (defn word-count [s]
   (count-occurrences (.split #"\s+" s)))
 
-(def war-and-peace "http://www.gutenberg.org/files/2600/2600-0.txt")
+(def war-and-peace "https://tinyurl.com/wandpeace")
 (def book (slurp war-and-peace))
 
 (def freqs (word-count book))

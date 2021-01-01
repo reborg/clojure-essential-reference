@@ -26,7 +26,7 @@
               :rain-accumulation 2}}])
 
 (def event-stream                         ; <4>
-  (apply concat (repeat events)))
+  (cycle events))
 
 (defn average [k n]
   (let [sum (->> event-stream

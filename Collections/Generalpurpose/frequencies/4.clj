@@ -6,7 +6,7 @@
        (sort-by last >)                ; <3>
        (take 5)))                      ; <4>
 
-(def war-and-peace "https://tinyurl.com/uyovxow")
+(def war-and-peace "https://tinyurl.com/wandpeace")
 (def book (slurp war-and-peace))       ; <5>
 
 (freq-used-words book)                 ; <6>

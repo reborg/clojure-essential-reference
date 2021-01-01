@@ -4,5 +4,5 @@
   (with-open [r (reader url)]
     (count (line-seq r))))
 
-(count-lines "http://gutenberg.org/files/50/50.txt")
+(count-lines "https://tinyurl.com/pi-digits")
 ;; 29301

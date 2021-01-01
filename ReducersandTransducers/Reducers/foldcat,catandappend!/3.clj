@@ -2,7 +2,7 @@
 (require '[clojure.string :as s])
 
 (def text                               ; <1>
-  (-> "http://www.gutenberg.org/files/2600/2600-0.txt"
+  (-> "https://tinyurl.com/wandpeace"
       slurp
       s/split-lines))
 
