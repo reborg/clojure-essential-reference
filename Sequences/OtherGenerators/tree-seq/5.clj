@@ -14,8 +14,7 @@
              :meta nil
              :node [90.11]}]}]})
 
-(def branch?    ; <2>
-  (complement (some-fn string? number?)))
+(def branch? (every-pred map? :node)) ; <2>
 
 (def document-seq ; <3>
   (tree-seq
